@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>oEnergy</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style-custom.css" />
+   <!-- poppins font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+   <!-- fontawesome -->
+   <script src="https://kit.fontawesome.com/5298658fa2.js" crossorigin="anonymous"></script>
+
+   <title>oEnergy</title>
+
+</head>
+
+<body>
+
+  <!-- START NAVBAR-->
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="font-size: 20px">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/img/logo oenergy SVG.svg" alt="logoPrincipal" height="45" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container collapse navbar-collapse justify-content-end" id="navbarScroll">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 120px">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Conócenos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="conocenos.html">Historia</a></li>
+              <li>
+                <a class="dropdown-item" href="conocenos.html#que-hacemos">Qué Hacemos</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="conocenos.html#mision-vision">Misión y Visión</a>
+              </li>
+              <li><a class="dropdown-item" href="conocenos.html#team">Team</a></li>
+              <li>
+                <a class="dropdown-item" href="conocenos.html#proyectos">Proyectos</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              ESG
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li>
+                <a class="dropdown-item" href="esg.html">Annual ESG Report</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="esg.html#environmental">Environmental</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="esg.html#social">Social</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="esg.html#governance">Governance</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li>
+                <a class="dropdown-item" href="servicios.html">Partnership</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="servicios.html#om">O&M</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="servicios.html#scada">SCADA - CCTV y Aseguramiento de Activos</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="servicios.html#assets">Assets Management</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="servicios.html#irecs">Environmental Commodities (IRECs)</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item align-center">
+            <button class="btn btn-outline-light"
+              style="background-color: #4674b6; font-size: 20px; border-radius: 20px;" type="submit">
+              Contáctanos
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div style="position: relative; width: 100%;">
+    <video autoplay loop muted id="videoFondo" style="width: 100%;">
+      <source src="./assets/img/santaLaura.mp4" type="video/mp4">
+    </video>
+  
+    <div style="position: absolute; top: 0; bottom: 0; left: 20px; display: flex; flex-direction: column; justify-content: center; max-width: 50%; color: white; z-index: 1;">
+      <h1 style="font-size: 80px !important; color: white;">Generación Solar Distribuida</h1>
+      <h3 style="color: white; font-size: 22px !important;">oEnergy es un grupo empresarial chileno que busca contribuir en la transformación de la matriz energética de nuestro país por medio del desarrollo, construcción y explotación de Recursos Energéticos Distribuidos</h3>
+    </div>
+  </div>
+
+  <section style="background: rgb(34,49,105);
+  background: linear-gradient(0deg, rgba(34,49,105,1) 0%, rgba(255,255,255,1) 100%); height: 400px; display: flex; align-items: center;">
+    <div class="container align-items-center">
+        <div class="row">
+            <div class="col">
+                <p class="pe-5" 
+                style="font-size: 20px;
+                  font-weight: 400;
+                  padding-top: 40px;
+                  line-height: 26px; 
+                  text-align: left;
+                  color: #223169">
+                    oEnergy nace en 2013 como un emprendimiento familiar de solo 
+                    dos personas, y en menos de una década, 
+                    se transformó en una empresa de más de 200 colaboradores, 
+                    posicionándose como uno de los principales 
+                    actores del mercado energético chileno en el 
+                    segmento de Pequeños Medios de Generación Distribuida (PMGD).
+                </p>
+            </div>
+            <div class="col rounded-video">
+              <video width="660" height="370" controls poster="./assets/img/placeholder-videocorp.png" class="rounded-video">
+                <source src="./assets/img/Video Corporativo oEnergy - sub.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+              </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  <footer class="footer-oenergy" style="
+  color: white;
+  background-color: #223169;
+  padding: 5px 0;
+">
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center align-items-center text-start"
+          style="display: flex;  flex-direction: column;   justify-content: center;   align-items: center; ">
+          <img style="display: inline-block; " src="./assets/img/logo oenergy_Mesa de trabajo 1.png"
+            alt="logoPrincipal" height="45" />
+          <img style="display: inline-block;" src="./assets/img/marca_chile.png" alt="logoPrincipal"
+            height="75" />
+            <p class="pt-3">Avenida Apoquindo 3910 <br> Oficina 201, Las Condes</p>
+            <p>comunicaciones@oenergy.cl</p>
+        </div>
+
+
+        <div class="col pt-4 ps-5">
+          <h5>Nosotros</h5>
+          <p>Historia</p>
+          <p>Qué Hacemos</p>
+          <p>Misión y Visión</p>
+          <p>Team</p>
+          <p>Proyectos</p>
+        </div>
+        <div class="col pt-4">
+          <h5>ESG</h5>
+          <p>Annual Report</p>
+          <p>Social</p>
+          <p>Governance</p>
+        </div>
+        <div class="col pt-4">
+          <h5>Servicios</h5>
+          <p>Partnership</p>
+          <p>O&M</p>
+          <p>SCADA, CCTV</p>
+          <p>Asset Management</p>
+          <p>IRECs</p>
+        </div>
+        <div class="col pt-4">
+          <h5>Información Legal</h5>
+          <p>Gobierno Corporativo</p>
+          <p>Términos de Uso</p>
+          <p>Política de Privacidad</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- END NAVBAR-->
+
+  <!-- START VIDEO SECTION -->
+  <!--   <div class="container-fluid m-0 p-0">
+    <video class="w-100" autoplay loop muted>
+      <source src="./assets/img/Drone.mp4" type="video/mp4" />
+    </video>
+  </div> -->
+  <!-- END VIDEO SECTION -->
+
+
+
+
+
+<!--   <footer class="footer-oenergy" style="
+        color: white;
+        background-color: #223169;
+        padding: 20px 0;
+        margin-top: 50px;
+      ">
+    <div class="container">
+      <div class="row">
+        <div class="col pt-4">
+          <img src="./assets/img/logo oenergy SVG.svg" alt="logoPrincipal" height="45" />
+          <p class="pt-4" style="color: white">Contáctanos:</p>
+          <p class="pt-1" style="color: white">comunicaciones@oenergy.cl</p>
+          <p class="pt-1" style="color: white">Avda. Apoquindo 1234</p>
+        </div>
+
+        <div class="col pt-4 ps-5">
+          <h5>Nosotros</h5>
+          <p>Historia</p>
+          <p>Qué Hacemos</p>
+          <p>Misión y Visión</p>
+          <p>Team</p>
+          <p>Proyectos</p>
+        </div>
+        <div class="col pt-4">
+          <h5>ESG</h5>
+          <p>Annual Report</p>
+          <p>Social</p>
+          <p>Governance</p>
+        </div>
+        <div class="col pt-4">
+          <h5>Servicios</h5>
+          <p>Partnership</p>
+          <p>O&M</p>
+          <p>SCADA, CCTV</p>
+          <p>Asset Management</p>
+          <p>IRECs</p>
+        </div>
+        <div class="col pt-4">
+          <h5>Información Legal</h5>
+          <p>Gobierno Corporativo</p>
+          <p>Términos de Uso</p>
+          <p>Política de Privacidad</p>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+      <!-- jquery -->
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+      <!-- Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <!-- JS -->
+      <script src="./assets/js/main-custom.js"></script>
+</body>
+
+
+
+</html>
