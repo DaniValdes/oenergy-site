@@ -86,6 +86,7 @@ h2 {
   #video-home iframe {
     width: 100%;
     height: auto;
+    max-width: 100vh;
   }
  /*  .col-order {
     flex-direction: column-reverse;
@@ -420,6 +421,22 @@ h2 {
     max-height: 250px;
   }
   
+  @media (max-width: 600px) { /* Ajustar este valor al breakpoint que estás utilizando para el cambio a la vista móvil */
+    .image-container-mision {
+      width: auto;
+      
+    }
+    .custom-text-center{
+      font-size: 14px !important;
+      margin-left: 45px !important;
+      margin-right: 70px !important;
+      line-height: 25px !important;
+      
+    }
+}
+
+
+
   .custom-image {
     display: block;
     width: 450px;
