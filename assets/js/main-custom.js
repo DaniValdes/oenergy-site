@@ -153,3 +153,8 @@ console.log("Resolución de pantalla: " + screenWidth + "x" + screenHeight);
     }
 });
 
+
+var carousel = document.querySelector('#team-carousel')
+var bsCarousel = new bootstrap.Carousel(carousel, {
+  interval: 2500
+})
