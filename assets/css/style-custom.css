@@ -19,6 +19,33 @@ h2 {
     font-weight: 600;
 }
 
+.dropdown-menu {
+
+  white-space: normal; /* Permite que el texto se ajuste y pase a la siguiente línea si es demasiado largo */
+  max-width: 90vw; /* Establece el ancho máximo al 90% del ancho de la pantalla */
+
+}
+
+.dropdown-item {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+      max-height: 100vh;
+      overflow: auto;
+  }
+}
+
+@media (max-width: 992px) { /* Ajustar este valor al breakpoint que estás utilizando para el cambio a la vista móvil */
+  .navbar-nav-scroll {
+      max-height: none; /* Anula la altura máxima predefinida de Bootstrap */
+  }
+}
+
 .zoom-component {
     transition: transform .5s; /* Animación */
   }
@@ -33,6 +60,57 @@ h2 {
     -webkit-transform: translateZ(0);
     
 }
+
+@media (max-width: 600px) {
+  #titulo-home {
+    font-size: 16px !important ;
+  }
+
+  #descripcion-home {
+    font-size: 8px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #texto-home {
+    font-size: 12px !important;
+    text-align: center !important;
+    margin-top: 130px !important;
+    margin-left: 40px;
+    line-height: 15px !important;
+    
+  }
+  #video-home {
+    width: 100%;
+  }
+  #video-home iframe {
+    width: 100%;
+    height: auto;
+  }
+ /*  .col-order {
+    flex-direction: column-reverse;
+  } */
+}
+
+@media (max-width: 768px) {
+  .footer-mobile-hide {
+    display: none;
+  }
+  .footer-oenergy h5 {
+    text-align: center;
+  }
+}
+
+.footer-link {
+  text-decoration: none; /* Esto elimina el subrayado */
+  color: white; /* Esto cambiará el color del texto del enlace. Reemplázalo con el color que prefieras */
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* Esto agrega un subrayado cuando se pasa el mouse sobre el enlace. Puedes quitarlo si no lo quieres */
+}
+
+
 
 
 /* TIMELINE */
