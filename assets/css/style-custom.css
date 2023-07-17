@@ -19,6 +19,9 @@ h2 {
     font-weight: 600;
 }
 
+
+
+
 .dropdown-menu {
 
   white-space: normal; /* Permite que el texto se ajuste y pase a la siguiente línea si es demasiado largo */
@@ -63,7 +66,7 @@ h2 {
 
 @media (max-width: 600px) {
   #titulo-home {
-    font-size: 16px !important ;
+    font-size: 18px !important ;
   }
 
   #descripcion-home {
@@ -73,7 +76,7 @@ h2 {
 
 @media (max-width: 768px) {
   #texto-home {
-    font-size: 12px !important;
+    font-size: 14px !important;
     text-align: center !important;
     margin-top: 130px !important;
     margin-left: 40px;
@@ -88,6 +91,26 @@ h2 {
     height: auto;
     max-width: 100vh;
   }
+}
+
+  @media (max-width: 768px) {
+    .section-nuestra-historia{
+      text-align: center;
+    }
+
+    .section-nuestra-historia p{
+      text-align: center !important;
+    }
+
+    #video-conocenos {
+      width: auto;
+    }
+    #video-conocenos iframe {
+      width: 200px;
+      height: auto;
+    }
+
+
  /*  .col-order {
     flex-direction: column-reverse;
   } */
@@ -110,7 +133,6 @@ h2 {
 .footer-link:hover {
   text-decoration: underline; /* Esto agrega un subrayado cuando se pasa el mouse sobre el enlace. Puedes quitarlo si no lo quieres */
 }
-
 
 
 
@@ -285,7 +307,7 @@ h2 {
 
 @media (max-width: 1370px) {
     .section-container {
-      height: 90vh;
+      height: 90vh !;
     }
   }
   
@@ -1031,7 +1053,4 @@ h2 {
   .contact-form button:hover {
     background-color: #45a049;
   }
-  
-  
-
   
