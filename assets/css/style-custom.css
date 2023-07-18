@@ -615,6 +615,23 @@ h2 {
     }
   }
 
+  @media (max-width: 768px) {
+    .person-carousel {
+      display: none;
+    }
+  }
+  
+  .ejecutivos-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .ejecutivos-mobile {
+        display: block;
+    }
+}
+
+
   .our-team {
     position: relative;
     height: 100vh; /* Ajusta la altura según tus necesidades */
@@ -806,6 +823,14 @@ h2 {
 
 
       /* PROYECTOS */
+      @media screen and (max-width: 768px) {
+        .proyectos-container {
+            height: auto !important;
+            padding-bottom: 25px;
+        }
+    }
+    
+
       .horizontal-line-white {
         height: 2px;
         background-color: #ffffff;
