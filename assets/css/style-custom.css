@@ -26,6 +26,11 @@ h2 {
   }
 }
 
+@media (max-width: 576px) {
+  .our-team {
+    height: 60vh !important;
+  }
+}
 
 .dropdown-menu {
 
@@ -604,6 +609,12 @@ h2 {
     width: 60%;
   }
   
+  @media (max-width: 576px) {
+    .horizontal-line {
+      display: none !important;
+    }
+  }
+
   .our-team {
     position: relative;
     height: 100vh; /* Ajusta la altura según tus necesidades */
