@@ -19,6 +19,34 @@ h2 {
     font-weight: 600;
 }
 
+
+
+
+.dropdown-menu {
+
+  white-space: normal; /* Permite que el texto se ajuste y pase a la siguiente línea si es demasiado largo */
+  max-width: 90vw; /* Establece el ancho máximo al 90% del ancho de la pantalla */
+
+}
+
+.dropdown-item {
+  white-space: normal;
+}
+
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+      max-height: 100vh;
+      overflow: auto;
+  }
+}
+
+@media (max-width: 992px) { /* Ajustar este valor al breakpoint que estás utilizando para el cambio a la vista móvil */
+  .navbar-nav-scroll {
+      max-height: none; /* Anula la altura máxima predefinida de Bootstrap */
+  }
+}
+
 .zoom-component {
     transition: transform .5s; /* Animación */
   }
@@ -33,6 +61,77 @@ h2 {
     -webkit-transform: translateZ(0);
     
 }
+
+@media (max-width: 600px) {
+  #titulo-home {
+    font-size: 18px !important ;
+  }
+
+  #descripcion-home {
+    font-size: 8px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #texto-home {
+    font-size: 14px !important;
+    text-align: center !important;
+    margin-top: 130px !important;
+    margin-left: 40px;
+    line-height: 15px !important;
+    
+  }
+  #video-home {
+    width: 100%;
+  }
+  #video-home iframe {
+    width: 100%;
+    height: auto;
+    max-width: 100vh;
+  }
+}
+
+  @media (max-width: 768px) {
+    .section-nuestra-historia{
+      text-align: center;
+    }
+
+    .section-nuestra-historia p{
+      text-align: center !important;
+    }
+
+    #video-conocenos {
+      width: auto;
+    }
+    #video-conocenos iframe {
+      width: 200px;
+      height: auto;
+    }
+
+
+ /*  .col-order {
+    flex-direction: column-reverse;
+  } */
+}
+
+@media (max-width: 768px) {
+  .footer-mobile-hide {
+    display: none;
+  }
+  .footer-oenergy h5 {
+    text-align: center;
+  }
+}
+
+.footer-link {
+  text-decoration: none; /* Esto elimina el subrayado */
+  color: white; /* Esto cambiará el color del texto del enlace. Reemplázalo con el color que prefieras */
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* Esto agrega un subrayado cuando se pasa el mouse sobre el enlace. Puedes quitarlo si no lo quieres */
+}
+
 
 
 /* TIMELINE */
@@ -206,7 +305,7 @@ h2 {
 
 @media (max-width: 1370px) {
     .section-container {
-      height: 90vh;
+      height: 90vh !;
     }
   }
   
@@ -342,6 +441,22 @@ h2 {
     max-height: 250px;
   }
   
+  @media (max-width: 600px) { /* Ajustar este valor al breakpoint que estás utilizando para el cambio a la vista móvil */
+    .image-container-mision {
+      width: auto;
+      
+    }
+    .custom-text-center{
+      font-size: 14px !important;
+      margin-left: 45px !important;
+      margin-right: 70px !important;
+      line-height: 25px !important;
+      
+    }
+}
+
+
+
   .custom-image {
     display: block;
     width: 450px;
@@ -936,7 +1051,4 @@ h2 {
   .contact-form button:hover {
     background-color: #45a049;
   }
-  
-  
-
   
