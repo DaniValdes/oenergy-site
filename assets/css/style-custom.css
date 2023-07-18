@@ -403,7 +403,13 @@ h2 {
     z-index: 2;
   }
 
- 
+  @media screen and (max-width: 768px) {
+    .icon-overlay {
+        max-width: 100vw;
+        left: 50%;
+    }
+}
+
 
   .icon-overlay .icon-first-overlay {
     height: 320px;
