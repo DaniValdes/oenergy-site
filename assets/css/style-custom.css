@@ -20,6 +20,11 @@ h2 {
 }
 
 
+.dropdown-toggle::after {
+  vertical-align: 0.155em
+}
+
+
 @media (max-width: 576px) {
   .section-container {
     display: none !important;
@@ -1056,29 +1061,32 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+  
 }
 
 .image-gallery {
-  width: 100%;
+  width: 80%;
 }
 
 .image-row {
   display: flex;
   justify-content: space-around;
+  max-height: 350px;
 }
 
 .image-item {
-  width: 48%;
   overflow: hidden;
-  /* margin: 20px 0; */
   margin-top: 20px;
   margin-bottom: 0;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .image-item img {
   width: 100%;
   height: auto;
+  max-height: 350px;
+  object-fit: cover; /* Esto hará que las imágenes mantengan su aspecto, pero se ajusten al tamaño de su contenedor. */
   transition: transform 0.5s ease;
 }
 
@@ -1087,11 +1095,10 @@ h2 {
 }
 
 .image-item.offset {
-  transform: translateY(-20px);
+  transform: none; /* Esto eliminará el desplazamiento vertical. */
 }
 
 .image-item.centered {
   margin: 1px auto;
 }
-
 
