@@ -1,36 +1,37 @@
-/* COUNTERS */
-const counters = document.querySelectorAll('.counter');
+document.addEventListener('DOMContentLoaded', (event) => {
 
-const animateNumbers = (counter, index) => {
-  const target = +counter.getAttribute('data-target');
-  const countElement = counter.querySelector('.counter-number');
-  let count = +countElement.innerText.replace(' Mwp', '');
-
-  if (count < target) {
-    count++;
-    countElement.innerText = (index === 0 || index === 2) ? `${count} Mwp` : count;
-    setTimeout(() => animateNumbers(counter, index), 10);
-  }
-};
-
-const checkScroll = () => {
-  const triggers = Array.from(document.querySelectorAll('.counter'));
-  const windowHeight = window.innerHeight;
-
-  triggers.forEach((trigger, index) => {
-    const triggerTop = trigger.getBoundingClientRect().top;
-
-    if (triggerTop < windowHeight) {
-      animateNumbers(trigger, index);
+  /* COUNTERS */
+  const counters = document.querySelectorAll('.counter');
+  
+  const animateNumbers = (counter, index) => {
+    const target = +counter.getAttribute('data-target');
+    const countElement = counter.querySelector('.counter-number');
+    let count = +countElement.innerText.replace(' Mwp', '');
+  
+    if (count < target) {
+      count++;
+      countElement.innerText = (index === 0 || index === 2) ? `${count} Mwp` : count;
+      setTimeout(() => animateNumbers(counter, index), 10);
     }
-  });
-};
-
-window.addEventListener('scroll', checkScroll);
-
-
-//MAPA
-$(document).ready(function() {
+  };
+  
+  const checkScroll = () => {
+    const triggers = Array.from(document.querySelectorAll('.counter'));
+    const windowHeight = window.innerHeight;
+  
+    triggers.forEach((trigger, index) => {
+      const triggerTop = trigger.getBoundingClientRect().top;
+  
+      if (triggerTop < windowHeight) {
+        animateNumbers(trigger, index);
+      }
+    });
+  };
+  
+  window.addEventListener('scroll', checkScroll);
+  
+  
+  //MAPA
   $('#developer-checkbox').change(function() {
     if(this.checked) {
       $('.developer-pin').removeClass('hidden');
@@ -46,7 +47,7 @@ $(document).ready(function() {
       $('.constructor-pin').addClass('hidden');
     }
   });
-
+  
   $('#operator-checkbox').change(function() {
     if(this.checked) {
       $('.operator-pin').removeClass('hidden');
@@ -54,9 +55,7 @@ $(document).ready(function() {
       $('.operator-pin').addClass('hidden');
     }
   });
-});
-
-$(document).ready(function() {
+  
   $('.round-checkbox').change(function() {
     if (this.checked) {
       $(this).addClass('checked');
@@ -70,7 +69,7 @@ $(document).ready(function() {
       $(this).css('background-color', 'transparent');
     }
   });
-
+  
   function getPinColor(checkboxId) {
     var pinColor = '';
     switch (checkboxId) {
@@ -87,131 +86,108 @@ $(document).ready(function() {
     }
     return pinColor;
   }
-});
+  
+  
+  
+  // Obtener la resolución de pantalla
+  var screenWidth = screen.width;
+  var screenHeight = screen.height;
+  
+  // Mostrar la resolución en la consola
+  console.log("Resolución de pantalla: " + screenWidth + "x" + screenHeight);
+  
+  
+     // Obtener todos los contenedores de iconos
+     const iconContainers = document.querySelectorAll('.icon-container-que-hacemos');
+  
+     // Función para ajustar la posición del tooltip
+     function adjustTooltipPosition(tooltip) {
+         const iconContainer = tooltip.parentElement;
+         const iconRect = iconContainer.getBoundingClientRect();
+         const tooltipRect = tooltip.getBoundingClientRect();
+  
+         // Calcular la posición del tooltip en relación al icono
+         const left = iconRect.left + (iconRect.width / 2) - (tooltipRect.width / 2);
+  
+         // Ajustar la posición del tooltip
+         tooltip.style.left = `${left}px`;
+     }
+  
+     // Ajustar la posición de los tooltips al cargar la página
+     window.addEventListener('load', () => {
+         const tooltips = document.querySelectorAll('.tooltip-que-hacemos');
+         tooltips.forEach(tooltip => adjustTooltipPosition(tooltip));
+     });
+  
+     // Ajustar la posición de los tooltips al redimensionar la ventana
+     window.addEventListener('resize', () => {
+         const tooltips = document.querySelectorAll('.tooltip-que-hacemos');
+         tooltips.forEach(tooltip => adjustTooltipPosition(tooltip));
+     });
+  
+  
+  
+     $(document).ready(function() {
+      // Manejo de clics en los enlaces de anclaje en la misma página
+      $('a').click(function(event){
+          var href = $.attr(this, 'href');
+          
+          // Verifica si el enlace es a una ancla en la misma página
+          if (href.startsWith('#')) {
+              event.preventDefault();
+              $('html, body').animate({
+                  scrollTop: $(href).offset().top - 50 // reemplaza 50 con la altura de tu navbar
+              }, 500);
+          }
+      });
+  
+      // Manejo de desplazamiento a una ancla al cargar la página
+      if(window.location.hash) {
+          setTimeout(function() {
+              $('html, body').animate({
+                  scrollTop: $(window.location.hash).offset().top - 50 // reemplaza 50 con la altura de tu navbar
+              }, 500);
+          }, 0);
+      }
+  });
+  
+  try {
+    var carousel = document.querySelector('#team-carousel')
+    var bsCarousel = new bootstrap.Carousel(carousel, {
+      interval: 1600,
+      keyboard: true
+    })
+  } catch(error) {
+    console.error("Hubo un problema al inicializar el carrusel: ", error);
+  }
+  
 
 
 
-// Obtener la resolución de pantalla
-var screenWidth = screen.width;
-var screenHeight = screen.height;
-
-// Mostrar la resolución en la consola
-console.log("Resolución de pantalla: " + screenWidth + "x" + screenHeight);
-
-
-   // Obtener todos los contenedores de iconos
-   const iconContainers = document.querySelectorAll('.icon-container-que-hacemos');
-
-   // Función para ajustar la posición del tooltip
-   function adjustTooltipPosition(tooltip) {
-       const iconContainer = tooltip.parentElement;
-       const iconRect = iconContainer.getBoundingClientRect();
-       const tooltipRect = tooltip.getBoundingClientRect();
-
-       // Calcular la posición del tooltip en relación al icono
-       const left = iconRect.left + (iconRect.width / 2) - (tooltipRect.width / 2);
-
-       // Ajustar la posición del tooltip
-       tooltip.style.left = `${left}px`;
-   }
-
-   // Ajustar la posición de los tooltips al cargar la página
-   window.addEventListener('load', () => {
-       const tooltips = document.querySelectorAll('.tooltip-que-hacemos');
-       tooltips.forEach(tooltip => adjustTooltipPosition(tooltip));
-   });
-
-   // Ajustar la posición de los tooltips al redimensionar la ventana
-   window.addEventListener('resize', () => {
-       const tooltips = document.querySelectorAll('.tooltip-que-hacemos');
-       tooltips.forEach(tooltip => adjustTooltipPosition(tooltip));
-   });
-
-
-
-   $(document).ready(function() {
-    // Manejo de clics en los enlaces de anclaje en la misma página
-    $('a').click(function(event){
-        var href = $.attr(this, 'href');
-        
-        // Verifica si el enlace es a una ancla en la misma página
-        if (href.startsWith('#')) {
-            event.preventDefault();
-            $('html, body').animate({
-                scrollTop: $(href).offset().top - 50 // reemplaza 50 con la altura de tu navbar
-            }, 500);
-        }
-    });
-
-    // Manejo de desplazamiento a una ancla al cargar la página
-    if(window.location.hash) {
-        setTimeout(function() {
-            $('html, body').animate({
-                scrollTop: $(window.location.hash).offset().top - 50 // reemplaza 50 con la altura de tu navbar
-            }, 500);
-        }, 0);
-    }
-});
-
-
-var carousel = document.querySelector('#team-carousel')
-var bsCarousel = new bootstrap.Carousel(carousel, {
-  interval: 1600
-})
-
-
-/* parallax */
-var gallery = document.querySelector('#gallery');
-var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
-var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
-var resizeAll = function () {
-    var altura = getVal(gallery, 'grid-auto-rows');
-    var gap = getVal(gallery, 'grid-row-gap');
-    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-        var el = item;
-        el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-    });
-};
-gallery.querySelectorAll('img').forEach(function (item) {
-    item.classList.add('byebye');
-    if (item.complete) {
-        console.log(item.src);
-    }
-    else {
-        item.addEventListener('load', function () {
-            var altura = getVal(gallery, 'grid-auto-rows');
-            var gap = getVal(gallery, 'grid-row-gap');
-            var gitem = item.parentElement.parentElement;
-            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-            item.classList.remove('byebye');
-        });
-    }
-});
-window.addEventListener('resize', resizeAll);
-gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-    item.addEventListener('click', function () {        
-        item.classList.toggle('full');        
-    });
-});
-
-
-/* CONTACTANOS */
-
-  var modal = document.getElementById("myModal");
-  var btn = document.querySelector(".nav-item.align-center a");
-  var span = document.getElementsByClassName("close")[0];
-
+  /* CONTACTANOS */
+  
+  var popup = document.getElementById("contactFormPopup");
+  var btn = document.getElementById("openFormButton");
+  var span = document.getElementById("closePopup");
+  
+  console.log(popup); // Deberías ver el elemento del popup en la consola si se ha seleccionado correctamente
+  console.log(btn);   // Deberías ver el elemento del botón en la consola si se ha seleccionado correctamente
+  
   btn.onclick = function() {
-    modal.style.display = "block";
+    console.log("Botón presionado"); // Este mensaje debería aparecer en la consola cuando se presione el botón
+    popup.style.display = "block";
   }
-
+  
   span.onclick = function() {
-    modal.style.display = "none";
+    console.log("Popup cerrado"); // Este mensaje debería aparecer en la consola cuando se cierre el popup
+    popup.style.display = "none";
   }
-
+  
   window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
+    if (event.target == popup) {
+      console.log("Hiciste clic fuera del popup"); // Este mensaje debería aparecer en la consola cuando se haga clic fuera del popup
+      popup.style.display = "none";
     }
   }
 
+});
