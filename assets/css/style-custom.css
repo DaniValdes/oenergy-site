@@ -1124,7 +1124,7 @@ h2 {
   border: 1px solid #888;
   border-radius: 20px;
   width: 80%;
-  max-width: 300px; // Limita el ancho máximo para evitar que el popup sea demasiado grande en pantallas grandes
+  max-width: 300px; 
 }
 
 .close {
