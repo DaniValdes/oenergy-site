@@ -1164,6 +1164,14 @@ h2 {
   max-width: 300px; 
 }
 
+@media (max-width: 768px) {
+  .popup-content{
+    width: 100% !important;
+    top: 15%;
+    left: 3%;
+  }
+  }
+
 .close {
   color: #aaaaaa;
   float: right;
