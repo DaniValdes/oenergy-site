@@ -1159,3 +1159,9 @@ h2 {
   border: 2px solid #888;
   width: 200px;
 }
+
+@media (max-width: 768px) {
+  .imagen-reporte-anual {
+    max-width: 100% !important;
+  }
+}
