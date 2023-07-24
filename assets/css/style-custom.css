@@ -33,6 +33,18 @@ h2 {
 }
 
 @media (max-width: 576px) {
+  .video-home {
+    padding-top: 210px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-home {
+   padding-top: 200px !important;
+  }
+}
+
+@media (max-width: 576px) {
   #governance h1 {
     letter-spacing: 0em;
   }
