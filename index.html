@@ -25,7 +25,6 @@
 <body>
 
   <!-- START NAVBAR-->
-
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" 
   style="font-size: 20px">
     <div class="container-fluid">
@@ -57,8 +56,8 @@
                         ESG
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="esgDropdown">
-                        <li><a class="dropdown-item" href="esg.html">Annual ESG Report</a></li>
-                        <li><a class="dropdown-item" href="esg.html#environmental">Environmental</a></li>
+                        <li><a class="dropdown-item" href="esg.html">Reporte Anual ESG</a></li>
+                        <li><a class="dropdown-item" href="esg.html#Ambiental">Ambiental</a></li>
                         <li><a class="dropdown-item" href="esg.html#social">Social</a></li>
                         <li><a class="dropdown-item" href="esg.html#governance">Governance</a></li>
                     </ul>
@@ -73,20 +72,36 @@
                         <li><a class="dropdown-item" href="servicios.html#om">O&M</a></li>
                         <li><a class="dropdown-item" href="servicios.html#scada">SCADA - CCTV y Aseguramiento de Activos</a></li>
                         <li><a class="dropdown-item" href="servicios.html#assets">Assets Management</a></li>
-                        <li><a class="dropdown-item" href="servicios.html#irecs">Environmental Commodities (IRECs)</a></li>
+                        <li><a class="dropdown-item" href="servicios.html#irecs">Ambiental Commodities (IRECs)</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item align-center">
-                  <a href="conocenos.html#footer" class="btn btn-outline-light"
-                      style="background-color: #4774b2; font-size: 20px; border-radius: 20px; text-decoration: none; display: inline-block; padding: 10px 20px; color: white;">
-                      Contáctanos
-                  </a>
+                  <button id="openFormButton" type="button" class="btn btn-outline-light" 
+                          style="background-color: #4774b2; font-size: 20px; border-radius: 20px; 
+                          text-decoration: none; display: inline-block; padding: 10px 20px; color: white;">
+                    Contáctanos
+                  </button>
                 </li>
             </ul>
+            
         </div>
     </div>
 </nav>
+<div id="contactFormPopup" class="popup">
+  <div class="popup-content">
+    <span id="closePopup" class="close">&times;</span>
+    <form id="contactForm" action="https://formsubmit.co/comunicaciones@oenergy.cl" method="POST">
+      <label for="name">Nombre:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="message">Mensaje:</label><br>
+      <textarea id="message" name="message" placeholder="Cuéntanos tus dudas o comentarios" required></textarea><br>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</div>
 
 
   <div style="position: relative; width: 100%;">
