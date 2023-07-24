@@ -152,7 +152,7 @@ h2 {
 }
 
         /* Aplicar los estilos solo a dispositivos con un ancho máximo de 768px (típico para tablets y móviles) */
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           /* Mostrar el párrafo con la clase "mobile-visible" */
           .mobile-visible {
               display: block;
@@ -163,7 +163,7 @@ h2 {
           }
       }
       /* Estilos para dispositivos con un ancho mayor a 768px (tablets en modo horizontal y computadoras de escritorio) */
-      @media (min-width: 769px) {
+      @media (min-width: 768px) {
           /* Mostrar el párrafo con la clase "desktop-visible" */
           .desktop-visible {
               display: block;
