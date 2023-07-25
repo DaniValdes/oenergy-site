@@ -15,6 +15,7 @@ h1 {
     font-size: 40px !important;
 }
 
+
 h2 {
     font-weight: 600;
 }
@@ -30,6 +31,25 @@ h2 {
     display: none !important;
   }
 }
+
+@media (max-width: 576px) {
+  .video-home {
+    padding-top: 210px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-home {
+   padding-top: 200px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #governance h1 {
+    letter-spacing: 0em;
+  }
+}
+
 
 @media (max-width: 576px) {
   .our-team {
@@ -136,7 +156,36 @@ h2 {
   .footer-oenergy h5 {
     text-align: center;
   }
+
+  .mobile-hidden {
+    display: none;
+  }
+
 }
+
+        /* Aplicar los estilos solo a dispositivos con un ancho máximo de 768px (típico para tablets y móviles) */
+        @media (max-width: 767px) {
+          /* Mostrar el párrafo con la clase "mobile-visible" */
+          .mobile-visible {
+              display: block;
+          }
+          /* Ocultar el párrafo con la clase "desktop-visible" */
+          .desktop-visible {
+              display: none;
+          }
+      }
+      /* Estilos para dispositivos con un ancho mayor a 768px (tablets en modo horizontal y computadoras de escritorio) */
+      @media (min-width: 768px) {
+          /* Mostrar el párrafo con la clase "desktop-visible" */
+          .desktop-visible {
+              display: block;
+          }
+          /* Ocultar el párrafo con la clase "mobile-visible" */
+          .mobile-visible {
+              display: none;
+          }
+      }
+
 
 .footer-link {
   text-decoration: none; /* Esto elimina el subrayado */
@@ -1127,6 +1176,14 @@ h2 {
   max-width: 300px; 
 }
 
+@media (max-width: 768px) {
+  .popup-content{
+    width: 100% !important;
+    top: 15%;
+    left: 3%;
+  }
+  }
+
 .close {
   color: #aaaaaa;
   float: right;
@@ -1158,4 +1215,10 @@ h2 {
   border-radius: 5px;
   border: 2px solid #888;
   width: 200px;
+}
+
+@media (max-width: 768px) {
+  .imagen-reporte-anual {
+    max-width: 100% !important;
+  }
 }

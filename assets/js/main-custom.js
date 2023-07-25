@@ -191,3 +191,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 
 });
+
+
+    // Función para cerrar el menú desplegable del navbar cuando se presiona un botón
+    function cerrarMenu() {
+      $('.navbar-toggler').trigger('click');
+  }

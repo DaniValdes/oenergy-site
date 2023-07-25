@@ -77,8 +77,8 @@
                 </li>
 
                 <li class="nav-item align-center">
-                  <button id="openFormButton" type="button" class="btn btn-outline-light" 
-                          style="background-color: #4774b2; font-size: 20px; border-radius: 20px; 
+                  <button id="openFormButton" type="button" class="btn rounded-pill btn-outline-light" 
+                          style="background-color: #4774b2; font-size: 20px;  
                           text-decoration: none; display: inline-block; padding: 10px 20px; color: white;">
                     Contáctanos
                   </button>
@@ -115,41 +115,54 @@
     </div>
   </div>
 
-  <section style="background: rgb(34,49,105);
-  background: linear-gradient(0deg, rgba(34,49,105,1) 0%, rgba(255,255,255,1) 100%); height: 400px; display: flex; align-items: center;">
-    <div class="container align-items-center">
-        <div class="row col-order">
-            <div class="col align-items-center">
-                <p id="texto-home" class="pe-5" 
-                style="font-size: 20px;
-                  font-weight: 400;
-                  padding-top: 40px;
-                  line-height: 26px; 
-                  text-align: left;
-                  align-items: center;
-                  color: #223169">
-                    oEnergy nace en 2013 como un emprendimiento familiar de solo 
-                    dos personas, y en menos de una década, 
-                    se transformó en una empresa de más de 200 colaboradores, 
-                    posicionándose como uno de los principales 
-                    actores del mercado energético chileno en el 
-                    segmento de Pequeños Medios de Generación Distribuida (PMGD).
-                </p>
-            </div>
-            <div id="video-home" class="col rounded-video" style="overflow:hidden; border-radius:15px; width:660px; height:370px;">
-              <iframe width="660" height="370" 
-                src="https://www.youtube.com/embed/XKzFvZr5EIY" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
-            </div>
-          
+
+
+
+
+  
+  <section class="video-home" style="background: rgb(34,49,105);
+  background: linear-gradient(0deg, rgba(34,49,105,1) 0%, rgba(255,255,255,1) 100%); 
+  height: 400px; display: flex; align-items: center;">
+  <div class="container align-items-center">
+    <div class="row align-items-center">
+      <div class="col-md text-center">
+
+        <!--                 <div class="rounded-video">
+              <video width="660" height="370" controls poster="./assets/img/placeholder-videocorp.png" class="rounded-video">
+                <source src="./assets/img/Video Corporativo oEnergy - sub.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+              </video>
+            </div> -->
+
+        <div id="video-conocenos" class="rounded-video" style="overflow:hidden; border-radius:15px; ">
+          <iframe width="640" height="370" src="https://www.youtube.com/embed/XKzFvZr5EIY"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
+      </div>
+      <div class="col-md ">
+        <p style="font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: justify;
+        color: white;"> oEnergy nace en 2013 como un emprendimiento familiar de solo 
+          dos personas, y en menos de una década, 
+          se transformó en una empresa de más de 200 colaboradores, 
+          posicionándose como uno de los principales 
+          actores del mercado energético chileno en el 
+          segmento de Pequeños Medios de Generación Distribuida (PMGD).</p>
+      </div>
     </div>
+  </div>
 </section>
 
-  <footer class="footer-oenergy" style="
+
+
+
+  <footer class="container-fluid footer-home footer-oenergy" 
+  style="
   color: white;
   background-color: #223169;
   padding: 5px 0;
