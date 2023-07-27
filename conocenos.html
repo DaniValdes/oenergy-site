@@ -18,6 +18,9 @@
     rel="stylesheet">
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/5298658fa2.js" crossorigin="anonymous"></script>
+  <!-- select2 -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
   <title>oEnergy</title>
 
@@ -1051,8 +1054,8 @@
         <h2 class="pb-4" style="color: #6D6969; 
         font-weight: 700; 
         font-size: 28px; 
-        line-height: 48px;">NUESTRA PRESENCIA GEOGRÁFICA EN CHILE</h2>
-        <p style="color: #223169; font-size: 20px;">Tenemos presencia geográfica en proyectos fotovoltaicos a lo largo y
+        line-height: 38px;">NUESTRA PRESENCIA GEOGRÁFICA EN CHILE</h2>
+        <p style="color: #6D6969; font-size: 20px;">Tenemos presencia geográfica en proyectos fotovoltaicos a lo largo y
           ancho de Chile, desde la Región de Coquimbo hasta la Región del Maule.</p>
         <div class="container text-end ">
           <button type="button" class="btn rounded-pill"
@@ -1062,193 +1065,173 @@
         </div>
       </div>
       <div class="col map-container text-end">
-        <img src="./assets/img/chile-vector.svg" alt="Mapa" id="map-image" style="width: 100%;">
+        <img src="./assets/img/vector-cl-gris-rev.svg" alt="Mapa" id="map-image" 
+        style="width: 100%;">
         <!-- Pines para Desarrollador -->
         <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin1" style="left: 45%; top: 50%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+            <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
         <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin2" style="left: 40%; top: 50%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin3" style="left: 42%; top: 48%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin3" style="left: 42%; top: 48%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin4" style="left: 42%; top: 40%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin4" style="left: 42%; top: 40%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin5" style="left: 45%; top: 42%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin5" style="left: 45%; top: 42%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin6" style="left: 46%; top: 47%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin6" style="left: 46%; top: 47%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin7" style="left: 46%; top: 43%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin7" style="left: 46%; top: 43%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin8" style="left: 47%; top: 43%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin8" style="left: 47%; top: 43%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin9" style="left: 49%; top: 30%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin9" style="left: 49%; top: 30%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin10" style="left: 47%; top: 32%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin10" style="left: 47%; top: 32%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin11" style="left: 48%; top: 35%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin11" style="left: 48%; top: 35%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin12" style="left: 45%; top: 31%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin12" style="left: 45%; top: 31%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin13" style="left: 46%; top: 28%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin13" style="left: 46%; top: 28%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin14" style="left: 48%; top: 25%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin14" style="left: 48%; top: 25%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin16" style="left: 49%; top: 24%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin16" style="left: 49%; top: 24%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin17" style="left: 48%; top: 22%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin17" style="left: 48%; top: 22%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin18" style="left: 53%; top: 23%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin18" style="left: 53%; top: 23%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin19" style="left: 56%; top: 19%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin19" style="left: 56%; top: 19%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin20" style="left: 58%; top: 15%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin20" style="left: 58%; top: 15%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin21" style="left: 59%; top: 16%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin21" style="left: 59%; top: 16%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
-        <i class="fas fa-map-marker pin developer-pin hidden" data-pin-id="pin22" style="left: 57%; top: 17%;">
+        <i class="fas fa-location-dot pin developer-pin hidden" data-pin-id="pin22" style="left: 57%; top: 17%;">
           <div class="tooltip" style="line-height: 10px; padding: 5px;">
-            <p>CHILCA</p>
-            <p>Type: PV</p>
-            <p>MW: 3</p>
-            <p>PV MWp: 3</p>
+        <p style="font-weight: bold;">Nombre</p>
+            <p>Región</p>
+            <p>3 MWp</p>
           </div>
         </i>
 
@@ -1257,31 +1240,46 @@
 
 
         <!-- Pines para Constructor -->
-        <i class="fas fa-map-marker pin constructor-pin hidden" data-pin-id="pin30"
+        <i class="fas fa-location-dot pin constructor-pin hidden" data-pin-id="pin30"
           style="left: 230px; top: 150px;"></i>
-        <i class="fas fa-map-marker pin constructor-pin hidden" data-pin-id="pin31"
+        <i class="fas fa-location-dot pin constructor-pin hidden" data-pin-id="pin31"
           style="left: 240px; top: 160px;"></i>
-        <i class="fas fa-map-marker pin constructor-pin hidden" data-pin-id="pin32"
+        <i class="fas fa-location-dot pin constructor-pin hidden" data-pin-id="pin32"
           style="left: 250px; top: 170px;"></i>
-        <i class="fas fa-map-marker pin constructor-pin hidden" data-pin-id="pin33"
+        <i class="fas fa-location-dot pin constructor-pin hidden" data-pin-id="pin33"
           style="left: 260px; top: 180px;"></i>
         <!-- Pines para Operador -->
-        <i class="fas fa-map-marker pin operator-pin hidden" data-pin-id="pin60" style="left: 220px; top: 170px;"></i>
-        <i class="fas fa-map-marker pin operator-pin hidden" data-pin-id="pin61" style="left: 210px; top: 180px;"></i>
-        <i class="fas fa-map-marker pin operator-pin hidden" data-pin-id="pin62" style="left: 200px; top: 190px;"></i>
-        <i class="fas fa-map-marker pin operator-pin hidden" data-pin-id="pin63" style="left: 190px; top: 200px;"></i>
+        <i class="fas fa-location-dot pin operator-pin hidden" data-pin-id="pin60" style="left: 220px; top: 170px;"></i>
+        <i class="fas fa-location-dot pin operator-pin hidden" data-pin-id="pin61" style="left: 210px; top: 180px;"></i>
+        <i class="fas fa-location-dot pin operator-pin hidden" data-pin-id="pin62" style="left: 200px; top: 190px;"></i>
+        <i class="fas fa-location-dot pin operator-pin hidden" data-pin-id="pin63" style="left: 190px; top: 200px;"></i>
         <!-- Agrega más pines aquí con las clases correspondientes a cada tipo -->
       </div>
-      <div class="col-4 pin-selection text-start">
-        <div class="checkbox-container" style="font-size: 22px;">
-          <input type="checkbox" id="developer-checkbox" class="round-checkbox">
-          <label for="developer-checkbox">Desarrollador</label> <br>
-          <input type="checkbox" id="constructor-checkbox" class="round-checkbox">
-          <label for="constructor-checkbox">Constructor</label> <br>
-          <input type="checkbox" id="operator-checkbox" class="round-checkbox">
-          <label for="operator-checkbox">Operador</label>
-        </div>
+      <div class="col-4 pin-selection ">
+          <div class="container">
+            <div class="row">
+              <p style="font-size: 22px;">Explora nuestros proyectos</p> 
+            </div>
+          </div>
+          <div class="checkbox-container ps-4" style="font-size: 22px;">
+            <div id="developer-checkbox" class="custom-checkbox">
+              <input type="checkbox" class="round-checkbox">
+              <i class="fas fa-location-dot pin-gris"></i>
+              <label>Desarrollador</label>
+            </div>
+            <div id="constructor-checkbox" class="custom-checkbox">
+              <input type="checkbox" class="round-checkbox">
+              <i class="fas fa-location-dot pin-gris"></i>
+              <label>Constructor</label>
+            </div>
+            <div id="operator-checkbox" class="custom-checkbox">
+              <input type="checkbox" class="round-checkbox">
+              <i class="fas fa-location-dot pin-gris"></i>
+              <label>Operador</label>
+            </div>
+          </div>
       </div>
+      
     </div>
   </section>
 

@@ -32,62 +32,55 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
   
   //MAPA
-  $('#developer-checkbox').change(function() {
+
+  $(document).ready(function() {
+    $('.pin-gris').css('color', '#ccc');
+  });
+
+  $('.custom-checkbox').click(function(e) {
+    if (!$(e.target).is('input')) {
+        var checkbox = $(this).find('input');
+        checkbox.prop('checked', !checkbox.prop('checked'));
+        checkbox.trigger('change');
+    }
+});
+
+$('.round-checkbox').change(function() {
+    var parentDivId = $(this).parent().attr('id');
+    var pinColor = getPinColor(parentDivId);
+    var pinClass = '.' + parentDivId.split('-')[0] + '-pin';
+    var icon = $(this).next();
+  
     if(this.checked) {
-      $('.developer-pin').removeClass('hidden');
+        $(pinClass).removeClass('hidden');
+        icon.css('color', pinColor);
     } else {
-      $('.developer-pin').addClass('hidden');
+        $(pinClass).addClass('hidden');
+        icon.css('color', '#ccc');
     }
-  });
-  
-  $('#constructor-checkbox').change(function() {
-    if(this.checked) {
-      $('.constructor-pin').removeClass('hidden');
-    } else {
-      $('.constructor-pin').addClass('hidden');
-    }
-  });
-  
-  $('#operator-checkbox').change(function() {
-    if(this.checked) {
-      $('.operator-pin').removeClass('hidden');
-    } else {
-      $('.operator-pin').addClass('hidden');
-    }
-  });
-  
-  $('.round-checkbox').change(function() {
-    if (this.checked) {
-      $(this).addClass('checked');
-      var checkboxId = $(this).attr('id');
-      var pinColor = getPinColor(checkboxId);
-      $(this).css('border-color', pinColor);
-      $(this).css('background-color', pinColor);
-    } else {
-      $(this).removeClass('checked');
-      $(this).css('border-color', '#ccc');
-      $(this).css('background-color', 'transparent');
-    }
-  });
-  
-  function getPinColor(checkboxId) {
+});
+
+function getPinColor(checkboxId) {
     var pinColor = '';
     switch (checkboxId) {
-      case 'developer-checkbox':
-        pinColor = '#223169';
-        break;
-      case 'constructor-checkbox':
-        pinColor = '#333';
-        break;
-      case 'operator-checkbox':
-        pinColor = '#d76e14';
-        break;
-      // Agrega más casos según sea necesario para otros tipos de checkbox
+        case 'developer-checkbox':
+            pinColor = '#223169';
+            break;
+        case 'constructor-checkbox':
+            pinColor = '#333';
+            break;
+        case 'operator-checkbox':
+            pinColor = '#d76e14';
+            break;
+        // Agrega más casos según sea necesario para otros tipos de checkbox
     }
     return pinColor;
-  }
+}
+
   
   
+
+
   
   // Obtener la resolución de pantalla
   var screenWidth = screen.width;
