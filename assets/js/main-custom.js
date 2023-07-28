@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
+  
+
   /* COUNTERS */
   const counters = document.querySelectorAll('.counter');
   

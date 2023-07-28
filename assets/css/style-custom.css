@@ -1,8 +1,10 @@
 /* GENERAL STYLES */
 
 
+
 body {
     font-family: 'Poppins', sans-serif;
+   
 }
 
 img {
@@ -1297,7 +1299,7 @@ h2 {
 .slideInFromRight {
   transform: translateX(100%);
   opacity: 0;
-  animation: slideInFromRightAnimation 2s forwards;
+  animation: slideInFromRightAnimation 1s forwards;
 }
 
 @keyframes slideInFromRightAnimation {
@@ -1309,7 +1311,7 @@ h2 {
 .slideInFromLeft {
   transform: translateX(-100%);
   opacity: 0;
-  animation: slideInFromLeftAnimation 2s forwards;
+  animation: slideInFromLeftAnimation 1s forwards;
 }
 
 @keyframes slideInFromLeftAnimation {
@@ -1332,7 +1334,7 @@ h2 {
 .slideInFromBottom {
   transform: translateY(100%);
   opacity: 0;
-  animation: slideInFromBottomAnimation 2s forwards;
+  animation: slideInFromBottomAnimation 1s forwards;
 }
 
 @keyframes slideInFromBottomAnimation {
