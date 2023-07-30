@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
+  
+
   /* COUNTERS */
   const counters = document.querySelectorAll('.counter');
   
@@ -190,3 +192,24 @@ function getPinColor(checkboxId) {
     function cerrarMenu() {
       $('.navbar-toggler').trigger('click');
   }
+
+
+  //EFECTOS
+// Crear una nueva instancia del observer
+let observer = new IntersectionObserver((entries, observer) => {
+  // Para cada elemento "observado"
+  entries.forEach(entry => {
+      // Si el elemento está en la vista
+      if(entry.isIntersecting){
+          // Añadir la clase para la animación
+          entry.target.classList.add(entry.target.dataset.animation);
+          // Dejar de observar el elemento después de que la animación se ha ejecutado
+          observer.unobserve(entry.target);
+      }
+  });
+});
+
+// Observar todos los elementos que queremos animar
+document.querySelectorAll('.animate-on-scroll').forEach(element => {
+  observer.observe(element);
+});

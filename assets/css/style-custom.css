@@ -1,8 +1,10 @@
 /* GENERAL STYLES */
 
 
+
 body {
     font-family: 'Poppins', sans-serif;
+   
 }
 
 img {
@@ -394,6 +396,10 @@ h2 {
     background: linear-gradient(180deg, #AAA7A7 0%, rgba(217, 217, 217, 0.32) 100%);
 }
 
+#mision-vision {
+  background: linear-gradient(180deg, #AAA7A7 0%, rgba(217, 217, 217, 0.32) 100%);
+}
+
 .icon-que-hacemos {
     display: flex;
     justify-content: center;
@@ -584,8 +590,6 @@ h2 {
   }
 
 
-  
-  
 /* VALORES */
 
 .valores {
@@ -896,6 +900,7 @@ h2 {
         background-color: #ffffff;
         width: 60%;
       }
+      
 
       @media screen and (max-width: 768px) {
         .horizontal-line-white {
@@ -1150,8 +1155,8 @@ h2 {
 }
 
 .image-item {
-  overflow: hidden;
-  margin-top: 20px;
+/*   overflow: hidden;
+ */  margin-top: 20px;
   margin-bottom: 0;
   padding-left: 10px;
   padding-bottom: 10px;
@@ -1160,7 +1165,8 @@ h2 {
 .image-item img {
   width: 100%;
   height: auto;
-  max-height: 350px;
+  border-radius: 20px;
+  /* max-height: 350px; */
   object-fit: cover; /* Esto hará que las imágenes mantengan su aspecto, pero se ajusten al tamaño de su contenedor. */
   transition: transform 0.5s ease;
 }
@@ -1174,7 +1180,7 @@ h2 {
 }
 
 .image-item.centered {
-  margin: 1px auto;
+  margin: 0;
 }
 
 
@@ -1270,9 +1276,10 @@ h2 {
 }
 
 .box > img {
-  width: 200%;
+  width: 100%;
   height: 100%;
   object-fit: cover; 
+  object-position: center;
   transition: .5s;
 }
 
@@ -1281,4 +1288,59 @@ h2 {
   width: 100%;
   height: 100%;
   
+}
+
+
+
+
+
+
+
+
+/* EFECTOS */
+/* Estilos para la animación de entrada desde la derecha */
+.slideInFromRight {
+  transform: translateX(100%);
+  opacity: 0;
+  animation: slideInFromRightAnimation 1s forwards;
+}
+
+@keyframes slideInFromRightAnimation {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Estilos para la animación de entrada desde la izquierda */
+.slideInFromLeft {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideInFromLeftAnimation 1s forwards;
+}
+
+@keyframes slideInFromLeftAnimation {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Estilos para la animación de desvanecimiento */
+.fadeIn {
+  opacity: 0;
+  animation: fadeInAnimation 3s forwards;
+}
+
+@keyframes fadeInAnimation {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Estilos para la animación de entrada desde abajo */
+.slideInFromBottom {
+  transform: translateY(100%);
+  opacity: 0;
+  animation: slideInFromBottomAnimation 1s forwards;
+}
+
+@keyframes slideInFromBottomAnimation {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }

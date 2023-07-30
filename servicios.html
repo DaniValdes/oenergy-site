@@ -5,100 +5,107 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>oEnergy</title>
 
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <!--   FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/5298658fa2.js" crossorigin="anonymous"></script>
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="./assets/css/style-custom.css" />
+        <!-- poppins font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/5298658fa2.js" crossorigin="anonymous"></script>
+      
+        <title>oEnergy</title>
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 </head>
 
 <body>
     <!-- START NAVBAR-->
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./assets/img/logo oenergy SVG.svg" alt="logoPrincipal" height="45" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="container collapse navbar-collapse justify-content-end" id="navbarScroll">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 120px">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            CONÓCENOS
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li>
-                                <a class="dropdown-item" href="index.html#historia">Historia</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="index.html#que-hacemos">Qué Hacemos</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="index.html#mision-vision">Misión y Visión</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="index.html#team">Team</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="index.html#proyectos">Proyectos</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            ESG
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li>
-                                <a class="dropdown-item" href="./esg.html">Annual ESG Report</a>
-                            </li>
-                            <li><a class="dropdown-item" href="esg.html#environmental">Environmental</a></li>
-                            <li><a class="dropdown-item" href="esg.html#social">Social</a></li>
-                            <li><a class="dropdown-item" href="esg.html#governance">Governance</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            SERVICIOS
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#partner">Partnership</a></li>
-                            <li><a class="dropdown-item" href="#om">O&M</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#scada">SCADA - CCTV y Aseguramiento de Activos</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#assets">Assets Management</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#irecs">Environmental Commodities (IRECs)</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <button class="btn btn-outline-light" style="background-color: #d76e14" type="submit">
-                            CONTÁCTANOS
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" 
+    style="font-size: 20px">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+              <img src="./assets/img/logo oenergy SVG.svg" alt="logoPrincipal" height="45" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container collapse navbar-collapse justify-content-end" id="navbarScroll">
+              <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 120px">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="conocenosDropdown" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Conócenos
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="conocenosDropdown">
+                          <li><a class="dropdown-item" href="conocenos.html">Historia</a></li>
+                          <li><a class="dropdown-item" href="conocenos.html#mision-vision">Misión y Visión</a></li>
+                          <li><a class="dropdown-item" href="conocenos.html#valores">Valores</a></li>
+                          <li><a class="dropdown-item" href="conocenos.html#team">Team</a></li>
+                          <li><a class="dropdown-item" href="conocenos.html#proyectos">Proyectos</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Qué hacemos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                        <li><a class="dropdown-item" href="servicios.html">Partnership</a></li>
+                        <li><a class="dropdown-item" href="servicios.html#om">Desarrollo</a></li>
+                        <li><a class="dropdown-item" href="servicios.html#scada">EPC</a></li>
+                        <li><a class="dropdown-item" href="servicios.html#assets">O&M</a></li>
+                        <li><a class="dropdown-item" href="servicios.html#irecs">Explotación</a></li>
+                        <li><a class="dropdown-item" href="servicios.html#irecs">Environmental Commodities</a></li>
+                      </ul>
+                </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="esgDropdown" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          ESG
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="esgDropdown">
+                          <li><a class="dropdown-item" href="esg.html">Reporte Anual ESG</a></li>
+                          <li><a class="dropdown-item" href="esg.html#Ambiental">Ambiental</a></li>
+                          <li><a class="dropdown-item" href="esg.html#social">Social</a></li>
+                          <li><a class="dropdown-item" href="esg.html#governance">Governance</a></li>
+                      </ul>
+                  </li>
+  
+  
+                  <li class="nav-item align-center">
+                    <button id="openFormButton" type="button" class="btn rounded-pill btn-outline-light" 
+                            style="background-color: #4774b2; font-size: 20px;  
+                            text-decoration: none; display: inline-block; padding: 10px 20px; color: white;">
+                      Contáctanos
+                    </button>
+                  </li>
+              </ul>
+              
+          </div>
+      </div>
+  </nav>
+  <div id="contactFormPopup" class="popup">
+    <div class="popup-content">
+      <span id="closePopup" class="close">&times;</span>
+      <form id="contactForm" action="https://formsubmit.co/comunicaciones@oenergy.cl" method="POST">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" placeholder="Cuéntanos tus dudas o comentarios" required></textarea><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
     <!-- END NAVBAR-->
 
     <div class="container" id="partner">
@@ -118,6 +125,109 @@
             </div>
         </div>
     </div>
+
+
+<!-- QUE HACEMOS -->
+<section class="que-hacemos mt-3 mb-5 py-3" id="que-hacemos">
+    <div class="container text-center py-4">
+      <h1 style="
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 60px;
+      letter-spacing: 0.1em;
+      color: white;">NUESTRO QUEHACER</h1>
+      <h3 style="color:#223169;">Participamos en todas las etapas de un proyecto fotovoltaico, desde su origen, hasta la explotación del activo</h3>
+      <h3 class="pt-4" style="
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #223169;
+      ">
+        oEnergy es una empresa chilena dedicada al
+        desarrollo, construcción,
+        operación, mantenimiento y explotación de
+        Recursos Energéticos
+        Distribuidos</h3>
+    </div>
+
+    <section class="icon-section-que-hacemos container-fluid py-5 my-4" style="color:#223169 ;">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-3 icon-container-que-hacemos d-flex flex-column align-items-center">
+          <div class="icon-custom-que-hacemos">
+            <i class="fas fa-solar-panel" aria-hidden="true"></i>
+            <div class="icon-overlay" style="height: 330px;">
+              <p>Contamos con un equipo de profesionales y técnicos que se dedica exclusivamente a la
+                obtención de los <span class="highlight-valores">permisos</span> ambientales, sectoriales, de
+                edificación y
+                a la tramitación de los <span class="highlight-valores">procesos de interconexión</span> necesarios para
+                <span class="highlight-valores">transformar un proyecto factible en uno listo para construir</span> y
+                objeto de un <span class="highlight">due diligence</span> exitoso. Para ello, investigan, prospectan
+                terrenos y trabajan
+                coordinadamente para cumplir con todas las <span class="highlight-valores">exigencias legales y
+                  regulatorias</span>, bajo estándar IFC.
+            </div>
+            </p>
+          </div>
+          <h4 class="pt-2" style="font-size: 22px;">Desarrollo</h4>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 icon-container-que-hacemos d-flex flex-column align-items-center">
+          <div class="icon-custom-que-hacemos">
+            <i class="fas fa-digging" aria-hidden="true"></i>
+            <div class="icon-overlay">
+              <p>Somos <span class="highlight-valores">EPCistas</span> especializados en el diseño, ingeniería,
+                compra de suministros y componentes
+                para la construcción de parques de energía fotovoltaica. <span class="highlight-valores">Contamos con
+                  más de 80 colaboradores permanentes</span> desplegados
+                en terreno para la ejecución de las obras, con un <span class="highlight-valores">know how de alto
+                  valor</span> dentro del mercado.
+            </div>
+            </p>
+          </div>
+          <h4 class="pt-2" style="font-size: 22px;">EPC</h4>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 icon-container-que-hacemos d-flex flex-column align-items-center">
+          <div class="icon-custom-que-hacemos">
+            <i class="fas fa-gear" aria-hidden="true"></i>
+            <div class="icon-overlay">
+              <p>Utilizamos <span class="highlight-valores">tecnología de punta</span> para operar parques 
+                fotovoltaicos de forma <span class="highlight-valores">100% remota</span> . 
+                Contamos con una <span class="highlight-valores">interfaz personalizada y propia</span>  de monitoreo de sus variables eléctricas 
+                a partir del sistema SCADA de propósito general (Ignition), desarrollada por el equipo de TI de oEnergy.
+                Adicionalmente, prestamos servicios en terreno para el <span class="highlight-valores">mantenimiento preventivo y
+                  correctivo</span> de los parques,
+                así como también, para el <span class="highlight-valores">aseguramiento de activos</span> de generación
+                fotovoltaica.
+            </div>
+            </p>
+          </div>
+          <h4 class="pt-2 text-center" style="font-size: 22px;">Operación y Mantenimiento</h4>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 icon-container-que-hacemos d-flex flex-column align-items-center">
+          <div class="icon-custom-que-hacemos ">
+            <i class="fas fa-battery-full" aria-hidden="true"></i>
+            <div class="icon-overlay" style="left: 20%;">
+              <p>Nuestro equipo de <span class="highlight-valores">Asset Management</span> se encarga de la
+                administración
+                y explotación comercial de las plantas fotovoltaicas con el fin de maximizar los
+                ingresos por conceptos de ventas de energía y potencia. Prestamos <span
+                  class="highlight-valores">asesoría contable,
+                  técnica y regulatoria</span>, siendo contrapartes del Coordinador Eléctrico Nacional
+            </div>
+            </p>
+          </div>
+          <h4 class="pt-2" style="font-size: 22px;">Explotación</h4>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </section>
+
+
 
     <div class="container text-center align-items-center my-5" id="om">
         <h2>O&M</h2>
@@ -296,17 +406,24 @@
         </div>
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+   <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+   ></script>
+   <script
+    type="text/javascript"
+    src="https://www.amcharts.com/lib/3/ammap.js"
+   ></script>
+   <script
+    type="text/javascript"
+    src="https://www.amcharts.com/lib/3/maps/js/chileLow.js"
+   ></script>
+   <script src="./assets/js/main-custom.js"></script>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-    crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://www.amcharts.com/lib/3/ammap.js"></script>
-<script type="text/javascript" src="https://www.amcharts.com/lib/3/maps/js/chileLow.js"></script>
-<script src="./assets/js/main.js"></script>
 
 </html>
