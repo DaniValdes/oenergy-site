@@ -446,7 +446,7 @@ h2 {
     transform: translate(-50%, -50%); /* Aseguramos que el centro del overlay coincida con el centro del icono */
     width: 400px;
     max-width: 450px; /* Ajusta el ancho según sea necesario */
-    height: 300px; /* Ajusta la altura según sea necesario */
+    height: 305px; /* Ajusta la altura según sea necesario */
     background-color: rgba(255, 255, 255, 0.9); /* Ajusta el color y la opacidad como desees */
     color: #6D6969;
      /* Ajusta el color del texto como desees */
