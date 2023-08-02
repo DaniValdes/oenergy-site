@@ -77,13 +77,13 @@ span.carousel-control-prev-icon {
 }
 
 .dropdown-menu {
-  white-space: nowrap; 
+  white-space: nowrap; /* NO SALTAR linea */
   max-width: 90vw; 
   overflow: hidden;
 }
 
 .dropdown-item {
-  white-space: nowrap;
+  white-space: nowrap; /* NO SALTAR linea*/
   text-overflow: ellipsis;
   overflow: hidden;
 }
