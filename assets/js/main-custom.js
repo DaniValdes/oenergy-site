@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
-  
-
   /* COUNTERS */
   const counters = document.querySelectorAll('.counter');
   
@@ -158,6 +156,7 @@ function getPinColor(checkboxId) {
   
 
 
+  
 
   /* CONTACTANOS */
   
@@ -209,7 +208,10 @@ let observer = new IntersectionObserver((entries, observer) => {
   });
 });
 
+ 
 // Observar todos los elementos que queremos animar
 document.querySelectorAll('.animate-on-scroll').forEach(element => {
   observer.observe(element);
 });
+
+
