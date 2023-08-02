@@ -77,14 +77,15 @@ span.carousel-control-prev-icon {
 }
 
 .dropdown-menu {
-
-  white-space: normal; /* Permite que el texto se ajuste y pase a la siguiente línea si es demasiado largo */
-  max-width: 90vw; /* Establece el ancho máximo al 90% del ancho de la pantalla */
-
+  white-space: nowrap; /* NO SALTAR linea */
+  max-width: 90vw; 
+  overflow: hidden;
 }
 
 .dropdown-item {
-  white-space: normal;
+  white-space: nowrap; /* NO SALTAR linea*/
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 
