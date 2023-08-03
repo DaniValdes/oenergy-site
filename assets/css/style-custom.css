@@ -360,7 +360,7 @@ blockquote {
 .numero-colaboradores {
 text-align: end;
 padding-right: 10px;
-
+font-weight: 500;
 }
 
 .texto-hito{
