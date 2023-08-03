@@ -214,3 +214,15 @@ document.querySelectorAll('.animate-on-scroll').forEach(element => {
   observer.observe(element);
 });
 
+window.addEventListener("scroll", () => {
+  const timeline = document.querySelector(".timeline");
+  const timelineLine = document.querySelector(".timeline-line");
+  const scrollPos = window.scrollY + window.innerHeight / 2; 
+
+  if (timeline && timelineLine) {
+    const timelineHeight = timeline.getBoundingClientRect().height;
+    const newHeight = Math.min(scrollPos, timelineHeight);
+    const margin = 680; // set the size of the 'margin' you want at the bottom
+    timelineLine.style.height = `${newHeight - margin}px`;
+  }
+});
