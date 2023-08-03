@@ -222,7 +222,7 @@ window.addEventListener("scroll", () => {
   if (timeline && timelineLine) {
     const timelineHeight = timeline.getBoundingClientRect().height;
     const newHeight = Math.min(scrollPos, timelineHeight);
-    const margin = 680; // set the size of the 'margin' you want at the bottom
+    const margin = 662; // set the size of the 'margin' you want at the bottom
     timelineLine.style.height = `${newHeight - margin}px`;
   }
 });
