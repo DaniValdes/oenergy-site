@@ -573,9 +573,9 @@ text-align: justify;
     background: linear-gradient(180deg, #AAA7A7 0%, rgba(217, 217, 217, 0.32) 100%);
 }
 
-#mision-vision {
+/* #mision-vision {
   background: linear-gradient(180deg, #AAA7A7 0%, rgba(217, 217, 217, 0.32) 100%);
-}
+} */
 
 .icon-que-hacemos {
     display: flex;
