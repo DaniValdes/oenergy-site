@@ -1520,3 +1520,8 @@ text-align: justify;
   from { transform: translateY(100%); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+
+
+#partner {
+  background-color: #4674b6;
+}
