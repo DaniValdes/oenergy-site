@@ -51,6 +51,12 @@ span.carousel-control-prev-icon {
   }
 }
 
+@media (min-width: 1920px) {
+  .text-partnerships {
+    right: 36% !important;
+  }
+}
+
 @media (max-width: 576px) {
   .video-home {
     padding-top: 210px;
