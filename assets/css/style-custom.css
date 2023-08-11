@@ -58,6 +58,13 @@ span.carousel-control-prev-icon {
   }
 }
 
+@media (min-width: 1920px) {
+  .text-irecs {
+    right: 52% !important;
+    
+  }
+}
+
 @media (max-width: 576px) {
   .video-home {
     padding-top: 210px;
