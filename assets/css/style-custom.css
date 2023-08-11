@@ -53,7 +53,15 @@ span.carousel-control-prev-icon {
 
 @media (min-width: 1920px) {
   .text-partnerships {
-    right: 36% !important;
+    right: 23% !important;
+    
+  }
+}
+
+@media (min-width: 1920px) {
+  .text-irecs {
+    right: 52% !important;
+    
   }
 }
 
