@@ -792,6 +792,11 @@ text-align: justify;
     font-weight: bold;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+
   .valores h1 {
     margin: 0 auto;
     width: 50%;
