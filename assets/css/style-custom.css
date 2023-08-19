@@ -1128,7 +1128,7 @@ text-align: justify;
   .pin {
     position: absolute;
     color: #223169; /* Color del pin */
-    font-size: 16px; /* Tamaño del pin */
+    font-size: 28px; /* Tamaño del pin */
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
   }
