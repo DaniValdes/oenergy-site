@@ -1193,7 +1193,7 @@ text-align: justify;
   }
   
   .constructor-pin {
-    color: #333;
+    color: #5173AD;
   }
   
   .operator-pin {
@@ -1215,7 +1215,7 @@ text-align: justify;
     }
   
     .constructor-pin {
-      color: #333;
+      color: #5173AD;
       /* Ajusta la posición de los pines de constructor según sea necesario */
       left: 210px;
       top: 130px;
@@ -1239,7 +1239,7 @@ text-align: justify;
     }
   
     .constructor-pin {
-      color: #333;
+      color: #5173AD;
       /* Ajusta la posición de los pines de constructor según sea necesario */
       left: 240px;
       top: 100px;
@@ -1263,7 +1263,7 @@ text-align: justify;
     }
   
     .constructor-pin {
-      color: #333;
+      color: #5173AD;
       /* Ajusta la posición de los pines de constructor según sea necesario */
       left: 230px;
       top: 150px;
