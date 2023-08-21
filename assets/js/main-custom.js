@@ -67,7 +67,7 @@ function getPinColor(checkboxId) {
             pinColor = '#223169';
             break;
         case 'constructor-checkbox':
-            pinColor = '#333';
+            pinColor = '#5173AD';
             break;
         case 'operator-checkbox':
             pinColor = '#d76e14';
