@@ -46,19 +46,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 $('.round-checkbox').change(function() {
-    var parentDivId = $(this).parent().attr('id');
-    var pinColor = getPinColor(parentDivId);
-    var pinClass = '.' + parentDivId.split('-')[0] + '-pin';
-    var icon = $(this).next();
-  
-    if(this.checked) {
-        $(pinClass).removeClass('hidden');
-        icon.css('color', pinColor);
-    } else {
-        $(pinClass).addClass('hidden');
-        icon.css('color', '#ccc');
-    }
+  var parentDivId = $(this).parent().attr('id');
+  var pinColor = getPinColor(parentDivId);
+  var pinClass = '.' + parentDivId.split('-')[0] + '-pin';
+
+  // Aquí buscamos el contenedor superior más cercano, que sería .map-container
+  var closestMapContainer = $(this).closest('.map-container');
+
+  var icon = $(this).next();
+
+  if(this.checked) {
+      closestMapContainer.find(pinClass).removeClass('hidden');
+      icon.css('color', pinColor);
+  } else {
+      closestMapContainer.find(pinClass).addClass('hidden');
+      icon.css('color', '#ccc');
+  }
 });
+
 
 function getPinColor(checkboxId) {
     var pinColor = '';
