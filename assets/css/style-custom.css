@@ -398,6 +398,39 @@ text-align: justify;
 }
 
 
+@media screen and (max-width: 768px) {
+  /* Mueve la línea vertical a la izquierda */
+  .timeline::before {
+    left: 1px; /* Ajusta este valor según lo lejos que quieras la línea de la izquierda de la pantalla. */
+    transform: none; /* Remueve el transform para que no intente centrar la línea */
+  }
+
+  /* Posiciona la imagen/icono a la izquierda, cerca de la línea */
+  .timeline-img {
+    left: 15px; /* Ajusta este valor según dónde quieras el icono con respecto a la línea */
+  }
+
+  /* Alinear todos los contenidos de los hitos a la derecha */
+  .timeline-content {
+    float: right; /* Hace que todos los hitos floten a la derecha */
+    margin-left: 50px; /* Espacio para dar lugar a la línea y el ícono. Ajusta según sea necesario. */
+  }
+
+  /* Dado que todos flotarán a la derecha, remueve los estilos específicos para los hitos pares */
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-right: 0; /* Remueve el margen derecho */
+  }
+
+  .timeline {
+    padding: 0 !important;
+  }
+
+  .timeline-line {
+    left: 25px !important; /* Ajusta este valor según lo lejos que quieras la línea de la izquierda de la pantalla */
+    transform: none; /* Remueve la transformación para que no intente centrar la línea */
+    top: 1% !important;
+  }
+}
 
 
 
