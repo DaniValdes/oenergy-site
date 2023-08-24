@@ -1488,3 +1488,90 @@ text-align: justify;
 #partner {
   background-color: #4674b6;
 }
+
+
+/* MAP MEDIA QUERIES */
+@media (min-width: 1367px) and (max-width: 1919px) {
+  [data-pin-id="pin1"] {
+      left: 20%;
+      top: 35%;
+  }
+  [data-pin-id="pin2"] {
+      left: 8%;
+      top: 69%;
+  }
+  [data-pin-id="pin3"] {
+      left: 8%;
+      top: 80%;
+  }
+  [data-pin-id="pin4"] {
+      left: 7%;
+      top: 79%;
+  }
+  [data-pin-id="pin5"] {
+      left: 6%;
+      top: 80%;
+  }
+  [data-pin-id="pin6"] {
+      left: 7.5%;
+      top: 73%;
+  }
+  [data-pin-id="pin7"] {
+      left: 7%;
+      top: 72%;
+  }
+  [data-pin-id="pin8"] {
+      left: 8.2%;
+      top: 76.5%;
+  }
+  [data-pin-id="pin9"] {
+      left: 8.5%;
+      top: 83%;
+  }
+  [data-pin-id="pin10"] {
+      left: 5.5%;
+      top: 92%;
+  }
+  [data-pin-id="pin11"] {
+      left: 8%;
+      top: 89.5%;
+  }
+  [data-pin-id="pin12"] {
+      left: 7%;
+      top: 90.5%;
+  }
+  [data-pin-id="pin13"] {
+      left: 6%;
+      top: 89%;
+  }
+  [data-pin-id="pin14"] {
+      left: 7%;
+      top: 86%;
+  }
+  [data-pin-id="pin15"] {
+      left: 8%;
+      top: 86.5%;
+  }
+  [data-pin-id="pin16"] {
+      left: 9.3%;
+      top: 86%;
+  }
+  [data-pin-id="pin17"] {
+    left: 10%;
+    top: 87.5%;
+  }
+  [data-pin-id="pin18"] {
+    left: 9%;
+    top: 87.5%;
+  }
+  [data-pin-id="pin19"] {
+    left: 11%;
+    top: 88.5%;
+  }
+  [data-pin-id="pin20"] {
+    left: 12%;
+    top: 89.5%;
+  }
+
+ 
+}
