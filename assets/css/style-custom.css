@@ -1167,6 +1167,12 @@ text-align: justify;
 
 /* MAPA */
 /* #map { height: 180px; } */
+@media screen and (max-width: 767px) { /* Para dispositivos móviles */
+  #mc2 {
+    max-width: 300px;
+    overflow-y: auto; /* Esto añadirá un scroll si el contenido interno supera los 300px */
+  }
+}
 
 
 .map-container {
