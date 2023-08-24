@@ -51,6 +51,14 @@ span.carousel-control-prev-icon {
   vertical-align: 0.155em
 }
 
+.language-dropdown .dropdown-menu {
+  min-width: 30px;  /* Ajusta este valor según el tamaño de tus banderas */
+  padding: 0.1rem 0;  /* Añade un pequeño padding arriba y abajo */
+}
+
+.language-dropdown .dropdown-item {
+  padding: 0.25rem 0.5rem;  /* Reduce el padding interno del ítem */
+}
 
 @media (max-width: 576px) {
   .section-container {
