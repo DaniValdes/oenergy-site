@@ -702,6 +702,12 @@ text-align: justify;
     z-index: 2;
   }
 
+  @media (max-width: 768px) {
+    .icon-explotacion {
+      left: 50% !important ;
+    }
+  }
+  
   @media screen and (max-width: 768px) {
     .icon-overlay {
         max-width: 100vw;
