@@ -73,12 +73,37 @@ span.carousel-control-prev-icon {
   }
 }
 
+@media (max-width: 767px) {
+  .default-mobile-mp {
+    margin: 0 !important;
+    padding: initial !important;
+  }
+  .titulo-mobile {
+    font-size: 32px !important;
+  }
+}
+  @media (max-width: 767px) {
+    .no-border-mobile {
+      border: none !important;
+    }
+
+  }
+
+
 @media (min-width: 1920px) {
   .text-irecs {
     right: 52% !important;
     
   }
 }
+
+@media (max-width: 767px) {
+  /* Estilos específicos para el SVG en dispositivos móviles */
+  .mobile-svg {
+    margin-left: 0 !important; /* Eliminar el margen izquierdo */
+  }
+}
+
 
 @media (max-width: 576px) {
   .video-home {
@@ -844,6 +869,7 @@ text-align: justify;
       max-width: 200px o !important;
     }
   }
+
 
 
 /* VALORES */
