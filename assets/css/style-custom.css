@@ -102,7 +102,7 @@ span.carousel-control-prev-icon {
 
 @media (max-width: 576px) {
   .our-team {
-    height: 60vh !important;
+    height: 30vh !important;
   }
 }
 
