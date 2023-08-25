@@ -82,7 +82,8 @@ span.carousel-control-prev-icon {
 
 @media (max-width: 576px) {
   .video-home {
-    padding-top: 210px;
+        padding-top: 20px; 
+        height: auto !important;
   }
 }
 
@@ -145,11 +146,15 @@ span.carousel-control-prev-icon {
     -webkit-transform: translateZ(0);
     
 }
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   #titulo-home {
     font-size: 18px !important ;
+    line-height: 16px !important;
   }
+}
+
+@media (max-width: 600px) {
+
 
   #descripcion-home {
     font-size: 8px !important;
@@ -175,6 +180,12 @@ span.carousel-control-prev-icon {
   }
 }
 
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+  #video-conocenos, #video-conocenos iframe {
+      width: 100% !important;
+  }
+}
   @media (max-width: 768px) {
     .section-nuestra-historia{
       text-align: center;
