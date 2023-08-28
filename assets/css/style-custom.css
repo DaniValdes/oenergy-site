@@ -1628,4 +1628,50 @@ text-align: justify;
 }
 
 
+@media (max-width: 1024px) {
+  [data-pin-id="pin27"] {
+      left: 33% !important;
+      top: 38% !important;
+  }
+  [data-pin-id="pin28"] {
+      left: 39% !important;
+      top: 37% !important;
+  }
+  [data-pin-id="pin29"] {
+      left: 33% !important;
+      top: 39% !important;
+  }
+  [data-pin-id="pin30"] {
+      left: 41% !important;
+      top: 35% !important;
+  }
+  [data-pin-id="pin31"] {
+      left: 40% !important;
+      top: 36% !important;
+  }
+  [data-pin-id="pin32"] {
+      left: 42% !important;
+      top: 36% !important;
+  }
+  [data-pin-id="pin33"] {
+      left: 39% !important;
+      top: 39% !important;
+  }
+  [data-pin-id="pin34"] {
+      left: 37% !important;
+      top: 37.5% !important;
+  }
+  [data-pin-id="pin35"] {
+      left: 37% !important;
+      top: 37.5% !important;
+  }
+  [data-pin-id="pin36"] {
+      left: 37% !important;
+      top: 37.5% !important;
+  }
+  [data-pin-id="pin37"] {
+      left: 38% !important;
+      top: 40% !important;
+  }
+}
 
