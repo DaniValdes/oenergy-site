@@ -1573,6 +1573,7 @@ text-align: justify;
 
 
 /* MAP MEDIA QUERIES */
+/* METROPOLITANA */
 @media (max-width: 1440px) {
   [data-pin-id="pin21"] {
       left: 30% !important;
@@ -1600,25 +1601,52 @@ text-align: justify;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   [data-pin-id="pin21"] {
-      left: 40% !important;
+      left: calc(30% + 3%) !important;
       top: 32% !important;
   }
   [data-pin-id="pin22"] {
-      left: 41% !important;
+      left: calc(31% + 3%) !important;
       top: 33% !important;
   }
   [data-pin-id="pin23"] {
-      left: 42% !important;
+      left: calc(32% + 3%) !important;
       top: 32% !important;
   }
   [data-pin-id="pin24"] {
-      left: 40% !important;
+      left: calc(30% + 3%) !important;
       top: 30% !important;
   }
   [data-pin-id="pin25"] {
-      left: 41% !important;
+      left: calc(31% + 3%) !important;
+      top: 30% !important;
+  }
+  [data-pin-id="pin26"] {
+      left: calc(28% + 3%) !important;
+      top: 35% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  [data-pin-id="pin21"] {
+      left: 42% !important;
+      top: 32% !important;
+  }
+  [data-pin-id="pin22"] {
+      left: 43% !important;
+      top: 33% !important;
+  }
+  [data-pin-id="pin23"] {
+      left: 44% !important;
+      top: 32% !important;
+  }
+  [data-pin-id="pin24"] {
+      left: 42% !important;
+      top: 30% !important;
+  }
+  [data-pin-id="pin25"] {
+      left: 43% !important;
       top: 30% !important;
   }
   [data-pin-id="pin26"] {
@@ -1627,51 +1655,349 @@ text-align: justify;
   }
 }
 
-
-@media (max-width: 1024px) {
+/* OHIGGINS */
+@media (max-width: 1366px) {
   [data-pin-id="pin27"] {
-      left: 33% !important;
+      left: calc(33% - 5%) !important;
       top: 38% !important;
   }
   [data-pin-id="pin28"] {
-      left: 39% !important;
+      left: calc(39% - 5%) !important;
       top: 37% !important;
   }
   [data-pin-id="pin29"] {
-      left: 33% !important;
+      left: calc(33% - 5%) !important;
       top: 39% !important;
   }
   [data-pin-id="pin30"] {
-      left: 41% !important;
+      left: calc(41% - 5%) !important;
       top: 35% !important;
   }
   [data-pin-id="pin31"] {
-      left: 40% !important;
+      left: calc(40% - 5%) !important;
       top: 36% !important;
   }
   [data-pin-id="pin32"] {
-      left: 42% !important;
+      left: calc(42% - 5%) !important;
       top: 36% !important;
   }
   [data-pin-id="pin33"] {
-      left: 39% !important;
+      left: calc(39% - 5%) !important;
       top: 39% !important;
   }
   [data-pin-id="pin34"] {
-      left: 37% !important;
+      left: calc(37% - 5%) !important;
       top: 37.5% !important;
   }
   [data-pin-id="pin35"] {
-      left: 37% !important;
+      left: calc(37% - 5%) !important;
       top: 37.5% !important;
   }
   [data-pin-id="pin36"] {
-      left: 37% !important;
+      left: calc(37% - 5%) !important;
       top: 37.5% !important;
   }
   [data-pin-id="pin37"] {
-      left: 38% !important;
+      left: calc(38% - 5%) !important;
       top: 40% !important;
   }
 }
+
+@media (max-width: 1024px) {
+  [data-pin-id="pin27"] {
+      left: calc(33% + 2%) !important;
+      top: 38% !important;
+  }
+  [data-pin-id="pin28"] {
+      left: calc(39% + 2%) !important;
+      top: 37% !important;
+  }
+  [data-pin-id="pin29"] {
+      left: calc(33% + 2%) !important;
+      top: 39% !important;
+  }
+  [data-pin-id="pin30"] {
+      left: calc(43% + 0%) !important;
+      top: 35% !important;
+  }
+  [data-pin-id="pin31"] {
+      left: calc(40% + 2%) !important;
+      top: 36% !important;
+  }
+  [data-pin-id="pin32"] {
+      left: calc(42% + 2%) !important;
+      top: 36% !important;
+  }
+  [data-pin-id="pin33"] {
+      left: calc(39% + 2%) !important;
+      top: 39% !important;
+  }
+  [data-pin-id="pin34"] {
+      left: calc(37% + 2%) !important;
+      top: 37.5% !important;
+  }
+  [data-pin-id="pin35"] {
+      left: calc(37% + 2%) !important;
+      top: 37.5% !important;
+  }
+  [data-pin-id="pin36"] {
+      left: calc(37% + 2%) !important;
+      top: 37.5% !important;
+  }
+  [data-pin-id="pin37"] {
+      left: calc(38% + 2%) !important;
+      top: 40% !important;
+  }
+}
+
+
+/* MAULE */
+
+@media (max-width: 1366px) {
+  [data-pin-id="pin62"] {
+    left: 32% !important;
+    top: 41% !important;
+  }
+
+  [data-pin-id="pin63"] {
+    left: 31% !important;
+    top: 41% !important;
+  }
+
+  [data-pin-id="pin61"] {
+    left: 33% !important;
+    top: 42% !important;
+  }
+
+  [data-pin-id="pin57"] {
+    left: 30% !important;
+    top: 42.5% !important;
+  }
+
+  [data-pin-id="pin58"] {
+    left: 30% !important;
+    top: 42.5% !important;
+  }
+
+  [data-pin-id="pin59"] {
+    left: 31% !important;
+    top: 42.5% !important;
+  }
+
+  [data-pin-id="pin60"] {
+    left: 32% !important;
+    top: 42.5% !important;
+  }
+
+  [data-pin-id="pin51"] {
+    left: 31% !important;
+    top: 44% !important;
+  }
+
+  [data-pin-id="pin52"] {
+    left: 32% !important;
+    top: 44% !important;
+  }
+
+  [data-pin-id="pin53"] {
+    left: 32% !important;
+    top: 44% !important;
+  }
+
+  [data-pin-id="pin54"] {
+    left: 29% !important;
+    top: 44% !important;
+  }
+
+  [data-pin-id="pin46"] {
+    left: 29% !important;
+    top: 46% !important;
+  }
+
+  [data-pin-id="pin47"] {
+    left: 32% !important;
+    top: 46% !important;
+  }
+
+  [data-pin-id="pin48"] {
+    left: 22% !important;
+    top: 44% !important;
+  }
+
+  [data-pin-id="pin49"] {
+    left: 25% !important;
+    top: 42% !important;
+  }
+
+  [data-pin-id="pin50"] {
+    left: 27% !important;
+    top: 44% !important;
+  }
+
+  [data-pin-id="pin55"] {
+    left: 30% !important;
+    top: 43.5% !important;
+  }
+
+  [data-pin-id="pin56"] {
+    left: 29% !important;
+    top: 44.5% !important;
+  }
+
+  [data-pin-id="pin43"] {
+    left: 31% !important;
+    top: 46.5% !important;
+  }
+
+  [data-pin-id="pin44"] {
+    left: 32% !important;
+    top: 46.5% !important;
+  }
+
+  [data-pin-id="pin45"] {
+    left: 31% !important;
+    top: 47% !important;
+  }
+
+  [data-pin-id="pin42"] {
+    left: 30% !important;
+    top: 48.5% !important;
+  }
+
+  [data-pin-id="pin38"] {
+    left: 29% !important;
+    top: 49.5% !important;
+  }
+
+  [data-pin-id="pin39"] {
+    left: 28.5% !important;
+    top: 50.5% !important;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  [data-pin-id="pin62"] {
+    left: 38% !important;
+    top: 41% !important;
+  }
+
+  [data-pin-id="pin63"] {
+    left: 37% !important;
+    top: 41% !important;
+  }
+
+  [data-pin-id="pin61"] {
+    left: 39% !important;
+    top: 42% !important;
+  }
+
+  [data-pin-id="pin57"] {
+    left: 36% !important;
+    top: 42.5% !important;
+  }
+
+  [data-pin-id="pin58"] {
+    left: 36% !important;
+    top: 42.5% !important;
+  }
+
+  [data-pin-id="pin59"] {
+    left: 37% !important;
+    top: 42.5% !important;
+  }
+
+  [data-pin-id="pin60"] {
+    left: 38% !important;
+    top: 42.5% !important;
+  }
+
+  [data-pin-id="pin51"] {
+    left: 37% !important;
+    top: 44% !important;
+  }
+
+  [data-pin-id="pin52"] {
+    left: 38% !important;
+    top: 44% !important;
+  }
+
+  [data-pin-id="pin53"] {
+    left: 38% !important;
+    top: 44% !important;
+  }
+
+  [data-pin-id="pin54"] {
+    left: 35% !important;
+    top: 44% !important;
+  }
+
+  [data-pin-id="pin46"] {
+    left: 35% !important;
+    top: 46% !important;
+  }
+
+  [data-pin-id="pin47"] {
+    left: 38% !important;
+    top: 46% !important;
+  }
+
+  [data-pin-id="pin48"] {
+    left: 28% !important;
+    top: 44% !important;
+  }
+
+  [data-pin-id="pin49"] {
+    left: 31% !important;
+    top: 42% !important;
+  }
+
+  [data-pin-id="pin50"] {
+    left: 33% !important;
+    top: 44% !important;
+  }
+
+  [data-pin-id="pin55"] {
+    left: 36% !important;
+    top: 43.5% !important;
+  }
+
+  [data-pin-id="pin56"] {
+    left: 35% !important;
+    top: 44.5% !important;
+  }
+
+  [data-pin-id="pin43"] {
+    left: 37% !important;
+    top: 46.5% !important;
+  }
+
+  [data-pin-id="pin44"] {
+    left: 38% !important;
+    top: 46.5% !important;
+  }
+
+  [data-pin-id="pin45"] {
+    left: 37% !important;
+    top: 47% !important;
+  }
+
+  [data-pin-id="pin42"] {
+    left: 36% !important;
+    top: 48.5% !important;
+  }
+
+  [data-pin-id="pin38"] {
+    left: 35% !important;
+    top: 49.5% !important;
+  }
+
+  [data-pin-id="pin39"] {
+    left: 34.5% !important;
+    top: 50.5% !important;
+  }
+
+}
+
+
 
