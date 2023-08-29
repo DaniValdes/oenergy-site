@@ -2085,3 +2085,7 @@ text-align: justify;
   }
 }
 
+.our-carousel-image {
+  max-height: 300px; /* Ajusta este valor según tus necesidades */
+  margin: 0 auto; /* Para centrar la imagen horizontalmente si es necesario */
+}
