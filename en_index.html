@@ -12,11 +12,9 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="./assets/css/style-custom.css" />
    <!-- poppins font -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-   
-   <!-- fontawesome -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"><!-- fontawesome -->
    <script src="https://kit.fontawesome.com/5298658fa2.js" crossorigin="anonymous"></script>
 
    <title>oEnergy</title>
@@ -31,7 +29,7 @@
   style="font-size: 18px; font-weight: 500"
 >
   <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="./en_index.html">
       <img
         src="./assets/img/logo oenergy SVG.svg"
         alt="logoPrincipal"
@@ -66,28 +64,28 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Conócenos
+            About Us
           </a>
           <ul class="dropdown-menu" aria-labelledby="conocenosDropdown">
             <li>
-              <a class="dropdown-item" href="conocenos.html">Historia</a>
+              <a class="dropdown-item" href="en_conocenos.html">Story</a>
             </li>
             <li>
-              <a class="dropdown-item" href="conocenos.html#mision-vision"
-                >Misión y Visión</a
+              <a class="dropdown-item" href="en_conocenos.html#mision-vision"
+                >Mission and Vision</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="conocenos.html#valores"
-                >Valores</a
+              <a class="dropdown-item" href="en_conocenos.html#valores"
+                >Values</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="conocenos.html#team">Team</a>
+              <a class="dropdown-item" href="en_conocenos.html#team">Team</a>
             </li>
             <li>
-              <a class="dropdown-item" href="conocenos.html#proyectos"
-                >Proyectos</a
+              <a class="dropdown-item" href="en_conocenos.html#proyectos"
+                >Projects</a
               >
             </li>
           </ul>
@@ -101,26 +99,21 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Servicios
+            Services
           </a>
           <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
             <li>
-              <a class="dropdown-item" href="servicios.html">
-                Development Partnerships</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" href="servicios.html#om"
+              <a class="dropdown-item" href="en_servicios.html#om"
                 >O&M</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="servicios.html#asset"
+              <a class="dropdown-item" href="en_servicios.html#asset"
                 >Asset Management</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="servicios.html#irecs"
+              <a class="dropdown-item" href="en_servicios.html#irecs"
                 >Environmental Commodities</a
               >
             </li>
@@ -139,19 +132,19 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="esgDropdown">
             <li>
-              <a class="dropdown-item" href="esg.html">Reporte Anual ESG</a>
+              <a class="dropdown-item" href="en_esg.html">ESG ANNUAL REPORT</a>
             </li>
             <li>
-              <a class="dropdown-item" href="esg.html#Ambiental"
-                >Ambiental</a
+              <a class="dropdown-item" href="en_esg.html#Ambiental"
+                >Environment</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="esg.html#social">Social</a>
+              <a class="dropdown-item" href="en_esg.html#social">Social</a>
             </li>
             <li>
-              <a class="dropdown-item" href="esg.html#governance"
-                >Gobierno Corporativo</a
+              <a class="dropdown-item" href="en_esg.html#governance"
+                >Corporate Governance</a
               >
             </li>
           </ul>
@@ -168,31 +161,45 @@
               font-weight: 400;
               text-decoration: none;
               display: inline-block;
-              padding: 5px 12px;
+              padding: 5px 15px;
               color: white;
             "
           >
-            Contáctanos
+            Contact us
           </button>
+        </li>
+        <li class="nav-item dropdown language-dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="idiomaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            EN
+            <!-- <img src="./assets/img/espana.png" alt="Español" height="20" /> --> <!-- Imagen de la bandera española -->
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="idiomaDropdown">
+            <li>
+              <a class="dropdown-item" href="esg.html">
+                <!-- <img src="./assets/img/estados-unidos.png" alt="Inglés" height="20" width="20"/> -->
+                ES
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<div id="contactFormPopup" class="popup">
-  <div class="popup-content">
-    <span id="closePopup" class="close">&times;</span>
-    <form id="contactForm" action="https://formsubmit.co/comunicaciones@oenergy.cl" method="POST">
-      <label for="name">Nombre:</label><br>
-      <input type="text" id="name" name="name" required><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br>
-      <label for="message">Mensaje:</label><br>
-      <textarea id="message" name="message" placeholder="Cuéntanos tus dudas o comentarios" required></textarea><br>
-      <input type="submit" value="Enviar">
-    </form>
+  <div id="contactFormPopup" class="popup">
+    <div class="popup-content">
+      <span id="closePopup" class="close">&times;</span>
+      <form id="contactForm" action="https://formsubmit.co/comunicaciones@oenergy.cl" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" placeholder="Tell us your questions or comments" required></textarea><br>
+        <input type="submit" value="Send">
+      </form>
+    </div>
   </div>
-</div>
 
 
   <div style="position: relative; width: 100%;">
@@ -260,7 +267,7 @@ class="footer-oenergy"
 style="color: white; background-color: #223169; padding: 5px 0"
 >
 <div class="container">
-  <div class="row text-center">
+  <div class="row text-start">
     <div
       class="col d-flex justify-content-center align-items-center text-start"
       style="
@@ -290,97 +297,94 @@ style="color: white; background-color: #223169; padding: 5px 0"
       <p>comunicaciones@oenergy.cl</p>
     </div>
     <div class="col-md col-xs-12 pt-md-4">
-      <a class="footer-link" href="conocenos.html">
-        <h5>Conócenos</h5>
+      <a class="footer-link" href="en_conocenos.html">
+        <h5>About Us</h5>
       </a>
-      <a class="footer-link footer-mobile-hide" href="conocenos.html">
-        <p>Historia</p>
+      <a class="footer-link footer-mobile-hide" href="en_conocenos.html">
+        <p>Story</p>
       </a>
       <a
         class="footer-link footer-mobile-hide"
-        href="conocenos.html#mision-vision"
+        href="en_conocenos.html#mision-vision"
       >
-        <p>Misión y Visión</p>
+        <p>Mission and Vision</p>
       </a>
       <a
       class="footer-link footer-mobile-hide"
-      href="conocenos.html#valores"
+      href="en_conocenos.html#valores"
     >
-      <p>Valores</p>
+      <p>Values</p>
     </a>
       <a
         class="footer-link footer-mobile-hide"
-        href="conocenos.html#team"
+        href="en_conocenos.html#team"
       >
         <p>Team</p>
       </a>
       <a
         class="footer-link footer-mobile-hide"
-        href="conocenos.html#proyectos"
+        href="en_conocenos.html#proyectos"
       >
-        <p>Proyectos</p>
+        <p>Projects</p>
       </a>
     </div>
     <div class="col-md col-xs-12 pt-md-4">
-      <a class="footer-link" href="servicios.html">
-        <h5>Servicios</h5>
+      <a class="footer-link" href="en_servicios.html">
+        <h5>Services</h5>
       </a>
-      <a class="footer-link footer-mobile-hide" href="servicios.html">
-        <p>Development Partnership</p>
-      </a>
-      <a class="footer-link footer-mobile-hide" href="servicios.html#om">
+      <a class="footer-link footer-mobile-hide" href="en_servicios.html#om">
         <p>O&M</p>
       </a>
-      <a class="footer-link footer-mobile-hide" href="servicios.html#asset">
+      <a class="footer-link footer-mobile-hide" href="en_servicios.html#asset">
         <p>Asset Management</p>
       </a>
       <a
         class="footer-link footer-mobile-hide"
-        href="servicios.html#irecs"
+        href="en_servicios.html#irecs"
       >
         <p>Environmental Commodities</p>
       </a>
     </div>
     <div class="col-md col-xs-12 pt-md-4">
-      <a class="footer-link" href="esg.html">
+      <a class="footer-link" href="en_esg.html">
         <h5>ESG</h5>
       </a>
-      <a class="footer-link footer-mobile-hide" href="esg.html">
-        <p>Reporte Anual ESG</p>
+      <a class="footer-link footer-mobile-hide" href="en_esg.html">
+        <p>ESG ANNUAL REPORT</p>
       </a>
       <a
         class="footer-link footer-mobile-hide"
-        href="esg.html#environmental"
+        href="en_esg.html#environmental"
       >
-        <p>Ambiental</p>
+        <p>Environment</p>
       </a>
-      <a class="footer-link footer-mobile-hide" href="esg.html#social">
+      <a class="footer-link footer-mobile-hide" href="en_esg.html#social">
         <p>Social</p>
       </a>
       <a
         class="footer-link footer-mobile-hide"
-        href="esg.html#governance"
+        href="en_esg.html#governance"
       >
-        <p>Gobierno Corporativo</p>
+        <p>Corporate Governance</p>
       </a>
     </div>
 
-    <div class="col-md col-xs-12 pt-md-4">
-      <h5>Información Legal</h5>
+    <div class="col-md col-xs-12 pt-md-4 text-center text-md-start">
+      <h5>Legal Information</h5>
       <a 
-      class="footer-link footer-mobile-hide"
+      class="footer-link"
       href="terminosycondiciones.html">
-        <p>Términos de Uso</p>
+        <p>Terms of Use</p>
       </a>
       
         <a 
-      class="footer-link footer-mobile-hide"
+      class="footer-link"
       href="politicadeprivacidad.html">
-        <p>Política de Privacidad</p>
+        <p>Privacy Policy</p>
       </a>
       
-      <div class="pt-3">
-        <p style="font-weight: 600">Síguenos</p>
+      <div class="pt-3 text-center text-md-start">
+        <p style="font-weight: 600">Follow Us</p>
         <a
           class="footer-link"
           style="margin-top: 0"
