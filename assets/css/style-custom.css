@@ -1073,6 +1073,13 @@ text-align: justify;
     object-position: center top;
   }
 
+  @media (max-width: 767px) {
+    .our-carousel-image {
+      max-height: 190px !important; /* Ajusta este valor según tus necesidades */
+      margin: 0 auto; /* Para centrar la imagen horizontalmente si es necesario */
+    }
+  }
+
   .our-carousel-image-custom {
     max-width: 100%;
     max-height: 650px;
@@ -1356,6 +1363,12 @@ text-align: justify;
   footer {
     bottom: 0;
     width: 100%;    
+}
+
+@media (min-width: 768px) {
+  .custom-margin-footer {
+    margin-top: -230px;
+  }
 }
   
 /* ESG */
@@ -2094,7 +2107,3 @@ text-align: justify;
   }
 }
 
-.our-carousel-image {
-  max-height: 270px; /* Ajusta este valor según tus necesidades */
-  margin: 0 auto; /* Para centrar la imagen horizontalmente si es necesario */
-}
