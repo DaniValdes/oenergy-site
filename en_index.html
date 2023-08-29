@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #223169;">
 
   <!-- START NAVBAR-->
   <nav
@@ -55,6 +55,17 @@
         class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
         style="--bs-scroll-height: 120px"
       >
+      <li class="nav-item d-md-none" style="font-size: 14px;">
+        <div class="d-flex border-bottom">
+          <a class="nav-link language-indicator ps-1 pe-1 underline" 
+          href="#">
+            EN
+          </a>
+          <a class="nav-link language-indicator ps-1" href="index.html">
+            ES
+          </a>
+        </div>
+      </li>
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -132,7 +143,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="esgDropdown">
             <li>
-              <a class="dropdown-item" href="en_esg.html">ESG ANNUAL REPORT</a>
+              <a class="dropdown-item" href="en_esg.html">ESG Annual Report</a>
             </li>
             <li>
               <a class="dropdown-item" href="en_esg.html#Ambiental"
@@ -168,7 +179,7 @@
             Contact us
           </button>
         </li>
-        <li class="nav-item dropdown language-dropdown">
+        <li class="nav-item dropdown language-dropdown mobile-hidden">
           <a class="nav-link dropdown-toggle" href="#" id="idiomaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             EN
             <!-- <img src="./assets/img/espana.png" alt="Español" height="20" /> --> <!-- Imagen de la bandera española -->
@@ -209,10 +220,11 @@
   
     <div style="position: absolute; top: 0; bottom: 0; left: 20px; display: flex; flex-direction: column; justify-content: center; max-width: 50%; color: white; z-index: 1;">
       <p id="titulo-home" 
-      style="font-family: 'montserrat', arial-sans ;font-size: 80px; color: white; font-weight: 300; line-height: 70px;">GENERACIÓN SOLAR DISTRIBUIDA</p>
+      style="font-family: 'montserrat', arial-sans ;font-size: 80px; color: white; font-weight: 300; line-height: 70px;">DISTRIBUTED SOLAR GENERATION</p>
       <p id="descripcion-home" 
       style="font-family: 'montserrat', arial-sans  ;color: white; font-size: 22px; font-weight: 200; "
-      >oEnergy es un grupo empresarial chileno que busca contribuir en la transformación de la matriz energética de nuestro país por medio del desarrollo, construcción y explotación de Recursos Energéticos Distribuidos</p>
+      >oEnergy is a Chilean business group that seeks to contribute to the transformation of the energy matrix of our country through the development, construction and exploitation of Distributed Energy Resources.
+    </p>
     </div>
   </div>
 
@@ -221,7 +233,7 @@
 
 
   
-  <section class="video-home" style="background: rgb(34,49,105);
+<!--   <section class="video-home" style="background: rgb(34,49,105);
   background: linear-gradient(0deg, rgba(34,49,105,1) 0%, rgba(255,255,255,1) 100%); 
   height: 400px; display: flex; align-items: center;">
   <div class="container align-items-center">
@@ -235,7 +247,7 @@
               </video>
             </div> -->
 
-        <div id="video-conocenos" class="rounded-video" style="overflow:hidden; border-radius:15px; ">
+<!--         <div id="video-conocenos" class="rounded-video" style="overflow:hidden; border-radius:15px; ">
           <iframe width="640" height="370" src="https://www.youtube.com/embed/XKzFvZr5EIY"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -248,18 +260,14 @@
         line-height: 30px;
         letter-spacing: 0em;
         text-align: justify;
-        color: white;"> oEnergy nace en 2013 como un emprendimiento familiar de solo 
-          dos personas, y en menos de una década, 
-          se transformó en una empresa de más de 200 colaboradores, 
-          posicionándose como uno de los principales 
-          actores del mercado energético chileno en el 
-          segmento de Pequeños Medios de Generación Distribuida (PMGD).</p>
+        color: white;">oEnergy was born in 2013 with just two people as a family start-up. It has transformed into a company with more than 200 
+        collaborators in less than a decade. Now it is positioned as one of the leading actors in the Chilean energy market in the Distributed Energy Resources segment.
+        </p>
       </div>
     </div>
   </div>
 </section>
-
-
+ --> 
 
 
 <footer
@@ -350,7 +358,7 @@ style="color: white; background-color: #223169; padding: 5px 0"
         <h5>ESG</h5>
       </a>
       <a class="footer-link footer-mobile-hide" href="en_esg.html">
-        <p>ESG ANNUAL REPORT</p>
+        <p>ESG Annual Report</p>
       </a>
       <a
         class="footer-link footer-mobile-hide"
