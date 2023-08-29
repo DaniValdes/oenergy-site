@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden !important;
    
 }
 
@@ -848,7 +849,7 @@ text-align: justify;
     padding-left: 30px;
     
   }
-  
+
   .custom-text-center {
     font-size: 22px;
     font-weight: 500;
@@ -1484,6 +1485,14 @@ text-align: justify;
   padding: 4% 2%;
   box-sizing: border-box;
   height: 60vh;
+}
+@media (max-width: 768px) {
+  .expanding-cards {
+    height: 0 !important;
+  }
+  .comunitario {
+    margin-top: -60px !important;
+  }
 }
 
 .box {
