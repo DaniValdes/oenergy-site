@@ -2000,4 +2000,88 @@ text-align: justify;
 }
 
 
+/* ÑUBLE */
+@media (max-width: 1366px) {
+  [data-pin-id="pin64"] {
+    left: calc(20% + 3%) !important;
+    top: 53% !important;
+  }
+
+  [data-pin-id="pin65"] {
+    left: calc(19% + 3%) !important;
+    top: 54.5% !important;
+  }
+
+  [data-pin-id="pin66"] {
+    left: calc(20% + 3%) !important;
+    top: 55% !important;
+  }
+
+  [data-pin-id="pin67"] {
+    left: calc(21% + 3%) !important;
+    top: 54.5% !important;
+  }
+
+  [data-pin-id="pin68"] {
+    left: calc(21% + 3%) !important;
+    top: 51% !important;
+  }
+
+  [data-pin-id="pin69"] {
+    left: calc(18% + 3%) !important;
+    top: 50% !important;
+  }
+
+  [data-pin-id="pin70"] {
+    left: calc(24% + 3%) !important;
+    top: 53% !important;
+  }
+
+  [data-pin-id="pin71"] {
+    left: calc(25% + 3%) !important;
+    top: 52.5% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  [data-pin-id="pin64"] {
+    left: calc(20% + 7%) !important;
+    top: 53% !important;
+  }
+
+  [data-pin-id="pin65"] {
+    left: calc(19% + 7%) !important;
+    top: 54.5% !important;
+  }
+
+  [data-pin-id="pin66"] {
+    left: calc(20% + 7%) !important;
+    top: 55% !important;
+  }
+
+  [data-pin-id="pin67"] {
+    left: calc(21% + 7%) !important;
+    top: 54.5% !important;
+  }
+
+  [data-pin-id="pin68"] {
+    left: calc(21% + 7%) !important;
+    top: 51% !important;
+  }
+
+  [data-pin-id="pin69"] {
+    left: calc(18% + 7%) !important;
+    top: 50% !important;
+  }
+
+  [data-pin-id="pin70"] {
+    left: calc(24% + 7%) !important;
+    top: 53% !important;
+  }
+
+  [data-pin-id="pin71"] {
+    left: calc(25% + 7%) !important;
+    top: 52.5% !important;
+  }
+}
 
