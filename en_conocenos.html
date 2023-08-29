@@ -1,0 +1,3073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style-custom.css" />
+  <!-- poppins font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/5298658fa2.js" crossorigin="anonymous"></script>
+
+
+  <title>oEnergy</title>
+
+</head>
+
+<body>
+  <!-- START NAVBAR-->
+
+  <nav
+  class="navbar sticky-top navbar-expand-lg navbar-light bg-light"
+  style="font-size: 18px; font-weight: 500"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html">
+      <img
+        src="./assets/img/logo oenergy SVG.svg"
+        alt="logoPrincipal"
+        height="45"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarScroll"
+      aria-controls="navbarScroll"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="container collapse navbar-collapse justify-content-end"
+      id="navbarScroll"
+    >
+      <ul
+        class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+        style="--bs-scroll-height: 120px"
+      >
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="conocenosDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Conócenos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="conocenosDropdown">
+            <li>
+              <a class="dropdown-item" href="conocenos.html">Historia</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="conocenos.html#mision-vision"
+                >Misión y Visión</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="conocenos.html#valores"
+                >Valores</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="conocenos.html#team">Team</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="conocenos.html#proyectos"
+                >Proyectos</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="serviciosDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Servicios
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+            <li>
+              <a class="dropdown-item" href="servicios.html#om"
+                >O&M</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="servicios.html#asset"
+                >Asset Management</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="servicios.html#irecs"
+                >Environmental Commodities</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="esgDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            ESG
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="esgDropdown">
+            <li>
+              <a class="dropdown-item" href="esg.html">Reporte Anual ESG</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="esg.html#Ambiental"
+                >Ambiental</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="esg.html#social">Social</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="esg.html#governance"
+                >Gobierno Corporativo</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item align-center">
+          <button
+            id="openFormButton"
+            type="button"
+            class="btn rounded-pill btn-outline-light"
+            style="
+              background-color: #4774b2;
+              font-size: 19px;
+              font-weight: 400;
+              text-decoration: none;
+              display: inline-block;
+              padding: 5px 12px;
+              color: white;
+            "
+          >
+            Contáctanos
+          </button>
+        </li>
+        <li class="nav-item dropdown language-dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="idiomaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            ES
+            <!-- <img src="./assets/img/espana.png" alt="Español" height="20" /> --> <!-- Imagen de la bandera española -->
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="idiomaDropdown">
+            <li>
+              <a class="dropdown-item" href="en_esg.html">
+                <!-- <img src="./assets/img/estados-unidos.png" alt="Inglés" height="20" width="20"/> -->
+                EN
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div id="contactFormPopup" class="popup">
+    <div class="popup-content">
+      <span id="closePopup" class="close">&times;</span>
+      <form id="contactForm" action="https://formsubmit.co/comunicaciones@oenergy.cl" method="POST">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" placeholder="Cuéntanos tus dudas o comentarios" required></textarea><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
+  <!-- NUESTRA HISTORIA -->
+
+  <section class="section-nuestra-historia pt-5" id="nuestra-historia">
+    <div class="container align-items-center">
+      <div class="row align-items-center">
+        <div class="col-md animate-on-scroll" data-animation="slideInFromLeft">
+          <h1 style="color: #d76e14;">OUR STORY</h1>
+          <p class="pe-md-5" style="font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: justify;
+                color: #6D6969;">
+          oEnergy was born in 2013 with just two people as a <span class="highlight-valores">family start-up</span>.
+          It has transformed into a company with more than 200 collaborators in less
+          than a decade. Now it is positioned as one of the leading actors in the
+          Chilean energy market in the 
+          <span class="highlight-valores">Distributed Energy Resources segment</span>.
+          </p>
+        </div>
+        <div class="col-md mb-3">
+
+          <!--                 <div class="rounded-video">
+                <video width="660" height="370" controls poster="./assets/img/placeholder-videocorp.png" class="rounded-video">
+                  <source src="./assets/img/Video Corporativo oEnergy - sub.mp4" type="video/mp4">
+                  Tu navegador no soporta el elemento de video.
+                </video>
+              </div> -->
+
+          <div id="video-conocenos" class="rounded-video animate-on-scroll" data-animation="slideInFromRight"
+            style="overflow:hidden; border-radius:15px; ">
+            <iframe width="640" height="370" src="https://www.youtube.com/embed/XKzFvZr5EIY"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- NEW TIMELINE -->
+
+    <section class="timeline" style="padding: 100px; color: #6D6969">
+      <div class="timeline-line"></div>
+
+      <div class="container">
+
+        <div class="timeline-item animate-on-scroll" data-animation="slideInFromLeft">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card ">
+            <div class="timeline-img-header" style=" background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)),
+            url('./assets/img/timeline-2013.jpg') center center no-repeat;
+            background-size: cover;">
+              <h2>2013</h2>
+            </div>
+            <p class="texto-hito">
+              oEnergy was born to explore business opportunities in the NCRE market. During
+              its first year, the founding partners studied and evaluated the feasibility of
+              projects of various technologies and sizes.
+            </p>
+            <p class="numero-colaboradores">Colaboradores: 2</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-animation="slideInFromRight">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card ">
+            <div class="timeline-img-header" style=" background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)),
+            url('./assets/img/timeline-2014.jpg') center center no-repeat;
+            background-size: cover;">
+              <h2>2014</h2>
+            </div>
+            <p class="texto-hito">
+              oEnergy installed its first 30kW Net Billing solar project, 
+              cementing its focus on
+              solar technology and small and medium-scale projects.
+            </p>
+            <p class="numero-colaboradores">Colaboradores: 4</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-animation="slideInFromLeft">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card ">
+            <div class="timeline-img-header" style=" background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)),
+            url('./assets/img/timeline-2021.jpeg') center center no-repeat;
+            background-size: cover;">
+              <h2>2015</h2>
+            </div>
+            <p class="texto-hito">
+              oEnergy formed a joint venture with the German company Sybac to develop
+              36MW of solar energy PMGD (Small-scale Distributed Generation). Thus, we
+              positioned ourselves as a developer of this type of project early on in the
+              Chilean market.
+            </p>
+            <p class="numero-colaboradores">Colaboradores: 7</p>
+          </div>
+        </div>
+
+
+        <div class="timeline-item animate-on-scroll" data-animation="slideInFromRight">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card ">
+            <div class="timeline-img-header" style=" background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)),
+            url('./assets/img/timeline-2017.jpg') center center no-repeat;
+            background-size: cover;">
+              <h2>2017</h2>
+            </div>
+            <p class="texto-hito">
+              oEnergy was awarded the construction of 21 MW in solar PGMDs and created a
+              Construction Company (Constructora oEnergy). Thus, we began our trajectory
+              as EPC experts specializing in this type of project.
+            </p>
+            <p class="numero-colaboradores">Colaboradores: 75</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-animation="slideInFromLeft">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card ">
+            <div class="timeline-img-header" style=" background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)),
+            url('./assets/img/timeline-2018.jpeg') center center no-repeat;
+            background-size: cover;">
+              <h2>2018</h2>
+            </div>
+            <p class="texto-hito">
+              oEnergy was awarded the first contracts to operate and maintain 10 PMGD solar
+              plants. The oEnergy subsidiary O&M was set up to provide first-class services
+              with state-of-the-art technology.
+            </p>
+            <p class="numero-colaboradores">Colaboradores: 85</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-animation="slideInFromRight">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card ">
+            <div class="timeline-img-header" style=" background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)),
+            url('./assets/img/timeline-2019.jpg') center center no-repeat;
+            background-size: cover;">
+              <h2>2019</h2>
+            </div>
+            <p class="texto-hito">
+              oEnergy invested its own venture capital to develop 300MW in PMGD projects.
+            </p>
+            <p class="numero-colaboradores">Colaboradores: 110</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-animation="slideInFromLeft">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card ">
+            <div class="timeline-img-header" style=" background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)),
+            url('./assets/img/timeline-2020.jpg') center center no-repeat;
+            background-size: cover;">
+              <h2>2020</h2>
+            </div>
+            <p class="texto-hito">
+              oEnergy signed a joint venture with the German company Blue Elephant Energy
+              to build and operate a 113 MW portfolio of PMGDs. In addition, we secured project
+              financing from the German bank DEG (KFW). oEnergy became, for the first time,
+              an Independent Power Producer (IPP).
+              </p>
+            <p class="numero-colaboradores">Colaboradores: 125</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-animation="slideInFromRight">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card ">
+            <div class="timeline-img-header" style=" background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)),
+            url('./assets/img/timeline-2021.jpeg') center center no-repeat;
+            background-size: cover;">
+              <h2>2021</h2>
+            </div>
+            <p class="texto-hito">
+              oEnergy consolidated its position as an IPP by obtaining senior subordinated
+              financing from the Corporación Interamericana para el Financiamiento de
+              Infraestructura (CIFI, InterAmerican Corporation for Finance and Infrastructure)
+              to build and operate 70MW of self-owned PMGDs.
+            </p>
+            <p class="numero-colaboradores">Colaboradores: 135</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-animation="slideInFromLeft">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card ">
+            <div class="timeline-img-header" style=" background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)),
+            url('./assets/img/timeline-2022.jpeg') center center no-repeat;
+            background-size: cover;">
+              <h2>2022</h2>
+            </div>
+            <p class="texto-hito">
+              oEnergy extended its own venture capital to develop 3 GW of large-scale stand-
+              alone BESS projects and 600 MW of hybrid PMGDs (PFV + BESS).
+            </p>
+            <p class="numero-colaboradores">Colaboradores: 170</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-animation="slideInFromRight">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card ">
+            <div class="timeline-img-header" style=" background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)),
+            url('./assets/img/timeline-2023.jpeg') center center no-repeat;
+            background-size: cover;">
+              <h2>2023</h2>
+            </div>
+            <p class="texto-hito">
+              oEnergy inaugurated its first hybrid PMGD project (PFV+BESS) of 1.5 MW//2 MW
+              per hour. Thus, we consolidated our position as one of the leading developers,
+              constructors, and operators in the Chilean PMGD industry.
+            </p>
+            <p class="numero-colaboradores">Colaboradores: 200</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- QUE HACEMOS -->
+  <section class="que-hacemos mt-3 mb-5 py-3" id="que-hacemos">
+    <div class="container text-center py-4">
+      <h1 style="
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.1em;
+    color: white;">WHAT WE DO</h1>
+      <h3 style="color:#223169;">
+        We participate in every stage of a photovoltaic project, 
+        from its start to the commercialization of the asset.
+      </h3>
+      <h3 class="pt-4" style="
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #223169;
+    ">
+       oEnergy is a Chilean company dedicated to developing,
+       constructing, operating, maintaining, and commercializing
+       Distributed Energy Resources.
+      </h3>
+    </div>
+
+    <section class="icon-section-que-hacemos container-fluid py-5 my-4" 
+    style="color:#223169 ;">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-3 icon-container-que-hacemos d-flex flex-column align-items-center">
+          <div class="icon-custom-que-hacemos">
+            <i class="fas fa-solar-panel" aria-hidden="true"></i>
+            <div class="icon-overlay" style="height: 330px;">
+              <p>We have a team of professionals and technicians. They work exclusively on
+                getting the environmental, sectorial, and building 
+                <span class="highlight-valores">permits</span> and processing the
+                <span class="highlight-valores">interconnected procedures</span> needed to
+                <span class="highlight-valores">transform a feasible project into one
+                  ready to build</span>. All projects are subject to and must pass due diligence. To this
+                end, our team investigate and prospect land and work closely together to
+                comply with all <span class="highlight-valores">legal and regulatory requirements</span>
+                , meeting the IFC standard.
+              </p>
+              </div>
+          </div>
+          <h4 class="pt-2" style="font-size: 22px;">Development</h4>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 icon-container-que-hacemos d-flex flex-column align-items-center">
+          <div class="icon-custom-que-hacemos">
+            <i class="fas fa-digging" aria-hidden="true"></i>
+            <div class="icon-overlay">
+              <p>
+                We are <span class="highlight-valores">EPC experts</span> specializing in the design, engineering, and procurement of
+                supplies and components for the construction of photovoltaic energy parks. 
+                <span class="highlight-valores">We have more than 80 permanent collaborators</span> deployed in the field for the
+                execution of the works. Their 
+                <span class="highlight-valores">know-how is highly valued</span> in the market.
+            
+            </p>
+              </div>
+            
+          </div>
+          <h4 class="pt-2" style="font-size: 22px;">EPC</h4>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 icon-container-que-hacemos d-flex flex-column align-items-center">
+          <div class="icon-custom-que-hacemos">
+            <i class="fas fa-gear" aria-hidden="true"></i>
+            <div class="icon-overlay">
+              <p>
+                We use <span class="highlight-valores">state-of-the-art technology</span> 
+                to operate photovoltaic parks 
+                <span class="highlight-valores">100% remotely</span>. 
+                Our IT team developed our <span class="highlight-valores">own customized 
+                  interface</span> for monitoring
+                their electrical variables based on the general-purpose SCADA system
+                (Ignition). In addition, we provide on-site services for the 
+                <span class="highlight-valores">preventative and corrective maintenance</span>
+                 of the parks and <span class="highlight-valores">insurance</span> of the photovoltaic
+                generation <span class="highlight-valores">assets</span>.
+              </p>
+            </div>
+            
+          </div>
+          <h4 class="pt-2 text-center" style="font-size: 22px;">Operation and Maintenance</h4>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 icon-container-que-hacemos d-flex flex-column align-items-center">
+          <div class="icon-custom-que-hacemos ">
+            <i class="fas fa-battery-full" aria-hidden="true"></i>
+            <div class="icon-overlay icon-explotacion" style="left: 10%; max-width: 350px;">
+              <p>
+                Our <span class="highlight-valores">Asset Management</span> team is in charge of the administration and
+                commercialization of the photovoltaic plants in order to maximize income from
+                energy and power sales. We provide 
+                <span class="highlight-valores">accounting, technical, and regulatory advice</span>, 
+                being counterparts of the National Electricity Coordinator.
+             </p>
+              </div>
+          </div>
+          <h4 class="pt-2" style="font-size: 22px;">Commercialization</h4>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </section>
+
+
+  <!-- MISION Y VISION -->
+
+  <section class="my-5 pb-4" id="mision-vision">
+    <h1 class="text-center py-3" style="color: #6D6969; 
+    font-weight: 600; 
+    font-size: 40px;">OUR WORK HAS MEANING AND PURPOSE</h1>
+
+
+    <div class="container pt-5">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-6 mb-5 animate-on-scroll" data-animation="slideInFromLeft">
+          <h3
+            style="color: #223169; text-align: start; padding-left: 60px; font-weight: 600; font-size: 32px; line-height: 39px;">
+            MISSION</h3>
+          <div class="image-container-mision ">
+            <img src="./assets/img/Foto Mision.jpg" alt="Imagen" class="custom-image img-fluid">
+            <div class="text-container">
+              <div class="custom-text-container">
+                <p class="custom-text-center" style="color: white !important"> 
+                  To promote and democratize the massification of Distributed Energy Resources,
+                  thus contributing to the decarbonization of the energy matrix.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 animate-on-scroll" data-animation="slideInFromRight">
+          <h3
+            style="color: #223169; text-align: start; padding-left: 60px; font-weight: 600; font-size: 32px; line-height: 39px;">
+            VISION</h3>
+          <div class="image-container-mision">
+            <img src="./assets/img/energiarenovabeles-1-1024x726.png" alt="Imagen" class="custom-image img-fluid">
+            <div class="text-container">
+              <div class="custom-text-container">
+                <p class="custom-text-center" style="color: white !important">
+                  To be experts in Distributed Energy Resources and pioneers in the use and
+                  development of new technologies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALORES -->
+  <section class="valores animate-on-scroll" data-animation="slideInFromBottom">
+    <div class="text-center">
+      <h1 class="pt-5 pb-3" style="margin: 0 auto;
+       width: 75%;
+        border-bottom: 3px solid;
+         border-color: white;
+         color: white;">VALUES</h1>
+    </div>
+
+    <div class="container my-5">
+      <div class="d-flex flex-wrap justify-content-center pb-5 gap-md-5">
+        <div class="card shadow-lg m-3 custom-card d-flex align-items-center justify-content-center"
+          style="width: 290px; max-width: 100%; border-radius: 20px; padding-top: 90px;">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 24 24">
+              <path fill="#4774b2"
+                d="M19 6.734c0 4.164-3.75 6.98-3.75 10.266h-1.992c.001-2.079.996-3.826 1.968-5.513.913-1.585 1.774-3.083 1.774-4.753 0-3.108-2.518-4.734-5.004-4.734-2.482 0-4.996 1.626-4.996 4.734 0 1.67.861 3.168 1.774 4.753.972 1.687 1.966 3.434 1.967 5.513h-1.991c0-3.286-3.75-6.103-3.75-10.266 0-4.343 3.498-6.734 6.996-6.734 3.502 0 7.004 2.394 7.004 6.734zm-4 11.766c0 .276-.224.5-.5.5h-5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h5c.276 0 .5.224.5.5zm0 2c0 .276-.224.5-.5.5h-5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h5c.276 0 .5.224.5.5zm-1.701 3.159c-.19.216-.465.341-.752.341h-1.094c-.287 0-.562-.125-.752-.341l-1.451-1.659h5.5l-1.451 1.659zm2.013-18.767c-.489.287-.854.713-1.06 1.312-.556 1.609.373 2.928-.235 4.432-.355.875-1.104 1.33-1.889 1.41-.15 1.551.059 3.702.545 4.953h-1.113c-.581-2.322-.268-6.441 1.025-8.764-.787.603-1.564 2.254-1.79 3.567-2.738-1.642-.659-6.91 4.517-6.91z" />
+            </svg>
+          </div>
+          <div class="card-body text-center">
+            <h2 class="card-title custom-text-valores text-justify" style="color: #223169;">
+              Innovation
+            </h2>
+            <p class="card-text description">
+
+              <span style="font-weight: 500; font-size: 20px; 
+              padding-bottom: 10px;
+              padding-left: 70px;
+              display: inline-block;
+              align-items: center;
+              ">Innovation</span> <br> <br>
+              We are flexible in the face of change and pride ourselves on being 
+              <span class="highlight-valores">pioneers</span> in
+              the use of new technologies. We believe in 
+              <span class="highlight-valores">continuous improvement</span> and are
+              not afraid of challenges or novelty. We 
+              <span class="highlight-valores">permanently seek</span> and constantly work
+              on new ways to develop and massify Distributed Energy Resources.
+            </p>
+          </div>
+        </div>
+
+        <div class="card shadow-lg m-3 custom-card d-flex align-items-center justify-content-center"
+          style="width: 290px; max-width: 100%; border-radius: 20px; padding-top: 90px;">
+          <div>
+            <svg width="110" height="110" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#4774b2"
+              clip-rule="evenodd">
+              <path
+                d="M13 24h-2v-5.047c-5.047-.478-9-4.536-9-9.453 0-5.238 4.486-9.5 10-9.5s10 4.262 10 9.5c0 4.918-3.954 8.975-9 9.453v5.047zm0-7.058c3.935-.463 6.989-3.624 6.989-7.442 0-4.136-3.584-7.5-7.989-7.5-4.405 0-7.989 3.364-7.989 7.5 0 3.818 3.054 6.978 6.989 7.441l-.001-2.355-5.216-3.804.589-.808 4.627 3.374v-2.96l-3.407-2.508.593-.806 2.814 2.072v-2.564l-1.621-1.161.582-.813 2.039 1.439 2.048-1.439.582.813-1.63 1.167v2.564l2.823-2.078.593.806-3.416 2.514v2.96l4.636-3.38.589.808-5.225 3.81.001 2.35z" />
+            </svg>
+          </div>
+          <div class="card-body text-center">
+            <h2 class="card-title py-2 custom-text-valores" style="color: #223169;">
+              Sustainability
+            </h2>
+
+            <p class="card-text text-justify description">
+              <span style="font-weight: 500; font-size: 20px; 
+              padding-bottom: 10px;
+              padding-left: 70px;
+              display: inline-block;
+              align-items: center;
+              ">Sustainability</span> <br> <br>
+              We believe <span class="highlight-valores">everyone can contribute to the fight against climate change</span>
+               by taking concrete measures with <span class="highlight-valores">future generations</span> in mind. We want to
+              contribute to the generation of the energy needed for social development and
+              progress with <span class="highlight-valores">environmental awareness and responsibility</span>.
+            <br>
+            </p>
+          </div>
+        </div>
+
+        <div class=" card shadow-lg m-3 custom-card d-flex align-items-center justify-content-center"
+          style="width: 290px; max-width: 100%; border-radius: 20px; padding-top: 90px;">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 24 24">
+              <path fill="#4774b2"
+                d="M17 10.645v-2.29c-1.17-.417-1.907-.533-2.28-1.431-.373-.9.07-1.512.6-2.625l-1.618-1.619c-1.105.525-1.723.974-2.626.6-.9-.373-1.017-1.116-1.431-2.28h-2.29c-.412 1.158-.53 1.907-1.431 2.28h-.001c-.9.374-1.51-.07-2.625-.6l-1.617 1.619c.527 1.11.973 1.724.6 2.625-.375.901-1.123 1.019-2.281 1.431v2.289c1.155.412 1.907.531 2.28 1.431.376.908-.081 1.534-.6 2.625l1.618 1.619c1.107-.525 1.724-.974 2.625-.6h.001c.9.373 1.018 1.118 1.431 2.28h2.289c.412-1.158.53-1.905 1.437-2.282h.001c.894-.372 1.501.071 2.619.602l1.618-1.619c-.525-1.107-.974-1.723-.601-2.625.374-.899 1.126-1.019 2.282-1.43zm-8.5 1.689c-1.564 0-2.833-1.269-2.833-2.834s1.269-2.834 2.833-2.834 2.833 1.269 2.833 2.834-1.269 2.834-2.833 2.834zm15.5 4.205v-1.077c-.55-.196-.897-.251-1.073-.673-.176-.424.033-.711.282-1.236l-.762-.762c-.52.248-.811.458-1.235.283-.424-.175-.479-.525-.674-1.073h-1.076c-.194.545-.25.897-.674 1.073-.424.176-.711-.033-1.235-.283l-.762.762c.248.523.458.812.282 1.236-.176.424-.528.479-1.073.673v1.077c.544.193.897.25 1.073.673.177.427-.038.722-.282 1.236l.762.762c.521-.248.812-.344 1.235-.283.424.175.479.526.674 1.073h1.076c.194-.545.25-.897.676-1.074h.001c.421-.175.706.034 1.232.284l.762-.762c-.247-.521-.458-.812-.282-1.235s.529-.481 1.073-.674zm-4 .794c-.736 0-1.333-.597-1.333-1.333s.597-1.333 1.333-1.333 1.333.597 1.333 1.333-.597 1.333-1.333 1.333z" />
+            </svg>
+          </div>
+          <div class="card-body text-center">
+            <h2 class="card-title py-2 custom-text-valores" style="color: #223169;">
+              Commitment
+            </h2>
+            <p class="card-text text-justify description">
+              <span style="font-weight: 500; font-size: 20px; 
+              padding-bottom: 10px;
+              padding-left: 60px;
+              display: inline-block;
+              align-items: center;
+              ">
+                Commitment</span> <br>
+                Our employees work with the awareness that their <span class="highlight-valores">work and talent are
+                  fundamental</span> to fulfil our objectives as a group; they give their best every day to
+                
+                add value to everything we do. We believe that <span class="highlight-valores">trust</span> and 
+                <span class="highlight-valores">transparency</span> are
+                essential to building <span class="highlight-valores">valuable, long-term relationships</span> with our stakeholders.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUESTRO EQUIPO -->
+
+  <div class="d-sm-none text-center text-md-start">
+    <h1 class="text-center " style="color: #d76e14;">OUR TEAM</h1>
+    <p style="line-height: 25px; color: #223169; align-items: center; text-align: centergit; padding:20px">
+      oEnergy’s greatest asset is the people who work every day to fulfill our mission,
+      either on the ground or from our corporate offices. We work with a diverse and
+      committed team with recognized know-how in Distributed Energy Resources.
+    </p>
+  </div>
+
+  <section class="our-team">
+    <div id="team-carousel" class="carousel slide our-carousel" data-bs-ride="carousel">
+
+      <div class="carousel-inner our-carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/nuestro-equipo-1.jpeg" class="d-block w-100 our-carousel-image"
+            alt="Miembro del equipo 1">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/nuestro-equipo-4.jpg" class="d-block w-100 our-carousel-image"
+            alt="Miembro del equipo 4">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/nuestro-equipo-5.jpg" class="d-block w-100 our-carousel-image"
+            alt="Miembro del equipo 5">
+        </div>
+        <div class="carousel-item our-carousel-image-custom">
+          <img src="./assets/img/nuestro-equipo-7.jpg" class="d-block w-100 our-carousel-image"
+            alt="Miembro del equipo 7">
+        </div>
+        <div class="carousel-item our-carousel-image-custom">
+          <img src="./assets/img/nuestro-equipo-10.jpg" class="d-block w-100 our-carousel-image"
+            alt="Miembro del equipo 10">
+        </div>
+        <div class="carousel-item our-carousel-image-custom">
+          <img src="./assets/img/nuestro-equipo-11.jpg" class="d-block w-100 our-carousel-image"
+            alt="Miembro del equipo 11">
+        </div>
+        <div class="carousel-item our-carousel-image-custom">
+          <img src="./assets/img/nuestro-equipo-13-2.jpg" class="d-block w-100 our-carousel-image"
+            alt="Miembro del equipo 11">
+        </div>
+      </div>
+
+      <div class="our-team-overlay d-none d-sm-block">
+        <h1>OUR TEAM</h1>
+        <p style="line-height: 30px;">
+          oEnergy’s greatest asset is the people who work every day to fulfill our mission,
+          either on the ground or from our corporate offices. We work with a diverse and
+          committed team with recognized know-how in Distributed Energy Resources.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- NUESTROS EJECUTIVOS -->
+  <div class="container text-center" id="team">
+    <h1 class="title-border pt-3 text-md-start text-center" style="font-size: 40px; line-height: 60px; color: #223169;">
+      OUR EXECUTIVES</h1>
+    <div class="horizontal-line" style="padding-top: 0;"></div>
+    <div class="row align-items-center text-justify text-lg-start mt-5 flex-column flex-lg-row">
+      <div class="col-12 col-lg-3 py-sm-4">
+        <img src="./assets/img/R.Sylvester 5.jpg" alt="Foto de Rircardo Sylvester" class="img-fundadores " />
+      </div>
+      <div class="col-12 col-lg-9 pe-2 animate-on-scroll" data-animation="slideInFromRight">
+        <h2 class="text-lg-start text-center" style="font-weight: 600; color: #223169; font-size: 32px;">Ricardo
+          Sylvester Zapata</h2>
+        <p class="no-margin" style="font-weight: 600; color: #4774b2; font-size: 22px;">
+          Founding Partner and General Manager
+        </p>
+        <p class="no-margin" style="font-weight: 600; color: #4774b2; font-size: 22px;">
+          Civil Electrical Engineer from the University of Concepción
+        </p>
+        <p style="font-weight: 400; color: #6D6969; font-size: 20px; line-height: 30px; margin-top: 15px;">
+          Before founding oEnergy, he held different executive positions in important
+          companies such as Minera Disputada, the IT provider DTS, and the aeronautics
+          company ENAER. In addition to leading the daily operations of all the companies
+          that comprise the group and exercising his role as General Manager, he has
+          directly managed the Construction team.
+        </p>
+      </div>
+    </div>
+
+    <div class="row align-items-center text-justify text-lg-end mt-5 flex-column-reverse flex-lg-row">
+      <div class="col-12 col-lg-9 pe-2 animate-on-scroll" data-animation="slideInFromLeft">
+        <h2 class="text-lg-end text-center" style="font-weight: 600; color: #223169; font-size: 32px;">Yuri Andrade
+          Sylvester</h2>
+        <p class="no-margin" style="font-weight: 600; color: #4774b2; font-size: 22px;">
+          Founding Partner and Director of Business Development
+        </p>
+        <p class="no-margin" style="font-weight: 600; color: #4774b2; font-size: 22px;">
+          Materials Science Engineer from Cornell University
+        </p>
+        <p style="font-weight: 400; color: #6D6969; font-size: 20px; line-height: 30px; margin-top: 15px;">
+          Before building oEnergy from zero, he worked in the United States as an engineer
+          at Intel and Carl Zeiss. Since the company started, he has been responsible for
+          the strategic definition of the business, identifying new opportunities, and
+          leading the development of new projects.
+        </p>
+      </div>
+      <div class="col-12 col-lg-3 py-sm-4">
+        <img src="./assets/img/Y.Andrade 3.jpg" alt="Foto de Yuri Andrade Sylvester" class="img-fundadores" />
+      </div>
+    </div>
+  </div>
+
+
+  <section id="person-carousel-2" class="container person-carousel text-center pt-5" style="height: 650px;">
+    <p class="text-center pb-3"
+      style="font-weight: 400; color: #6D6969; font-size: 20px; line-height: 33px; margin-top: 15px;">
+      Our management team are first-class professionals
+    </p>
+    <div id="person-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <img src="./assets/img/G.Paredes 3.jpg" class="d-block mx-auto zoom-component" alt="Persona 1"
+                style="width: 210px; height: 300px; border-radius: 20px;">
+              <div class="person-info">
+                <p style="
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 30px;
+                text-align: center;
+                margin-bottom: 0;
+                ">Gonzalo Paredes</p>
+                <p style="
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                text-align: center;
+                margin-top: 0;
+                color: #4774b2;
+                ">Head of Legal <br> Lawyer with an LL.M</p>
+                <p style="color: #6D6969;
+                 font-weight: 400; 
+                 font-size: 14px;">University of Chile<br>Stanford Law School<br>(ENAP, Shearman &amp; Sterling LLP)
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <img src="./assets/img/A.Ferrini 5.jpg" class="d-block mx-auto zoom-component" alt="Persona 6"
+                style="width: 210px; height: 300px; border-radius: 20px;">
+              <div class="person-info">
+                <p style="
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 30px;
+                text-align: center;
+                margin-bottom: 0; 
+                ">Adriana Ferrini</p>
+                <p style="
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                text-align: center;
+                margin-top: 0;
+                color: #4774b2;
+                ">Head of Engineering<br>Civil Engineer</p>
+                <p style="color: #6D6969;
+                font-weight: 400; 
+                font-size: 14px;">University of Los Andes<br>(D&C Integrados, LEN & Asoc.)</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <img src="./assets/img/C.Guerrero 3.jpg" class="d-block mx-auto zoom-component" alt="Persona 2"
+                style="width: 210px; height: 300px; border-radius: 20px;">
+              <div class="person-info">
+                <p style="
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 30px;
+                text-align: center;
+                margin-bottom: 0;
+                ">Carlos Guerrero</p>
+                <p style="
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                text-align: center;
+                margin-top: 0;
+                color: #4774b2;
+                ">Head of Development<br>Lawyer</p>
+                <p style="color: #6D6969;
+                font-weight: 400; 
+                font-size: 14px;">Mayor University<br>(Lavín Abogados, Aaktei)</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <img src="./assets/img/M.Chacc 1.jpg" class="d-block mx-auto zoom-component" alt="Persona 7"
+                style="width: 210px; height: 300px; border-radius: 20px;">
+              <div class="person-info">
+                <p style="
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 30px;
+                text-align: center;
+                margin-bottom: 0;
+                ">Macarena Chacc</p>
+                <p style="
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                text-align: center;
+                margin-top: 0;
+                color: #4774b2;
+                ">Head of Corporate Affairs<br>Lawyer</p>
+                <p style="color: #6D6969;
+                font-weight: 400; 
+                font-size: 14px;">University of Chile<br> (Enrique Barros & Cia, PPU, Marca Chile)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <img src="./assets/img/C.Ocares 2.jpg" class="d-block mx-auto zoom-component" alt="Persona 5"
+                style="width: 210px; height: 300px; border-radius: 20px;">
+              <div class="person-info">
+                <p style="
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 30px;
+                text-align: center;
+                margin-bottom: 0;
+                ">Claudio Ocares</p>
+                <p style="
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                text-align: center;
+                margin-top: 0;
+                color: #4774b2;
+                ">Head of Finance and Administration<br>Civil and Electrical Engineer with an MBA</p>
+                <p style="color: #6D6969;
+                font-weight: 400; 
+                font-size: 14px;">TFSM University/ ESE Business School<br> (Transnet, CGE, Cruzeiro Gomas)</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <img src="./assets/img/G.Mendez 2 (1).jpg" class="d-block mx-auto zoom-component" alt="Persona 3"
+                style="width: 210px; height: 300px; border-radius: 20px;">
+              <div class="person-info">
+                <p style="
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 30px;
+                text-align: center;
+                margin-bottom: 0;
+                ">Gabriel Méndez</p>
+                <p style="
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                text-align: center;
+                margin-top: 0;
+                color: #4774b2;
+                ">Head of IT<br>Systems Engineer</p>
+                <p style="color: #6D6969;
+                font-weight: 400; 
+                font-size: 14px;">UNEXPO<br>(Servicios Casmen)</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <img src="./assets/img/A.Sylvester 2.jpg" class="d-block mx-auto zoom-component" alt="Persona 4"
+                style="width: 210px; height: 300px; border-radius: 20px;">
+              <div class="person-info">
+                <p style="
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 30px;
+                text-align: center;
+                margin-bottom: 0;
+                ">Andrés Sylvester</p>
+                <p style="
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                text-align: center;
+                margin-top: 0;
+                color: #4774b2;
+                ">Head of Asset Management<br>Civil Engineer specializing in Energy and Environment</p>
+                <p style="color: #6D6969;
+                font-weight: 400; 
+                font-size: 14px;">Adolfo Ibáñez University<br>Diploma in Finance - MIT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#person-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#person-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="container ejecutivos-mobile text-center">
+    <div class="row ">
+      <div class="col-12 col-md-3">
+        <img src="./assets/img/G.Paredes 3.jpg" class="d-block mx-auto zoom-component" alt="Persona 1"
+          style="width: 210px; height: 300px; border-radius: 20px;">
+        <div class="person-info">
+          <p style="
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 0;
+            ">Gonzalo Paredes</p>
+          <p style="
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 0;
+            color: #4774b2;
+            ">Head of Legal<br>Lawyer with an LL.M</p>
+          <p style="color: #6D6969;
+             font-weight: 400; 
+             font-size: 14px;">University of Chile<br>Stanford Law School <br>(ENAP, Shearman &amp; Sterling LLP)</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <img src="./assets/img/A.Ferrini 5.jpg" class="d-block mx-auto zoom-component" alt="Persona 6"
+          style="width: 210px; height: 300px; border-radius: 20px;">
+        <div class="person-info">
+          <p style="
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 0; 
+            ">Adriana Ferrini</p>
+          <p style="
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 0;
+            color: #4774b2;
+            ">Head of Engineering<br>Civil Engineer</p>
+          <p style="color: #6D6969;
+            font-weight: 400; 
+            font-size: 14px;">University of Los Andes<br>(D&C Integrados, LEN & Asoc.)</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <img src="./assets/img/C.Guerrero 3.jpg" class="d-block mx-auto zoom-component" alt="Persona 2"
+          style="width: 210px; height: 300px; border-radius: 20px;">
+        <div class="person-info">
+          <p style="
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 0;
+            ">Carlos Guerrero</p>
+          <p style="
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 0;
+            color: #4774b2;
+            ">Head of Development<br>Lawyer</p>
+          <p style="color: #6D6969;
+            font-weight: 400; 
+            font-size: 14px;">Mayor University<br> (Lavín Abogados, Aaktei)</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <img src="./assets/img/M.Chacc 1.jpg" class="d-block mx-auto zoom-component" alt="Persona 7"
+          style="width: 210px; height: 300px; border-radius: 20px;">
+        <div class="person-info">
+          <p style="
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 0;
+            ">Macarena Chacc</p>
+          <p style="
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 0;
+            color: #4774b2;
+            ">Head of Corporate Affairs<br>Lawyer</p>
+          <p style="color: #6D6969;
+            font-weight: 400; 
+            font-size: 14px;">University of Chile<br>(Enrique Barros & Cia, PPU, Marca Chile)</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="./assets/img/C.Ocares 2.jpg" class="d-block mx-auto zoom-component" alt="Persona 5"
+          style="width: 210px; height: 300px; border-radius: 20px;">
+        <div class="person-info">
+          <p style="
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 0;
+            ">Claudio Ocares</p>
+          <p style="
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 0;
+            color: #4774b2;
+            ">Head of Finance and Administration<br>Civil and Electrical Engineer with an MBA</p>
+          <p style="color: #6D6969;
+            font-weight: 400; 
+            font-size: 14px;">TFSM University/ ESE Business School<br> (Transnet, CGE, Cruzeiro Gomas)</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="./assets/img/G.Mendez 2 (1).jpg" class="d-block mx-auto zoom-component" alt="Persona 3"
+          style="width: 210px; height: 300px; border-radius: 20px;">
+        <div class="person-info">
+          <p style="
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 0;
+            ">Gabriel Méndez</p>
+          <p style="
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 0;
+            color: #4774b2;
+            ">Head of IT<br>Systems Engineer</p>
+          <p style="color: #6D6969;
+            font-weight: 400; 
+            font-size: 14px;">UNEXPO<br>(Servicios Casmen)</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="./assets/img/A.Sylvester 2.jpg" class="d-block mx-auto zoom-component" alt="Persona 4"
+          style="width: 210px; height: 300px; border-radius: 20px;">
+        <div class="person-info">
+          <p style="
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 0;
+            ">Andrés Sylvester</p>
+          <p style="
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 0;
+            color: #4774b2;
+            ">Head of Asset Management<br>Civil Engineer specializing in Energy and Environment</p>
+          <p style="color: #6D6969;
+            font-weight: 400; 
+            font-size: 14px;">Adolfo Ibáñez University<br>Diploma in Finance from MIT</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="container-fluid proyectos-container" style="    background: linear-gradient(180deg, #5173AD 0%, rgba(81, 115, 173, 0) 100%);
+  height: 400px;" id="proyectos">
+
+    <div class="container text-center mt-5 nuestros-proyectos" id="proyectos">
+      <h1 class="text-center text-md-start pt-5 pb-1 pb-sm-1 " style="color: white;">OUR PROJECTS</h1>
+      <div class="horizontal-line-white"></div>
+      <div class="row pt-4 mt-5">
+        <div class="col-12 col-md-3 counter counter1 border-md-right" data-target="242">
+          <p class="counter-number no-margin">0 </p>
+          <p class="counter-title">Developed</p>
+        </div>
+        <div class="col-12 col-md-3 counter counter2 border-md-right" data-target="41">
+          <p class="counter-number no-margin">0</p>
+          <p class="counter-title">Projects built</p>
+        </div>
+        <div class="col-12 col-md-3 counter counter3 border-md-right" data-target="226">
+          <p class="counter-number no-margin">0 </p>
+          <p class="counter-title">Built and connected</p>
+        </div>
+        <div class="col-12 col-md-3 counter counter4" data-target="62">
+          <p class="counter-number no-margin">0</p>
+          <p class="counter-title">Projects operated by Energy O&M</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+ 
+
+
+
+<section class="map-section container" style="margin-top:150px; margin-bottom: 100px; ">
+    <div class="container text-center pb-5 mb-3">
+      <h1 class="pb-4" style="color: #d76e14; 
+      font-weight: 700; 
+      font-size: 28px; 
+      line-height: 38px;">SEE OUR WORK
+      </h1>
+      <p style="color: #6D6969; font-size: 20px;">We have contributed to the massification of distributed solar energy in Chile,
+        through the development, construction and/or operation of photovoltaic plants
+        in the PMGD segment throughout our country.</p>
+        <div class="container d-grid d-md-flex justify-content-md-end pt-2">
+          <button type="button" class="btn rounded-pill mobile-visible" style="border-color: #d76e14; color: #d76e14">
+            Download PDF
+          </button>
+        </div>   
+    </div>
+
+
+<section class="mapa-norte desktop-visible">
+  <div class="container text-center text-md-start">
+  <div class="row align-items-center map-container" id="mapa1">
+    <div class="col-md-6 "> 
+      <h1 style="color: #d76e14 !important;">NORTH ZONE</h1>
+      <div class="col pin-selection  animate-on-scroll" 
+      data-animation="slideInFromLeft">
+        <div class="checkbox-container ps-4" style="font-size: 22px;">
+          <div id="developer-checkbox" class="custom-checkbox">
+            <input type="checkbox" class="round-checkbox">
+            <i class="fa-solid fa-map-pin pin-gris"></i>
+            <label>Developer</label>
+          </div>
+          <div id="constructor-checkbox" class="custom-checkbox">
+            <input type="checkbox" class="round-checkbox">
+            <i class="fa-solid fa-map-pin pin-gris"></i>
+            <label>Constructor</label>
+          </div>
+          <div id="operator-checkbox" class="custom-checkbox">
+            <input type="checkbox" class="round-checkbox">
+            <i class="fa-solid fa-map-pin pin-gris"></i>
+            <label>Operator</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 animate-on-scroll" 
+    data-animation="slideInFromRight">
+      
+      <img src="./assets/img/mc.svg" alt="" 
+      style="max-height: 80vh; max-width: 300px;">
+
+        <!-- SAN JUAN -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin1" 
+        style="left: 20%; top: 35%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">SAN JUAN</p>
+            <p>Antofagasta</p>
+            <p>Calama</p>
+            <p>10,7 MWp</p>
+          </div>
+        </i>
+
+                <!-- PUNTA BAJA -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin2" 
+        style=" left: 8%; top: 69%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PUNTA BAJA</p>
+            <p>Coquimbo</p>
+            <p>La Higuera</p>
+            <p>3,5 MWp</p>
+          </div>
+        </i>
+
+
+    <!-- CUZ CUZ -->
+<!-- Pines para Operador -->
+<i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin3" 
+style="left: 8%; top: 80%;">
+  <div class="tooltip" style="line-height: 15px; padding: 5px;">
+    <p style="font-weight: bold;">CUZ CUZ</p>
+    <p>Coquimbo</p>
+    <p>Illapel</p>
+    <p>3,6 MWp</p>
+  </div>
+</i>
+
+<!-- ILLAPEL -->
+<!-- Pines para Operador -->
+<i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin4" 
+style="left: 7%; top: 79%;">
+  <div class="tooltip" style="line-height: 15px; padding: 5px;">
+    <p style="font-weight: bold;">ILLAPEL</p>
+    <p>Coquimbo</p>
+    <p>Illapel</p>
+    <p>3,5 MWp</p>
+  </div>
+</i>
+
+<!-- CANESA -->
+<!-- Pines para Operador -->
+<i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin5" 
+style="left: 6%; top: 80%;">
+  <div class="tooltip" style="line-height: 15px; padding: 5px;">
+    <p style="font-weight: bold;">CANESA</p>
+    <p>Coquimbo</p>
+    <p>Illapel</p>
+    <p>3,5 MWp</p>
+  </div>
+</i>
+
+<!-- GAVIOTIN -->
+<!-- Pines para Desarrollador -->
+<i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin6" 
+style="left: 7.5%; top: 73%;">
+  <div class="tooltip" style="line-height: 15px; padding: 5px;">
+    <p style="font-weight: bold;">GAVIOTIN</p>
+    <p>Coquimbo</p>
+    <p>La Serena</p>
+    <p>12 MWp</p>
+  </div>
+</i>
+
+<!-- Pines para Constructor -->
+<i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin6" 
+style="left: 7.5%; top: 73%;">
+  <div class="tooltip" style="line-height: 15px; padding: 5px;">
+    <p style="font-weight: bold;">GAVIOTIN</p>
+    <p>Coquimbo</p>
+    <p>La Serena</p>
+    <p>12 MWp</p>
+  </div>
+</i>
+
+<!-- Pines para Operador -->
+<i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin6" 
+style="left: 7.5%; top: 73%;">
+  <div class="tooltip" style="line-height: 15px; padding: 5px;">
+    <p style="font-weight: bold;">GAVIOTIN</p>
+    <p>Coquimbo</p>
+    <p>La Serena</p>
+    <p>12 MWp</p>
+  </div>
+</i>
+
+<!-- RAYADOR -->
+<!-- Pines para Desarrollador -->
+<i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin7" 
+style="left: 7%; top: 72%;">
+  <div class="tooltip" style="line-height: 15px; padding: 5px;">
+    <p style="font-weight: bold;">RAYADOR</p>
+    <p>Coquimbo</p>
+    <p>La Serena</p>
+    <p>12 MWp</p>
+  </div>
+</i>
+
+<!-- Pines para Constructor -->
+<i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin7" 
+style="left: 7%; top: 72%;">
+  <div class="tooltip" style="line-height: 15px; padding: 5px;">
+    <p style="font-weight: bold;">RAYADOR</p>
+    <p>Coquimbo</p>
+    <p>La Serena</p>
+    <p>12 MWp</p>
+  </div>
+</i>
+
+<!-- Pines para Operador -->
+<i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin7" 
+style="left: 7%; top: 72%;">
+  <div class="tooltip" style="line-height: 15px; padding: 5px;">
+    <p style="font-weight: bold;">RAYADOR</p>
+    <p>Coquimbo</p>
+    <p>La Serena</p>
+    <p>12 MWp</p>
+  </div>
+</i>
+
+<!-- AMPARO DEL SOL -->
+<!-- Pines para Operador -->
+<i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin8" 
+style="left: 8.2%; top: 76.5%;">
+  <div class="tooltip" style="line-height: 15px; padding: 5px;">
+    <p style="font-weight: bold;">AMPARO DEL SOL</p>
+    <p>Coquimbo</p>
+    <p>Ovalle</p>
+    <p>3,3 MWp</p>
+  </div>
+</i>
+
+<!-- CHALINGA -->
+<!-- Pines para Operador -->
+<i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin9" 
+style="left: 8.5%; top: 83%;">
+  <div class="tooltip" style="line-height: 15px; padding: 5px;">
+    <p style="font-weight: bold;">CHALINGA</p>
+    <p>Coquimbo</p>
+    <p>Salamanca</p>
+    <p>3,2 MWp</p>
+  </div>
+</i>
+
+
+     <!-- FARDELA NEGRA -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin10" 
+        style="left: 5.5%; top: 92%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">FARDELA NEGRA</p>
+            <p>Valparaíso</p>
+            <p>Algarrobo</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+
+                <!-- GRAN PIQUERO -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin11" 
+        style="left: 8%; top: 89.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">GRAN PIQUERO</p>
+            <p>Valparaíso</p>
+            <p>Casablanca</p>
+            <p>6,7 MWp</p>
+          </div>
+        </i>
+        
+
+                <!-- PIQUERO -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin12" 
+        style="left: 7%; top: 90.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PIQUERO</p>
+            <p>Valparaíso</p>
+            <p>Casablanca</p>
+            <p>3,5 MWp</p>
+          </div>
+        </i>
+
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin12" 
+        style="left: 7%; top: 89.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PIQUERO</p>
+            <p>Valparaíso</p>
+            <p>Casablanca</p>
+            <p>3,5 MWp</p>
+          </div>
+        </i>
+
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin12" 
+        style="left: 7%; top: 90.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PIQUERO</p>
+            <p>Valparaíso</p>
+            <p>Casablanca</p>
+            <p>3,5 MWp</p>
+          </div>
+        </i>
+
+        <!-- TORTOLA -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin13" 
+        style="left: 6%; top: 89%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">TORTOLA</p>
+            <p>Valparaíso</p>
+            <p>Quintero</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- JAURURO -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin14" 
+        style="left: 7%; top: 86%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">JAURURO</p>
+            <p>Valparaíso</p>
+            <p>La Ligua</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- ILLALOLEN -->
+               <!-- Pines para Constructor -->
+               <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin15" 
+               style="left: 8%; top: 86.5%;">
+                 <div class="tooltip" style="line-height: 15px; padding: 5px;">
+                   <p style="font-weight: bold;">ILLALOLEN</p>
+                   <p>Valparaíso</p>
+                   <p>La Ligua</p>
+                   <p>3,6 MWp</p>
+                 </div>
+               </i>
+
+       <!-- Pines para Operador -->
+       <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin15" 
+       style="left: 8%; top: 86.5%;">
+         <div class="tooltip" style="line-height: 15px; padding: 5px;">
+           <p style="font-weight: bold;">ILLALOLEN</p>
+           <p>Valparaíso</p>
+           <p>La Ligua</p>
+           <p>3,6 MWp</p>
+         </div>
+       </i>
+               
+        <!-- JOTES -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin16" 
+        style="left: 9.3%; top: 86%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">JOTES</p>
+            <p>Valparaíso</p>
+            <p>Cabildo</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+        
+       <!-- Pines para Constructor -->
+                <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin16" 
+                style="left: 9.3%; top: 86%;">
+                  <div class="tooltip" style="line-height: 15px; padding: 5px;">
+                    <p style="font-weight: bold;">JOTES</p>
+                    <p>Valparaíso</p>
+                    <p>Cabildo</p>
+                    <p>3 MWp</p>
+                  </div>
+                </i>
+
+          <!-- Pines para Developer -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin16" 
+        style="left: 9.3%; top: 86%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">JOTES</p>
+            <p>Valparaíso</p>
+            <p>Cabildo</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+
+        <!-- RINCONADA SUR -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin17" 
+        style="left: 10%; top: 87.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">RINCONADA SUR</p>
+            <p>Valparaíso</p>
+            <p>Putaendo</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+
+        <!-- RINCONADA NORTE -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin18" 
+        style="left: 9%; top: 87.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">RINCONADA NORTE</p>
+            <p>Valparaíso</p>
+            <p>Putaendo</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+
+
+        <!-- HORMIGA -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin19" 
+        style="left: 11%; top: 88.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">HORMIGA</p>
+            <p>Valparaíso</p>
+            <p>San Felipe</p>
+            <p>2,5 MWp</p>
+          </div>
+        </i>
+
+        <!-- CATEMU -->
+                <!-- Pines para Constructor -->
+                <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin20" 
+                style="left: 12%; top: 89.5%;">
+                  <div class="tooltip" style="line-height: 15px; padding: 5px;">
+                    <p style="font-weight: bold;">CATEMU</p>
+                    <p>Valparaíso</p>
+                    <p>Catemu</p>
+                    <p>2,5 MWp</p>
+                  </div>
+                </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin20" 
+        style="left: 12%; top: 89.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CATEMU</p>
+            <p>Valparaíso</p>
+            <p>Catemu</p>
+            <p>2,5 MWp</p>
+          </div>
+        </i>
+
+
+    </div> 
+  </div>  
+  </div>
+</section>
+
+<section class="mapa-central desktop-visible">
+  <div class="container">
+  <div class="row align-items-center map-container" id="mapa2">
+    <div class="col-md-6 animate-on-scroll" 
+    data-animation="slideInFromLeft">
+      <img src="./assets/img/mc2_rev.svg" alt="" 
+      style="height: 1000px; max-width: 750px !important;" id="mc2">
+    
+
+        <!-- TURCAS -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin21" 
+        style="left: 30%; top: 32%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">TURCAS</p>
+            <p>Región Metropolitana</p>
+            <p>Melipilla</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin21" 
+        style="left: 30%; top: 32%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">TURCAS</p>
+            <p>Región Metropolitana</p>
+            <p>Melipilla</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin21" 
+        style="left: 30%; top: 32%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">TURCAS</p>
+            <p>Región Metropolitana</p>
+            <p>Melipilla</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- QUELTEHUE -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin22" 
+        style="left: 31%; top: 33%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">QUELTEHUE</p>
+            <p>Región Metropolitana</p>
+            <p>Melipilla</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin22" 
+        style="left: 31%; top: 33%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">QUELTEHUE</p>
+            <p>Región Metropolitana</p>
+            <p>Melipilla</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin22" 
+        style="left: 31%; top: 33%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">QUELTEHUE</p>
+            <p>Región Metropolitana</p>
+            <p>Melipilla</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- PILPEN -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin23" 
+        style="left: 32%; top: 32%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PILPEN</p>
+            <p>Región Metropolitana</p>
+            <p>Melipilla</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin23" 
+        style="left: 32%; top: 32%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PILPEN</p>
+            <p>Región Metropolitana</p>
+            <p>Melipilla</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin23" 
+        style="left: 32%; top: 32%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PILPEN</p>
+            <p>Región Metropolitana</p>
+            <p>Melipilla</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- CISNES -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin24" 
+        style="left: 30%; top: 30%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CISNES</p>
+            <p>Región Metropolitana</p>
+            <p>María Pinto</p>
+            <p>6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin24"
+         style="left: 30%; top: 30%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CISNES</p>
+            <p>Región Metropolitana</p>
+            <p>María Pinto</p>
+            <p>6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin24"
+         style="left: 30%; top: 30%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CISNES</p>
+            <p>Región Metropolitana</p>
+            <p>María Pinto</p>
+            <p>6 MWp</p>
+          </div>
+        </i>
+
+        <!-- MARIA PINTO -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin25" 
+        style="left: 31%; top: 30%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">MARIA PINTO</p>
+            <p>Región Metropolitana</p>
+            <p>María Pinto</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin25"
+         style="left: 31%; top: 30%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">MARIA PINTO</p>
+            <p>Región Metropolitana</p>
+            <p>María Pinto</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+
+        <!-- FARAMALLA -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin26" 
+        style="left: 28%; top: 35%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">FARAMALLA</p>
+            <p>Región Metropolitana</p>
+            <p>Alhué</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+<!-- LIBERTADOR BERNARDO OHIGGINS -->
+        <!-- GUADALAO -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin27" 
+        style="left: 23%; top: 38%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">GUADALAO</p>
+            <p>O'Higgins</p>
+            <p>La Estrella</p>
+            <p>3,5 MWp</p>
+          </div>
+        </i>
+
+         <!-- MIRLO -->
+         <!-- Pines para Developer -->
+         <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin28" 
+         style="left: 29%; top: 37%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">MIRLO</p>
+             <p>O'Higgins</p>
+             <p>Malloa</p>
+             <p>12 MWp</p>
+           </div>
+         </i>
+         <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin28" 
+        style="left: 29%; top: 37%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">MIRLO</p>
+            <p>O'Higgins</p>
+            <p>Malloa</p>
+            <p>12 MWp</p>
+          </div>
+        </i>
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin28" 
+        style="left: 29%; top: 37%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">MIRLO</p>
+            <p>O'Higgins</p>
+            <p>Malloa</p>
+            <p>12 MWp</p>
+          </div>
+        </i>
+
+
+         <!-- TORCAZAS -->
+         <!-- Pines para Developer -->
+         <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+         data-pin-id="pin29" 
+         style="left: 23%; top: 39%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">TORCAZAS</p>
+             <p>O'Higgins</p>
+             <p>Marchigüe</p>
+             <p>3 MWp</p>
+           </div>
+         </i>    
+
+         <!-- AYLA SOLAR -->
+         <!-- Pines para Developer -->
+         <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin30" 
+         style="left: 31%; top: 35%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">AYLA SOLAR</p>
+             <p>O'Higgins</p>
+             <p>Rancagua</p>
+             <p>12 MWp</p>
+           </div>
+         </i>  
+         <!-- Pines para Constructor -->
+         <i class="fa-solid fa-map-pin pin construtor-pin hidden" data-pin-id="pin30" 
+         style="left: 31%; top: 35%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">AYLA SOLAR</p>
+             <p>O'Higgins</p>
+             <p>Rancagua</p>
+             <p>12 MWp</p>
+           </div>
+         </i>  
+         <!-- Pines para operador -->
+         <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin30" 
+         style="left: 31%; top: 35%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">AYLA SOLAR</p>
+             <p>O'Higgins</p>
+             <p>Rancagua</p>
+             <p>12 MWp</p>
+           </div>
+         </i>  
+
+         <!-- MERCEDES -->
+         <!-- Pines para Constructor -->
+         <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin31" 
+         style="left: 30%; top: 36%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">MERCEDES</p>
+             <p>O'Higgins</p>
+             <p>Requinoa</p>
+             <p>3 MWp</p>
+           </div>
+         </i>  
+         <!-- Pines para operador -->
+         <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin31" 
+         style="left: 30%; top: 36%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">MERCEDES</p>
+             <p>O'Higgins</p>
+             <p>Requinoa</p>
+             <p>3 MWp</p>
+           </div>
+         </i>  
+
+         <!-- ENCINO -->
+         <!-- Pines para operador -->
+         <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin31" 
+         style="left: 31%; top: 37%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">ENCINO</p>
+             <p>O'Higgins</p>
+             <p>Requinoa</p>
+             <p>3 MWp</p>
+           </div>
+         </i>  
+
+         <!-- SAN ISIDRO -->
+         <!-- Pines para operador -->
+         <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin32" 
+         style="left: 32%; top: 36%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">SAN ISIDRO</p>
+             <p>O'Higgins</p>
+             <p>Requinoa</p>
+             <p>3 MWp</p>
+           </div>
+         </i>  
+
+         <!-- CACHANAS -->
+         <!-- Pines para DEVELOPER -->
+         <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin33" 
+         style="left: 29%; top: 39%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">CACHANAS</p>
+             <p>O'Higgins</p>
+             <p>San Fernando</p>
+             <p>11,3 MWp</p>
+           </div>
+         </i>  
+         <!-- Pines para constructor -->
+         <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin33" 
+         style="left: 29%; top: 39%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">CACHANAS</p>
+             <p>O'Higgins</p>
+             <p>San Fernando</p>
+             <p>11,3 MWp</p>
+           </div>
+         </i>  
+         <!-- Pines para operador -->
+         <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin33" 
+         style="left: 29%; top: 39%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">CACHANAS</p>
+             <p>O'Higgins</p>
+             <p>San Fernando</p>
+             <p>11,3 MWp</p>
+           </div>
+         </i>  
+
+
+         <!-- CARDENAL -->
+         <!-- Pines para Developer -->
+         <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin34" 
+         style="left: 27%; top: 37.5%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">CARDENAL</p>
+             <p>O'Higgins</p>
+             <p>San Vicente de Tagua Tagua </p>
+             <p>3 MWp</p>
+           </div>
+         </i>      
+
+         <!-- TENCAS -->
+         <!-- Pines para Developer -->
+         <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin35" 
+         style="left: 27%; top: 37.5%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">TENCAS</p>
+             <p>O'Higgins</p>
+             <p>San Vicente de Tagua Tagua </p>
+             <p>11,3 MWp</p>
+           </div>
+         </i>   
+         <!-- Pines para Constructor -->
+         <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin35" 
+         style="left: 27%; top: 37.5%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">TENCAS</p>
+             <p>O'Higgins</p>
+             <p>San Vicente de Tagua Tagua </p>
+             <p>11,3 MWp</p>
+           </div>
+         </i>
+         <!-- Pines para operator -->
+         <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin35" 
+         style="left: 27%; top: 37.5%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">TENCAS</p>
+             <p>O'Higgins</p>
+             <p>San Vicente de Tagua Tagua </p>
+             <p>11,3 MWp</p>
+           </div>
+         </i>   
+         
+         <!-- MURALLA -->
+         <!-- Pines para operator -->
+         <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin36" 
+         style="left: 27%; top: 37.5%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">MURALLA</p>
+             <p>O'Higgins</p>
+             <p>San Vicente de Tagua Tagua </p>
+             <p>3 MWp</p>
+           </div>
+         </i>   
+         
+         <!-- PICURIO -->
+         <!-- Pines para operador -->
+         <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin37" 
+         style="left: 28%; top: 40%">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">PICURIO</p>
+             <p>O'Higgins</p>
+             <p>Chimbarongo</p>
+             <p>3,6 MWp</p>
+           </div>
+         </i>  
+
+<!-- REGION DEL MAULE -->
+        <!-- SANTA LAURA -->
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin62" 
+        style="left: 28%; top: 41%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">SANTA LAURA</p>
+            <p>Maule</p>
+            <p>Teno</p>
+            <p>1,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin62" 
+        style="left: 28%; top: 41%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">SANTA LAURA</p>
+            <p>Maule</p>
+            <p>Teno</p>
+            <p>1,6 MWp</p>
+          </div>
+        </i>
+
+        
+        <!-- CONDOR -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin63" 
+        style="left: 27%; top: 41%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CONDOR</p>
+            <p>Maule</p>
+            <p>Teno</p>
+            <p>1,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin63" style="left: 27%; top: 41%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CONDOR</p>
+            <p>Maule</p>
+            <p>Teno</p>
+            <p>1,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin63" style="left: 27%; top: 41%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CONDOR</p>
+            <p>Maule</p>
+            <p>Teno</p>
+            <p>1,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- CURICURA -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin61" style="left: 29%; top: 42%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CURICURA</p>
+            <p>Maule</p>
+            <p>Romeral</p>
+            <p>10,6 MWp</p>
+          </div>
+        </i>
+
+
+        <!-- CHERCAN -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin57" style="left: 26%; top: 42.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CHERCAN</p>
+            <p>Maule</p>
+            <p>Curicó</p>
+            <p>12 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin58" style="left: 26%; top: 42.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CHERCAN</p>
+            <p>Maule</p>
+            <p>Curicó</p>
+            <p>12 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin58" style="left: 26%; top: 42.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CHERCAN</p>
+            <p>Maule</p>
+            <p>Curicó</p>
+            <p>12 MWp</p>
+          </div>
+        </i>
+
+
+        <!-- BANDURRIAS -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin59" style="left: 27%; top: 42.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">BANDURRIAS</p>
+            <p>Maule</p>
+            <p>Curicó</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin59" style="left: 27%; top: 42.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">BANDURRIAS</p>
+            <p>Maule</p>
+            <p>Curicó</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin59" style="left: 27%; top: 42.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">BANDURRIAS</p>
+            <p>Maule</p>
+            <p>Curicó</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- LORO CHOROY -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin60" style="left: 28%; top: 42.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">LORO CHOROY</p>
+            <p>Maule</p>
+            <p>Curicó</p>
+            <p>10,4 MWp</p>
+          </div>
+        </i>
+
+  <!-- PATOS -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin51" style="left: 27%; top: 44%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PATOS</p>
+            <p>Maule</p>
+            <p>San Rafael</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin51" style="left: 27%; top: 44%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PATOS</p>
+            <p>Maule</p>
+            <p>San Rafael</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin51" style="left: 27%; top: 44%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PATOS</p>
+            <p>Maule</p>
+            <p>San Rafael</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- PERDICES -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin52" style="left: 28%; top: 44%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PERDICES</p>
+            <p>Maule</p>
+            <p>San Rafael</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin53" style="left: 28%; top: 44%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PERDICES</p>
+            <p>Maule</p>
+            <p>San Rafael</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin53" style="left: 28%; top: 44%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PERDICES</p>
+            <p>Maule</p>
+            <p>San Rafael</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+
+        <!-- ZORZAL -->
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin54" style="left: 25%; top: 44%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">ZORZAL</p>
+            <p>Maule</p>
+            <p>San Rafael</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- TIUQUE -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin46" 
+        style="left: 25%; top: 46%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">TIUQUE</p>
+            <p>Maule</p>
+            <p>San Javier</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin46" 
+        style="left: 25%; top: 46%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">TIUQUE</p>
+            <p>Maule</p>
+            <p>San Javier</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin46" 
+        style="left: 25%; top: 46%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">TIUQUE</p>
+            <p>Maule</p>
+            <p>San Javier</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- GOLONDRINAS -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin47" style="left: 28%; top: 46%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">GOLONDRINAS</p>
+            <p>Maule</p>
+            <p>Colbún</p>
+            <p>9,3 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin47" style="left: 28%; top: 46%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">GOLONDRINAS</p>
+            <p>Maule</p>
+            <p>Colbún</p>
+            <p>9,3 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin47" style="left: 28%; top: 46%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">GOLONDRINAS</p>
+            <p>Maule</p>
+            <p>Colbún</p>
+            <p>9,3 MWp</p>
+          </div>
+        </i>
+
+
+        <!-- CARPINTERO -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin48" style="left: 18%; top: 44%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CARPINTERO</p>
+            <p>Maule</p>
+            <p>Constitución</p>
+            <p>12 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin48" style="left: 18%; top: 44%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CARPINTERO</p>
+            <p>Maule</p>
+            <p>Constitución</p>
+            <p>12 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin48" style="left: 18%; top: 44%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CARPINTERO</p>
+            <p>Maule</p>
+            <p>Constitución</p>
+            <p>12 MWp</p>
+          </div>
+        </i>
+
+        <!-- CUERVO -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin49" style="left: 21%; top: 42%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CUERVO</p>
+            <p>Maule</p>
+            <p>Curepto</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin49" style="left: 21%; top: 42%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CUERVO</p>
+            <p>Maule</p>
+            <p>Curepto</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin49" style="left: 21%; top: 42%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CUERVO</p>
+            <p>Maule</p>
+            <p>Curepto</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- PENCAHUE ESTE -->
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin50" style="left: 23%; top: 44%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PENCAHUE ESTE</p>
+            <p>Maule</p>
+            <p>Pencahue</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+      
+
+
+        <!-- TORDOS -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin55" style="left: 26%; top: 43.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">TORDOS</p>
+            <p>Maule</p>
+            <p>Talca</p>
+            <p>6,5 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin55" style="left: 26%; top: 43.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">TORDOS</p>
+            <p>Maule</p>
+            <p>Talca</p>
+            <p>6,5 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin55" style="left: 26%; top: 45%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">TORDOS</p>
+            <p>Maule</p>
+            <p>Talca</p>
+            <p>6,5 MWp</p>
+          </div>
+        </i>
+
+        <!-- AEROPUERTO -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin56" style="left: 25%; top: 44.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">AEROPUERTO</p>
+            <p>Maule</p>
+            <p>Talca</p>
+            <p>6,6 MWp</p>
+          </div>
+        </i>
+
+                <!-- FLAMENCO -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin43" 
+        style="left: 27%; top: 46.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">FLAMENCO</p>
+            <p>Maule</p>
+            <p>Yerbas Buenas</p>
+            <p>10,4 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin43" 
+        style="left: 27%; top: 46.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">FLAMENCO</p>
+            <p>Maule</p>
+            <p>Yerbas Buenas</p>
+            <p>10,4 MWp</p>
+          </div>
+        </i>
+
+
+                <!-- TRILE -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" data-pin-id="pin44" 
+        style="left: 28%; top: 46.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">TRILE</p>
+            <p>Maule</p>
+            <p>Yerbas Buenas</p>
+            <p>10,4 MWp</p>
+          </div>
+        </i>
+
+
+        <!-- CATITAS -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin45" style="left: 27%; top: 47%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CATITAS</p>
+            <p>Maule</p>
+            <p>Linares</p>
+            <p>11,3 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin45" style="left: 27%; top: 47%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CATITAS</p>
+            <p>Maule</p>
+            <p>Linares</p>
+            <p>11,3 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin45" style="left: 27%; top: 47%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CATITAS</p>
+            <p>Maule</p>
+            <p>Linares</p>
+            <p>11,3 MWp</p>
+          </div>
+        </i>
+
+        <!-- PITIO -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin42" 
+        style="left: 26%; top: 48.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PITIO</p>
+            <p>Maule</p>
+            <p>Longaví</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin42" 
+        style="left: 26%; top: 48.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PITIO</p>
+            <p>Maule</p>
+            <p>Longaví</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin42" 
+        style="left: 26%; top: 48.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PITIO</p>
+            <p>Maule</p>
+            <p>Longaví</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+
+
+
+  <!-- GORRIONES -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin38" style="left: 25%; top: 49.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">GORRIONES</p>
+            <p>Maule</p>
+            <p>Retiro</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin38" style="left: 25%; top: 49.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">GORRIONES</p>
+            <p>Maule</p>
+            <p>Retiro</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin38" style="left: 25%; top: 49.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">GORRIONES</p>
+            <p>Maule</p>
+            <p>Retiro</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- BICENTENARIO -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin39" style="left: 24.5%; top: 50.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">BICENTENARIO</p>
+            <p>Maule</p>
+            <p>Parral</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- REGION DE ÑUBLE -->
+
+        <!-- CERNICALO -->
+        <!-- Pines para Desarrollador -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin64" 
+        style="left: 20%; top: 53% ;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CERNICALO</p>
+            <p>Ñuble</p>
+            <p>Ninhue</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin64" 
+        style="left: 20%; top: 53%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CERNICALO</p>
+            <p>Ñuble</p>
+            <p>Ninhue</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin64" 
+        style="left: 20%; top: 53%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CERNICALO</p>
+            <p>Ñuble</p>
+            <p>Ninhue</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+      
+
+        <!-- CHINCOL -->
+        <!-- Pines para developer -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin68" 
+        style="left: 21%; top: 51%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CHINCOL</p>
+            <p>Ñuble</p>
+            <p>Ñiquen</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>       
+        <!-- Pines para constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin68" 
+        style="left: 21%; top: 51%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CHINCOL</p>
+            <p>Ñuble</p>
+            <p>Ñiquen</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin68" 
+        style="left: 21%; top: 51%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CHINCOL</p>
+            <p>Ñuble</p>
+            <p>Ñiquen</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- ALCALDESA -->
+        <!-- Pines para Operador -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin69" 
+        style="left: 18%; top: 50%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">ALCALDESA</p>
+            <p>Ñuble</p>
+            <p>Quirihue</p>
+            <p>7,2 MWp</p>
+          </div>
+        </i>
+
+        <!-- CODORNICES -->
+        <!-- Pines para developer -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin70" 
+        style="left: 24%; top: 53%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CODORNICES</p>
+            <p>Ñuble</p>
+            <p>San Carlos</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+        <!-- Pines para constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin70" 
+        style="left: 24%; top: 53%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CODORNICES</p>
+            <p>Ñuble</p>
+            <p>San Carlos</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+        <!-- Pines para operator -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin70" 
+        style="left: 24%; top: 53%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">CODORNICES</p>
+            <p>Ñuble</p>
+            <p>San Carlos</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- LECHUZAS -->
+        <!-- Pines para developer -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin71" 
+        style="left: 25%; top: 52.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">LECHUZAS</p>
+            <p>Ñuble</p>
+            <p>San Carlos</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+        <!-- Pines para constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" data-pin-id="pin71" 
+        style="left: 25%; top: 52.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">LECHUZAS</p>
+            <p>Ñuble</p>
+            <p>San Carlos</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+        <!-- Pines para operator -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" data-pin-id="pin71" 
+        style="left: 25%; top: 52.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">LECHUZAS</p>
+            <p>Ñuble</p>
+            <p>San Carlos</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- PALOMAS -->
+        <!-- Pines para developer -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin65" 
+        style="left: 19%; top: 54.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PALOMAS</p>
+            <p>Ñuble</p>
+            <p>Bulnes</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+         <!-- Pines para constructor -->
+         <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+         data-pin-id="pin65" 
+         style="left: 19%; top: 54.5%;">
+           <div class="tooltip" style="line-height: 15px; padding: 5px;">
+             <p style="font-weight: bold;">PALOMAS</p>
+             <p>Ñuble</p>
+             <p>Bulnes</p>
+             <p>3,6 MWp</p>
+           </div>
+         </i>
+
+        <!-- Pines para operator -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin65" 
+        style="left: 19%; top: 54.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PALOMAS</p>
+            <p>Ñuble</p>
+            <p>Bulnes</p>
+            <p>3,6 MWp</p>
+          </div>
+        </i>
+
+        <!-- PIUQUEN -->
+        <!-- Pines para developer -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin66" 
+        style="left: 20%; top: 55%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PIUQUEN</p>
+            <p>Ñuble</p>
+            <p>Bulnes</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+        <!-- Pines para CONSTRUCTOR -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin66" 
+        style="left: 20%; top: 55%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PIUQUEN</p>
+            <p>Ñuble</p>
+            <p>Bulnes</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+        <!-- Pines para operator -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin66" 
+        style="left: 20%; top: 55%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">PIUQUEN</p>
+            <p>Ñuble</p>
+            <p>Bulnes</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+        <!-- TORTOLAS -->
+        <!-- Pines para developer -->
+        <i class="fa-solid fa-map-pin pin developer-pin hidden" 
+        data-pin-id="pin67" 
+        style="left: 21%; top: 54.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">TORTOLAS</p>
+            <p>Ñuble</p>
+            <p>Bulnes</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+        <!-- Pines para constructor -->
+        <i class="fa-solid fa-map-pin pin constructor-pin hidden" 
+        data-pin-id="pin67" 
+        style="left: 21%; top: 54.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">TORTOLAS</p>
+            <p>Ñuble</p>
+            <p>Bulnes</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+        <!-- Pines para operator -->
+        <i class="fa-solid fa-map-pin pin operator-pin hidden" 
+        data-pin-id="pin67" 
+        style="left: 21%; top: 54.5%;">
+          <div class="tooltip" style="line-height: 15px; padding: 5px;">
+            <p style="font-weight: bold;">TORTOLAS</p>
+            <p>Ñuble</p>
+            <p>Bulnes</p>
+            <p>3 MWp</p>
+          </div>
+        </i>
+
+    </div> 
+    <div class="col-md-6 text-end "> 
+      <h1 style="color: #d76e14 !important;">CENTER-SOUTH ZONE</h1>
+      <div class="col pin-selection animate-on-scroll" 
+      data-animation="slideInFromRight"
+      style="align-items: flex-end !important;">
+        <div class="checkbox-container ps-4" style="font-size: 22px;">
+          <div id="developer-checkbox" class="custom-checkbox">
+            <input type="checkbox" class="round-checkbox">
+            <i class="fa-solid fa-map-pin pin-gris"></i>
+            <label>Developer</label>
+          </div>
+          <div id="constructor-checkbox" class="custom-checkbox">
+            <input type="checkbox" class="round-checkbox">
+            <i class="fa-solid fa-map-pin pin-gris"></i>
+            <label>Constructor</label>
+          </div>
+          <div id="operator-checkbox" class="custom-checkbox">
+            <input type="checkbox" class="round-checkbox">
+            <i class="fa-solid fa-map-pin pin-gris"></i>
+            <label>Operator</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  </div>
+</section>
+</section>
+
+
+<footer
+class="footer-oenergy"
+style="color: white; background-color: #223169; padding: 5px 0"
+>
+<div class="container">
+  <div class="row text-start">
+    <div
+      class="col d-flex justify-content-center align-items-center text-start"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <img
+        style="display: inline-block"
+        src="./assets/img/logo oenergy_Mesa de trabajo 1.png"
+        alt="logoPrincipal"
+        height="45"
+      />
+      <img
+        style="display: inline-block"
+        src="./assets/img/marca_chile.png"
+        alt="logoPrincipal"
+        height="50"
+      />
+
+      <p class="pt-2">
+        Avenida Apoquindo 3910 <br />
+        Oficina 201, Las Condes
+      </p>
+      <p>comunicaciones@oenergy.cl</p>
+    </div>
+    <div class="col-md col-xs-12 pt-md-4">
+      <a class="footer-link" href="conocenos.html">
+        <h5>Conócenos</h5>
+      </a>
+      <a class="footer-link footer-mobile-hide" href="conocenos.html">
+        <p>Historia</p>
+      </a>
+      <a
+        class="footer-link footer-mobile-hide"
+        href="conocenos.html#mision-vision"
+      >
+        <p>Misión y Visión</p>
+      </a>
+      <a
+      class="footer-link footer-mobile-hide"
+      href="conocenos.html#valores"
+    >
+      <p>Valores</p>
+    </a>
+      <a
+        class="footer-link footer-mobile-hide"
+        href="conocenos.html#team"
+      >
+        <p>Team</p>
+      </a>
+      <a
+        class="footer-link footer-mobile-hide"
+        href="conocenos.html#proyectos"
+      >
+        <p>Proyectos</p>
+      </a>
+    </div>
+    <div class="col-md col-xs-12 pt-md-4">
+      <a class="footer-link" href="servicios.html">
+        <h5>Servicios</h5>
+      </a>
+      <a class="footer-link footer-mobile-hide" href="servicios.html#om">
+        <p>O&M</p>
+      </a>
+      <a class="footer-link footer-mobile-hide" href="servicios.html#asset">
+        <p>Asset Management</p>
+      </a>
+      <a
+        class="footer-link footer-mobile-hide"
+        href="servicios.html#irecs"
+      >
+        <p>Environmental Commodities</p>
+      </a>
+    </div>
+    <div class="col-md col-xs-12 pt-md-4">
+      <a class="footer-link" href="esg.html">
+        <h5>ESG</h5>
+      </a>
+      <a class="footer-link footer-mobile-hide" href="esg.html">
+        <p>Reporte Anual ESG</p>
+      </a>
+      <a
+        class="footer-link footer-mobile-hide"
+        href="esg.html#environmental"
+      >
+        <p>Ambiental</p>
+      </a>
+      <a class="footer-link footer-mobile-hide" href="esg.html#social">
+        <p>Social</p>
+      </a>
+      <a
+        class="footer-link footer-mobile-hide"
+        href="esg.html#governance"
+      >
+        <p>Gobierno Corporativo</p>
+      </a>
+    </div>
+
+    <div class="col-md col-xs-12 pt-md-4">
+      <h5>Información Legal</h5>
+      <a 
+      class="footer-link footer-mobile-hide"
+      href="terminosycondiciones.html">
+        <p>Términos de Uso</p>
+      </a>
+      
+        <a 
+      class="footer-link footer-mobile-hide"
+      href="politicadeprivacidad.html">
+        <p>Política de Privacidad</p>
+      </a>
+      
+      <div class="pt-3">
+        <p style="font-weight: 600">Síguenos</p>
+        <a
+          class="footer-link"
+          style="margin-top: 0"
+          href="https://cl.linkedin.com/company/oenergy"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin" style="font-size: 28px"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+
+
+
+
+
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="./assets/js/main-custom.js"></script>
+</body>
+
+</html>
