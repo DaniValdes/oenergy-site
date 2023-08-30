@@ -28,7 +28,7 @@
   style="font-size: 18px; font-weight: 500"
 >
   <div class="container-fluid">
-    <a class="navbar-brand" href="./en_index.html">
+    <a class="navbar-brand" href="./index.html">
       <img
         src="./assets/img/logo oenergy SVG.svg"
         alt="logoPrincipal"
@@ -74,28 +74,28 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            About Us
+            Conócenos
           </a>
           <ul class="dropdown-menu" aria-labelledby="conocenosDropdown">
             <li>
-              <a class="dropdown-item" href="en_conocenos.html">Story</a>
+              <a class="dropdown-item" href="conocenos.html">Historia</a>
             </li>
             <li>
-              <a class="dropdown-item" href="en_conocenos.html#mision-vision"
-                >Mission and Vision</a
+              <a class="dropdown-item" href="conocenos.html#mision-vision"
+                >Misión y Visión</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="en_conocenos.html#valores"
-                >Values</a
+              <a class="dropdown-item" href="conocenos.html#valores"
+                >Valores</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="en_conocenos.html#team">Team</a>
+              <a class="dropdown-item" href="conocenos.html#team">Team</a>
             </li>
             <li>
-              <a class="dropdown-item" href="en_conocenos.html#proyectos"
-                >Projects</a
+              <a class="dropdown-item" href="conocenos.html#proyectos"
+                >Proyectos</a
               >
             </li>
           </ul>
@@ -109,21 +109,21 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Services
+            Servicios
           </a>
           <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
             <li>
-              <a class="dropdown-item" href="en_servicios.html#om"
+              <a class="dropdown-item" href="servicios.html#om"
                 >O&M</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="en_servicios.html#asset"
+              <a class="dropdown-item" href="servicios.html#asset"
                 >Asset Management</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="en_servicios.html#irecs"
+              <a class="dropdown-item" href="servicios.html#irecs"
                 >Environmental Commodities</a
               >
             </li>
@@ -142,19 +142,19 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="esgDropdown">
             <li>
-              <a class="dropdown-item" href="en_esg.html">ESG Annual Report</a>
+              <a class="dropdown-item" href="esg.html">Reporte Anual ESG</a>
             </li>
             <li>
-              <a class="dropdown-item" href="en_esg.html#Ambiental"
-                >Environment</a
+              <a class="dropdown-item" href="esg.html#Ambiental"
+                >Ambiental</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="en_esg.html#social">Social</a>
+              <a class="dropdown-item" href="esg.html#social">Social</a>
             </li>
             <li>
-              <a class="dropdown-item" href="en_esg.html#governance"
-                >Corporate Governance</a
+              <a class="dropdown-item" href="esg.html#governance"
+                >Gobierno Corporativo</a
               >
             </li>
           </ul>
@@ -175,7 +175,7 @@
               color: white;
             "
           >
-            Contact us
+            Contáctanos
           </button>
         </li>
         <li class="nav-item dropdown language-dropdown mobile-hidden">
@@ -196,20 +196,20 @@
     </div>
   </div>
 </nav>
-  <div id="contactFormPopup" class="popup">
-    <div class="popup-content">
-      <span id="closePopup" class="close">&times;</span>
-      <form id="contactForm" action="https://formsubmit.co/comunicaciones@oenergy.cl" method="POST">
-        <label for="name">Nombre:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="message">Mensaje:</label><br>
-        <textarea id="message" name="message" placeholder="Cuéntanos tus dudas o comentarios" required></textarea><br>
-        <input type="submit" value="Enviar">
-      </form>
-    </div>
+<div id="contactFormPopup" class="popup">
+  <div class="popup-content">
+    <span id="closePopup" class="close">&times;</span>
+    <form id="contactForm" action="https://formsubmit.co/comunicaciones@oenergy.cl" method="POST">
+      <label for="name">Nombre:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="message">Mensaje:</label><br>
+      <textarea id="message" name="message" placeholder="Cuéntanos tus dudas o comentarios" required></textarea><br>
+      <input type="submit" value="Enviar">
+    </form>
   </div>
+</div>
   
 
 
@@ -363,10 +363,13 @@
           <img class="w-100" src="./assets/img/proy-agrosolar1.png" alt="" style="max-height: 500px; width: auto;">
         </div>
       </div>
-      <div class="container d-grid d-md-flex justify-content-md-start pt-5">
-        <button type="button" class="btn rounded-pill" style="border-color: #d76e14; color: #d76e14">
-          Descarga nuestro brochure
-        </button>
+      <div class="container d-grid d-md-flex justify-content-center justify-content-md-start pt-5">
+        <a href="./assets/files/Brochure Ayla Solar.pdf" download style="text-decoration: none;">
+          <button type="button" class="btn rounded-pill mb-5" 
+          style="border-color: #d76e14; color: #d76e14">
+            Descarga nuestro brochure
+          </button>
+        </a>
       </div>
     </div>
   </section>
@@ -416,7 +419,7 @@
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#image-carousel" role="button" data-bs-slide="next">
+      <a class="carousel-control-next mobile-hidden" href="#image-carousel" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </a>
@@ -490,7 +493,7 @@
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#image-carousel" role="button" data-bs-slide="next">
+          <a class="carousel-control-next mobile-hidden" href="#image-carousel" role="button" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </a>
@@ -530,9 +533,11 @@
               <span class="highlight-valores">promover el desarrollo sostenible.</span>
             </p>
             <div class="container d-grid d-md-flex justify-content-md-end pt-5">
+              <a href="./assets/files/Brochure Comunidades oEnergy 2023.pdf" download style="text-decoration: none;">
               <button type="button" class="btn rounded-pill mb-5" style="border-color: #ffffff; color: #ffffff">
                 Descarga nuestro brochure
               </button>
+              </a>
             </div>
           </div>
         </div>
@@ -593,9 +598,11 @@
         Política de Género, Diversidad e Inclusión
       </div>
       <div class="col-md-auto d-flex align-items-center justify-content-end">
+        <a href="./assets/files/Política de Género, Diversidad e Inclusión.pdf" download style="text-decoration: none;">
         <button type="button" class="btn rounded-pill my-4" style="border-color: #d76e14; color: #d76e14">
           Descargar PDF
         </button>
+      </a>
       </div>
     </div>
   </div>
@@ -606,9 +613,11 @@
         Procedimiento de Selección y Contratación de Servicios
       </div>
       <div class="col-md-auto d-flex align-items-center justify-content-end">
+        <a href="./assets/files/Procedimiento de Selección y Contratación de Servicios.pdf" download style="text-decoration: none;">
         <button type="button" class="btn rounded-pill my-4" style="border-color: #d76e14; color: #d76e14">
           Descargar PDF
         </button>
+        </a>
       </div>
     </div>
   </div>
@@ -619,19 +628,14 @@
         Reglamento Especial de Contratistas y Subcontratistas
       </div>
       <div class="col-md-auto d-flex align-items-center justify-content-end">
+        <a href="./assets/files/Reglamento Especial de Contratistas y Subcontratistas.pdf" download style="text-decoration: none;">
         <button type="button" class="btn rounded-pill my-4" style="border-color: #d76e14; color: #d76e14">
           Descargar PDF
         </button>
+        </a>
       </div>
     </div>
   </div>
-  
-
-
-
-
-
-
 
   <footer
   class="footer-oenergy"
