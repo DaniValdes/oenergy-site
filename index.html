@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
   <title>oEnergy</title>
 
     <!-- Bootstrap CSS -->
@@ -213,19 +214,19 @@
 </div>
 
 
-  <div style="position: relative; width: 100%;">
-    <video autoplay loop muted id="videoFondo" style="width: 100%;">
-      <source src="./assets/img/Timelapse-v4.mp4" type="video/mp4">
-    </video>
-  
-    <div style="position: absolute; top: 0; bottom: 0; left: 20px; display: flex; flex-direction: column; justify-content: center; max-width: 50%; color: white; z-index: 1;">
-      <p id="titulo-home" 
-      style="font-family: 'montserrat', arial-sans ;font-size: 80px; color: white; font-weight: 300; line-height: 70px;">GENERACIÓN SOLAR DISTRIBUIDA</p>
-      <p id="descripcion-home" 
-      style="font-family: 'montserrat', arial-sans  ;color: white; font-size: 22px; font-weight: 200; "
-      >oEnergy es un grupo empresarial chileno que busca contribuir en la transformación de la matriz energética de nuestro país por medio del desarrollo, construcción y explotación de Recursos Energéticos Distribuidos</p>
-    </div>
+<div style="position: relative;">
+  <video autoplay loop muted playsinline id="" style="width: 100%; height: 100vh; object-fit: cover; ">
+    <source src="./assets/img/Timelapse-v4.mp4" type="video/mp4">
+  </video>
+
+  <div style="position: absolute; top: 0; bottom: 0; left: 20px; display: flex; flex-direction: column; justify-content: center; max-width: 50%; color: white; z-index: 1;">
+    <p id="titulo-home" 
+    style="font-family: 'montserrat', arial-sans ;font-size: 80px; color: white; font-weight: 300; line-height: 70px;">GENERACIÓN SOLAR DISTRIBUIDA</p>
+    <p id="descripcion-home" 
+    style="font-family: 'montserrat', arial-sans  ;color: white; font-size: 22px; font-weight: 200; "
+    >oEnergy es un grupo empresarial chileno que busca contribuir en la transformación de la matriz energética de nuestro país por medio del desarrollo, construcción y explotación de Recursos Energéticos Distribuidos</p>
   </div>
+</div>
 
 
 
@@ -274,7 +275,7 @@
 
 
 <footer
-class="footer-oenergy"
+class="footer-oenergy desktop-visible"
 style="color: white; background-color: #223169; padding: 5px 0"
 >
 <div class="container">
