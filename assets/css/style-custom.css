@@ -185,8 +185,8 @@ span.carousel-control-prev-icon {
 }
 @media (max-width: 768px) {
   #titulo-home {
-    font-size: 18px !important ;
-    line-height: 16px !important;
+    font-size: 38px !important ;
+    line-height: 32px !important;
   }
 }
 
@@ -194,7 +194,7 @@ span.carousel-control-prev-icon {
 
 
   #descripcion-home {
-    font-size: 8px !important;
+    font-size: 12px !important;
   }
 }
 
