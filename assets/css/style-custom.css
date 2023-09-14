@@ -857,6 +857,7 @@ text-align: justify;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 450px;
+    max-width: 100% !important;
     padding-left: 30px;
     
   }
