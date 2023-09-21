@@ -143,6 +143,20 @@ span.carousel-control-prev-icon {
   }
 }
 
+#team-carousel {
+  position: relative; /* Establece una referencia de posición para el logo SVG */
+}
+
+#logo-svg {
+  position: absolute; /* Posiciona el logo de manera absoluta con respecto al contenedor del carrusel */
+  top: 10px;          /* Distancia desde la parte superior */
+  left: 10px;         /* Distancia desde la izquierda */
+  width: 240px;        /* Ancho del logo (ajusta según tus necesidades) */
+  height: auto;       /* Altura automática para mantener las proporciones */
+  z-index: 10;        /* Asegura que el logo esté por encima de las imágenes */
+}
+
+
 .dropdown-menu {
   white-space: nowrap; /* NO SALTAR linea */
   max-width: 90vw; 
