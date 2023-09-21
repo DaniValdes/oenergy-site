@@ -153,9 +153,18 @@ span.carousel-control-prev-icon {
   left: 10px;         /* Distancia desde la izquierda */
   width: 240px;        /* Ancho del logo (ajusta según tus necesidades) */
   height: auto;       /* Altura automática para mantener las proporciones */
-  z-index: 10;        /* Asegura que el logo esté por encima de las imágenes */
+  z-index: 10; 
+  opacity: 0.4;       /* Asegura que el logo esté por encima de las imágenes */
 }
 
+@media (max-width: 768px) {
+  #logo-svg {
+      /* Estos son solo ejemplos, ajusta las propiedades según tus necesidades */
+      top: 35%;
+      left: 30%;
+      width: 120px;
+  }
+}
 
 .dropdown-menu {
   white-space: nowrap; /* NO SALTAR linea */
