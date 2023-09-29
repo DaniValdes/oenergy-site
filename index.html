@@ -56,7 +56,8 @@
         class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
         style="--bs-scroll-height: 120px"
       >
-      <li class="nav-item d-md-none nav-item-padding" style="font-size: 14px;">
+      <li class="nav-item d-md-none nav-item-padding" 
+      style="font-size: 14px;">
         <div class="d-flex border-bottom">
           <a class="nav-link language-indicator ps-1 pe-1 " 
           href="en_index.html">
@@ -366,12 +367,33 @@ style="color: white; background-color: #223169; padding: 5px 0"
 </div>
 </footer>
 
-      <!-- jquery -->
-      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-      <!-- Bootstrap Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <!-- JS -->
-      <script src="./assets/js/main-custom.js"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="./assets/js/main-custom.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.navbar-nav .dropdown-item').on('click', function(){
+        var width = $(window).width();
+        if (width <= 992) {  // Asume que el modo móvil se activa a 992px
+          $('.navbar-collapse').collapse('hide');
+        }
+      });
+    });
+  </script>
+
+  <!-- smooth scroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('.navbar-nav a[href*="#"]', {
+    offset: 66  // Ajusta este valor a la altura de tu navbar
+  });
+</script>
 </body>
 
 

@@ -280,7 +280,7 @@
       sustainable development. Wherever our projects are located, we
       will protect the <span class="highlight-valores">environment, existing ecosystems, and
         biodiversity</span>.
-      <br>
+      <br> <br>
       In addition to complying with national regulations, oEnergy
       complies with the <span class="highlight-valores">International Finance Corporation’s
         Performance Standards (IFC) on Environmental and Social
@@ -765,50 +765,35 @@
     </div>
   </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+
+  
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://www.amcharts.com/lib/3/ammap.js"></script>
-  <script type="text/javascript" src="https://www.amcharts.com/lib/3/maps/js/chileLow.js"></script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- JS -->
   <script src="./assets/js/main-custom.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.navbar-nav .dropdown-item').on('click', function(){
+        var width = $(window).width();
+        if (width <= 992) {  // Asume que el modo móvil se activa a 992px
+          $('.navbar-collapse').collapse('hide');
+        }
+      });
+    });
+  </script>
 
-  <!-- <div class="modal fade" id="contactFormModal" tabindex="-1" aria-labelledby="contactFormModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="contactFormModalLabel">Contáctanos</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <form>
-                  <div class="mb-3">
-                      <label for="contactName" class="form-label">Nombre</label>
-                      <input type="text" class="form-control" id="contactName">
-                  </div>
-                  <div class="mb-3">
-                      <label for="contactEmail" class="form-label">Correo</label>
-                      <input type="email" class="form-control" id="contactEmail">
-                  </div>
-                  <div class="mb-3">
-                      <label for="contactMessage" class="form-label">Mensaje</label>
-                      <textarea class="form-control" id="contactMessage" rows="3"></textarea>
-                  </div>
-              </form>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Enviar</button>
-          </div>
-      </div>
-  </div>
-</div>
- -->
-
+  <!-- smooth scroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('.navbar-nav a[href*="#"]', {
+    offset: 66  // Ajusta este valor a la altura de tu navbar
+  });
+</script>
 </body>
 
 

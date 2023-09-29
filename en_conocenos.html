@@ -3090,6 +3090,25 @@ style="color: white; background-color: #223169; padding: 5px 0"
     crossorigin="anonymous"></script>
   <!-- JS -->
   <script src="./assets/js/main-custom.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.navbar-nav .dropdown-item').on('click', function(){
+        var width = $(window).width();
+        if (width <= 992) {  // Asume que el modo móvil se activa a 992px
+          $('.navbar-collapse').collapse('hide');
+        }
+      });
+    });
+  </script>
+
+  <!-- smooth scroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('.navbar-nav a[href*="#"]', {
+    offset: 66  // Ajusta este valor a la altura de tu navbar
+  });
+</script>
+  
 </body>
 
 </html>

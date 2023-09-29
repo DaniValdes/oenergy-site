@@ -64,7 +64,7 @@
           href="#">
             EN
           </a>
-          <a class="nav-link language-indicator ps-1" href="esg.html">
+          <a class="nav-link language-indicator ps-1" href="politicadeprivacidad.html">
             ES
           </a>
         </div>
@@ -189,7 +189,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="idiomaDropdown">
             <li>
-              <a class="dropdown-item" href="esg.html">
+              <a class="dropdown-item" href="politicadeprivacidad.html">
                 <!-- <img src="./assets/img/estados-unidos.png" alt="Inglés" height="20" width="20"/> -->
                 ES
               </a>
@@ -448,6 +448,7 @@ Policy will be subject to the exclusive jurisdiction of the competent courts of 
     </div>
   </div>
   </footer>
+
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -457,6 +458,24 @@ Policy will be subject to the exclusive jurisdiction of the competent courts of 
     crossorigin="anonymous"></script>
   <!-- JS -->
   <script src="./assets/js/main-custom.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.navbar-nav .dropdown-item').on('click', function(){
+        var width = $(window).width();
+        if (width <= 992) {  // Asume que el modo móvil se activa a 992px
+          $('.navbar-collapse').collapse('hide');
+        }
+      });
+    });
+  </script>
+
+  <!-- smooth scroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('.navbar-nav a[href*="#"]', {
+    offset: 66  // Ajusta este valor a la altura de tu navbar
+  });
+</script>
 </body>
 
 
