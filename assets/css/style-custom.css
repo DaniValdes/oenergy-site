@@ -1512,7 +1512,7 @@ text-align: justify;
 }
 
 #contactForm input[type="submit"] {
-  background-color: #007bff;
+  background-color: #4674b6;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -1523,12 +1523,17 @@ text-align: justify;
   margin: 20px auto 0 auto;
 }
 
+#contactForm input[type="submit"]:active {
+  background-color: gray;
+}
+
 #contactFormPopup input,
 #contactFormPopup textarea {
   border-radius: 5px;
   border: 2px solid #888;
   width: 200px;
 }
+
 
 @media (max-width: 768px) {
   .imagen-reporte-anual {
