@@ -26,6 +26,7 @@
 <body>
 
   <!-- START NAVBAR-->
+
   <nav
   class="navbar sticky-top navbar-expand-lg navbar-light bg-light"
   style="font-size: 18px; font-weight: 500"
@@ -57,7 +58,7 @@
         class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
         style="--bs-scroll-height: 120px"
       >
-      <li class="nav-item d-md-none" style="font-size: 14px;">
+      <li class="nav-item d-md-none nav-item-padding" style="font-size: 14px;">
         <div class="d-flex border-bottom">
           <a class="nav-link language-indicator ps-1 pe-1 underline" 
           href="#">
@@ -68,7 +69,7 @@
           </a>
         </div>
       </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown nav-item-padding">
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -79,7 +80,7 @@
           >
             About Us
           </a>
-          <ul class="dropdown-menu" aria-labelledby="conocenosDropdown">
+          <ul class="dropdown-menu " aria-labelledby="conocenosDropdown">
             <li>
               <a class="dropdown-item" href="en_conocenos.html">Story</a>
             </li>
@@ -94,7 +95,7 @@
               >
             </li>
             <li>
-              <a class="dropdown-item" href="en_conocenos.html#team-section">Team</a>
+              <a class="dropdown-item" href="en_conocenos.html#team-div">Team</a>
             </li>
             <li>
               <a class="dropdown-item" href="en_conocenos.html#proyectos"
@@ -103,7 +104,7 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown nav-item-padding">
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -132,7 +133,7 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown nav-item-padding">
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -145,10 +146,10 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="esgDropdown">
             <li>
-              <a class="dropdown-item" href="en_esg.html">ESG Annual Report</a>
+              <a class="dropdown-item" href="en_esg.html">ESG/Global Compact</a>
             </li>
             <li>
-              <a class="dropdown-item" href="en_esg.html#Ambiental"
+              <a class="dropdown-item" href="en_esg.html#ambiental"
                 >Environment</a
               >
             </li>
@@ -163,11 +164,11 @@
           </ul>
         </li>
 
-        <li class="nav-item align-center">
+        <li class="nav-item align-center nav-item-padding">
           <button
             id="openFormButton"
             type="button"
-            class="btn rounded-pill btn-outline-light"
+            class="btn rounded-pill btn-outline-light margin-mobile-navbar"
             style="
               background-color: #4774b2;
               font-size: 19px;
@@ -208,7 +209,8 @@
       <label for="email">Email:</label><br>
       <input type="email" id="email" name="email" required><br>
       <label for="message">Message:</label><br>
-      <textarea id="message" name="message" placeholder="Tell us your questions or comments" required></textarea><br>
+      <textarea id="message" name="message" placeholder="Tell us your questions or comments" required
+      style="height: 100px;"></textarea><br>
       <input type="submit" value="Send">
     </form>
   </div>
@@ -366,7 +368,7 @@ Policy will be subject to the exclusive jurisdiction of the competent courts of 
       </a>
         <a
           class="footer-link footer-mobile-hide"
-          href="en_conocenos.html#team-section"
+          href="en_conocenos.html#team-div"
         >
           <p>Team</p>
         </a>
@@ -399,7 +401,7 @@ Policy will be subject to the exclusive jurisdiction of the competent courts of 
           <h5>ESG</h5>
         </a>
         <a class="footer-link footer-mobile-hide" href="en_esg.html">
-          <p>ESG Annual Report</p>
+          <p>ESG/Global Compact</p>
         </a>
         <a
           class="footer-link footer-mobile-hide"
@@ -447,6 +449,7 @@ Policy will be subject to the exclusive jurisdiction of the competent courts of 
     </div>
   </div>
   </footer>
+
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -456,6 +459,24 @@ Policy will be subject to the exclusive jurisdiction of the competent courts of 
     crossorigin="anonymous"></script>
   <!-- JS -->
   <script src="./assets/js/main-custom.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.navbar-nav .dropdown-item').on('click', function(){
+        var width = $(window).width();
+        if (width <= 992) {  // Asume que el modo móvil se activa a 992px
+          $('.navbar-collapse').collapse('hide');
+        }
+      });
+    });
+  </script>
+
+  <!-- smooth scroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('.navbar-nav a[href*="#"]', {
+    offset: 66  // Ajusta este valor a la altura de tu navbar
+  });
+</script>
 </body>
 
 

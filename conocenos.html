@@ -55,7 +55,7 @@
         class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
         style="--bs-scroll-height: 120px"
       >
-      <li class="nav-item d-md-none" style="font-size: 14px;">
+      <li class="nav-item d-md-none nav-item-padding" style="font-size: 14px;">
         <div class="d-flex border-bottom">
           <a class="nav-link language-indicator ps-1 pe-1 " 
           href="en_conocenos.html">
@@ -66,7 +66,7 @@
           </a>
         </div>
       </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown nav-item-padding">
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -92,7 +92,7 @@
               >
             </li>
             <li>
-              <a class="dropdown-item" href="conocenos.html#team-section">Team</a>
+              <a class="dropdown-item" href="conocenos.html#team-div">Team</a>
             </li>
             <li>
               <a class="dropdown-item" href="conocenos.html#proyectos"
@@ -101,7 +101,7 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown nav-item-padding">
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -130,7 +130,7 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown nav-item-padding">
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -143,10 +143,10 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="esgDropdown">
             <li>
-              <a class="dropdown-item" href="esg.html">Reporte Anual ESG</a>
+              <a class="dropdown-item" href="esg.html">ESG/Pacto Global</a>
             </li>
             <li>
-              <a class="dropdown-item" href="esg.html#Ambiental"
+              <a class="dropdown-item" href="esg.html#ambiental"
                 >Ambiental</a
               >
             </li>
@@ -161,11 +161,11 @@
           </ul>
         </li>
 
-        <li class="nav-item align-center">
+        <li class="nav-item align-center nav-item-padding">
           <button
             id="openFormButton"
             type="button"
-            class="btn rounded-pill btn-outline-light"
+            class="btn rounded-pill btn-outline-light margin-mobile-navbar"
             style="
               background-color: #4774b2;
               font-size: 19px;
@@ -206,7 +206,8 @@
       <label for="email">Email:</label><br>
       <input type="email" id="email" name="email" required><br>
       <label for="message">Mensaje:</label><br>
-      <textarea id="message" name="message" placeholder="Cuéntanos tus dudas o comentarios" required></textarea><br>
+      <textarea id="message" name="message" placeholder="Cuéntanos tus dudas o comentarios" required
+      style="height: 100px;"></textarea><br>
       <input type="submit" value="Enviar">
     </form>
   </div>
@@ -1222,7 +1223,9 @@
       </h1>
       <p style="color: #6D6969; font-size: 20px;">Hemos contribuido a la masificación de la
         energía solar distribuida en Chile, a través del desarrollo, construcción y/o operación
-        de plantas fotovoltaicas en el segmento PMGD a lo largo y ancho de nuestro país.</p>
+        de plantas fotovoltaicas en el segmento PMGD a lo largo y ancho de nuestro país.
+        <br><br>Haz click en los pines para conocer la información de cada proyecto.
+      </p>
         <div class="container d-grid d-md-flex justify-content-center justify-content-md-center pt-2">
           <a href="./assets/files/Proyectos oEnergy.pdf" download style="text-decoration: none;">
             <button type="button" class="btn rounded-pill mobile-visible" 
@@ -1242,7 +1245,7 @@
       <h1 style="color: #d76e14 !important;">ZONA NORTE</h1>
       <div class="col pin-selection  animate-on-scroll" 
       data-animation="slideInFromLeft">
-      <p style="color: #6D6969 !important; font-size: 20px; ">Revisa los pines para conocer la información de cada proyecto</p>
+      <p style="color: #6D6969 !important; font-size: 20px; ">Haz click en los pines para conocer la información de cada proyecto</p>
         <div class="checkbox-container ps-4" style="font-size: 22px;">
           <div id="developer-checkbox" class="custom-checkbox">
             <input type="checkbox" class="round-checkbox">
@@ -2912,7 +2915,7 @@ style="left: 8.5%; top: 83%;">
       <div class="col pin-selection animate-on-scroll" 
       data-animation="slideInFromLeft"
       style="align-items: flex-end !important;">
-      <p style="color: #6D6969 !important; font-size: 20px; ">Revisa los pines para conocer la información de cada proyecto</p>
+      <p style="color: #6D6969 !important; font-size: 20px; ">Haz click en los pines para conocer la información de cada proyecto</p>
 
         <div class="checkbox-container ps-4" style="font-size: 22px;">
           <div id="developer-checkbox" class="custom-checkbox">
@@ -2997,7 +3000,7 @@ style="color: white; background-color: #223169; padding: 5px 0"
     </a>
       <a
         class="footer-link footer-mobile-hide"
-        href="conocenos.html#team-section"
+        href="conocenos.html#team-div"
       >
         <p>Team</p>
       </a>
@@ -3030,7 +3033,7 @@ style="color: white; background-color: #223169; padding: 5px 0"
         <h5>ESG</h5>
       </a>
       <a class="footer-link footer-mobile-hide" href="esg.html">
-        <p>Reporte Anual ESG</p>
+        <p>ESG/Pacto Global</p>
       </a>
       <a
         class="footer-link footer-mobile-hide"
@@ -3084,6 +3087,7 @@ style="color: white; background-color: #223169; padding: 5px 0"
 
 
 
+
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -3093,6 +3097,33 @@ style="color: white; background-color: #223169; padding: 5px 0"
     crossorigin="anonymous"></script>
   <!-- JS -->
   <script src="./assets/js/main-custom.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.navbar-nav .dropdown-item').on('click', function(){
+        var width = $(window).width();
+        if (width <= 992) {  // Asume que el modo móvil se activa a 992px
+          $('.navbar-collapse').collapse('hide');
+        }
+      });
+    });
+  </script>
+
+  <!-- smooth scroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('.navbar-nav a[href*="#"]', {
+    offset: 66  // Ajusta este valor a la altura de tu navbar
+  });
+</script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
 </body>
 
 </html>
